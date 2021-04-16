@@ -9,7 +9,8 @@ public class Player_Space_Ship_Movement : MonoBehaviour
 {
     public Camera mainCam;
     public Camera noseCam;
-
+    // public GameObject reticleCanvas;
+    
     private CharacterController controller;
     private Transform playerShipTransform;
     [SerializeField] private InputActionAsset controls;
@@ -46,11 +47,31 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     [SerializeField] private float rotationCurrentXAxisSpeed;
     [SerializeField] private float rotationCurrentYAxisSpeed;
 
+    // photoCam movement restricted to rotation w/ seperate accel & speeds
+
+    
+    [SerializeField] private float photoCam_rotationAccelerationZAxis;
+    [SerializeField] private float photoCam_rotationAccelerationXAxis;
+    [SerializeField] private float photoCam_rotationAccelerationYAxis;
+    [SerializeField] private float photoCam_rotationMaxZAxisSpeed;
+    [SerializeField] private float photoCam_rotationMaxXAxisSpeed;
+    [SerializeField] private float photoCam_rotationMaxYAxisSpeed;
+    public float rotationResetSpeed = 1.0f;
+
+    // is Player in photo mode?
+    bool photoMode;
+    Quaternion lastRotation;
+    
+
 
     private void Start()
     {
         mainCam.enabled = true;
         noseCam.enabled = false;
+        // reticleCanvas.SetActive(false);
+        photoMode = false;
+        //controls.FindActionMap("Space Ship Controls").Enable();
+        controls.FindActionMap("photoCam Controls").Disable();
     }
 
     private void Awake()
@@ -82,9 +103,61 @@ public class Player_Space_Ship_Movement : MonoBehaviour
 
     void SwitchCamera()
     {
-        mainCam.enabled = !mainCam.enabled;
-        noseCam.enabled = !noseCam.enabled;
+        /*
+         * Method Responsible for engaging and disengaging "photoMode"
+         * If photoMode is not true, then that means the camera is being switched
+         * to engage photoMode. Otherwise, the camera is being switched to
+         * exit photoMode.
+         */
+
+        // if photoMode is not true, then photoMode is being engaged
+        if (!photoMode)
+        {
+            // save quaternion value to reset back to original rotation later
+            lastRotation = transform.rotation;
+            mainCam.enabled = false;
+            noseCam.enabled = true;
+            photoMode = true;
+            // reticleCanvas.SetActive(true);
+
+            // need to Enable specific actions for PhotoMode.
+            controls.FindActionMap("Space Ship Controls").Disable();
+            controls.FindActionMap("photoCam Controls").Enable();
+            controls.FindActionMap("photoCam Controls").FindAction("Rotation Z Axis").performed += cntxt => rotationZAxis = cntxt.ReadValue<float>();
+            controls.FindActionMap("photoCam Controls").FindAction("Rotation Z Axis").canceled += cntxt => rotationZAxis = 0;
+            controls.FindActionMap("photoCam Controls").FindAction("Rotation X Axis").performed += cntxt => rotationXAxis = cntxt.ReadValue<float>();
+            controls.FindActionMap("photoCam Controls").FindAction("Rotation X Axis").canceled += cntxt => rotationXAxis = 0;
+            controls.FindActionMap("photoCam Controls").FindAction("Rotation Y Axis").performed += cntxt => rotationYAxis = cntxt.ReadValue<float>();
+            controls.FindActionMap("photoCam Controls").FindAction("Rotation Y Axis").canceled += cntxt => rotationYAxis = 0;
+            controls.FindActionMap("photoCam Controls").FindAction("Camera Switch").performed += cntxt => SwitchCamera();
+
+        }
+        else
+        {
+            // reset back to original rotation
+            // reticleCanvas.SetActive(false);
+            transform.rotation = Quaternion.Slerp(transform.rotation, lastRotation, Time.time * rotationResetSpeed);
+            mainCam.enabled = true;
+            noseCam.enabled = false;
+            photoMode = false;
+            controls.FindActionMap("Space Ship Controls").Enable();
+            controls.FindActionMap("photoCam Controls").Disable();
+        }
+        
     }
+    /*
+    void photoModeEngaged()
+    {
+
+        controls.FindActionMap("photoCam Controls").FindAction("Rotation Z Axis").performed += cntxt => rotationZAxis = cntxt.ReadValue<float>();
+        controls.FindActionMap("photoCam Controls").FindAction("Rotation Z Axis").canceled += cntxt => rotationZAxis = 0;
+        controls.FindActionMap("photoCam Controls").FindAction("Rotation X Axis").performed += cntxt => rotationXAxis = cntxt.ReadValue<float>();
+        controls.FindActionMap("photoCam Controls").FindAction("Rotation X Axis").canceled += cntxt => rotationXAxis = 0;
+        controls.FindActionMap("photoCam Controls").FindAction("Rotation Y Axis").performed += cntxt => rotationYAxis = cntxt.ReadValue<float>();
+        controls.FindActionMap("photoCam Controls").FindAction("Rotation Y Axis").canceled += cntxt => rotationYAxis = 0;
+        controls.FindActionMap("photoCam Controls").FindAction("Camera Switch").performed += cntxt => SwitchCamera();
+    }
+    */
 
     private void OnEnable()
     {
@@ -109,26 +182,70 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     }
 
     // Update is called once per frame
+
     void Update()
     {
+        if (!photoMode)
+        {
+            /*
+             * PHOTO MODE DISENGAGED
+             * resume normal flight movement
+             */
 
-        // controls the movement speed during acceleration and deceleration.
-        movementCurrentZAxisSpeed = Mathf.Lerp(movementCurrentZAxisSpeed, movementZAxis * movementMaxZAxisSpeed, movementAccelerationZAxis * Time.deltaTime);
-        movementCurrentXAxisSpeed = Mathf.Lerp(movementCurrentXAxisSpeed, movementXAxis * movementMaxXAxisSpeed, movementAccelerationXAxis * Time.deltaTime);
-        movementCurrentYAxisSpeed = Mathf.Lerp(movementCurrentYAxisSpeed, movementYAxis * movementMaxYAxisSpeed, movementAccelerationYAxis * Time.deltaTime);
+            // controls the movement speed during acceleration and deceleration.
+            movementCurrentZAxisSpeed = Mathf.Lerp(movementCurrentZAxisSpeed, movementZAxis * movementMaxZAxisSpeed, movementAccelerationZAxis * Time.deltaTime);
+            movementCurrentXAxisSpeed = Mathf.Lerp(movementCurrentXAxisSpeed, movementXAxis * movementMaxXAxisSpeed, movementAccelerationXAxis * Time.deltaTime);
+            movementCurrentYAxisSpeed = Mathf.Lerp(movementCurrentYAxisSpeed, movementYAxis * movementMaxYAxisSpeed, movementAccelerationYAxis * Time.deltaTime);
 
-        // controls rotation speed during acceleration and deceleration.
-        rotationCurrentZAxisSpeed = Mathf.Lerp(rotationCurrentZAxisSpeed, rotationZAxis * rotationMaxZAxisSpeed, rotationAccelerationZAxis * Time.deltaTime);
-        rotationCurrentXAxisSpeed = Mathf.Lerp(rotationCurrentXAxisSpeed, rotationXAxis * rotationMaxXAxisSpeed, rotationAccelerationXAxis * Time.deltaTime);
-        rotationCurrentYAxisSpeed = Mathf.Lerp(rotationCurrentYAxisSpeed, rotationYAxis * rotationMaxYAxisSpeed, rotationAccelerationYAxis * Time.deltaTime);
+            // controls rotation speed during acceleration and deceleration.
+            rotationCurrentZAxisSpeed = Mathf.Lerp(rotationCurrentZAxisSpeed, rotationZAxis * rotationMaxZAxisSpeed, rotationAccelerationZAxis * Time.deltaTime);
+            rotationCurrentXAxisSpeed = Mathf.Lerp(rotationCurrentXAxisSpeed, rotationXAxis * rotationMaxXAxisSpeed, rotationAccelerationXAxis * Time.deltaTime);
+            rotationCurrentYAxisSpeed = Mathf.Lerp(rotationCurrentYAxisSpeed, rotationYAxis * rotationMaxYAxisSpeed, rotationAccelerationYAxis * Time.deltaTime);
 
-        controller.Move((transform.forward * movementCurrentZAxisSpeed * Time.deltaTime) +
-                        (transform.right * movementCurrentXAxisSpeed * Time.deltaTime) +
-                        (transform.up * movementCurrentYAxisSpeed * Time.deltaTime));
+            controller.Move((transform.forward * movementCurrentZAxisSpeed * Time.deltaTime) +
+                            (transform.right * movementCurrentXAxisSpeed * Time.deltaTime) +
+                            (transform.up * movementCurrentYAxisSpeed * Time.deltaTime));
 
-        playerShipTransform.Rotate(rotationCurrentZAxisSpeed * Time.deltaTime,
-                                   rotationCurrentXAxisSpeed * Time.deltaTime,
-                                   rotationCurrentYAxisSpeed * Time.deltaTime,
-                                   Space.Self);
+            playerShipTransform.Rotate(rotationCurrentZAxisSpeed * Time.deltaTime,
+                                       rotationCurrentXAxisSpeed * Time.deltaTime,
+                                       rotationCurrentYAxisSpeed * Time.deltaTime,
+                                       Space.Self);
+        }
+        else
+        {
+            /*
+             *  PHOTO MODE ENGAGED
+             *  Can only rotate on the axes in photo mode, no movement.
+             *  Movement code is included so ship can finish whatever movement it was previously doing,
+             *  otherwise it will force the ship to stop suddenyl.
+             */
+            rotationCurrentZAxisSpeed = Mathf.Lerp(rotationCurrentZAxisSpeed, rotationZAxis * photoCam_rotationMaxZAxisSpeed, photoCam_rotationAccelerationZAxis * Time.deltaTime);
+            rotationCurrentXAxisSpeed = Mathf.Lerp(rotationCurrentXAxisSpeed, rotationXAxis * photoCam_rotationMaxXAxisSpeed, photoCam_rotationAccelerationXAxis * Time.deltaTime);
+            rotationCurrentYAxisSpeed = Mathf.Lerp(rotationCurrentYAxisSpeed, rotationYAxis * photoCam_rotationMaxYAxisSpeed, photoCam_rotationAccelerationYAxis * Time.deltaTime);
+
+            /*
+            controller.Move((transform.forward * movementCurrentZAxisSpeed * Time.deltaTime) +
+                (transform.right * movementCurrentXAxisSpeed * Time.deltaTime) +
+                (transform.up * movementCurrentYAxisSpeed * Time.deltaTime));
+            */
+
+            movementCurrentZAxisSpeed = Mathf.Lerp(movementCurrentZAxisSpeed, movementZAxis * movementMaxZAxisSpeed, movementAccelerationZAxis * Time.deltaTime);
+
+            controller.Move((transform.forward * movementCurrentZAxisSpeed * Time.deltaTime));
+
+            playerShipTransform.Rotate(rotationCurrentZAxisSpeed * Time.deltaTime,
+                           rotationCurrentXAxisSpeed * Time.deltaTime,
+                           rotationCurrentYAxisSpeed * Time.deltaTime,
+                           Space.Self);
+        }
     }
+
+
+
+
+
+
+
+    // END OF SCRIPT
 }
+
