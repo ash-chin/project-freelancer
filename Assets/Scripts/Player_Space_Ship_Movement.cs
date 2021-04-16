@@ -2,19 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(CharacterController))]
 
 public class Player_Space_Ship_Movement : MonoBehaviour
 {
+    // Camera assets
     public Camera mainCam;
     public Camera noseCam;
+
+    // Hull and Fuel assets
+    public Slider hullSlider;
+    public Slider fuelSlider;
+    public float maxHull;
+    public float maxFuel;
+
+
     // public GameObject reticleCanvas;
     
+
+    // player controls, and input assets
     private CharacterController controller;
     private Transform playerShipTransform;
     [SerializeField] private InputActionAsset controls;
 
+    #region Serialized Fields
+    // serialized fields for the input of controls
     [SerializeField] private float movementAccelerationZAxis;
     [SerializeField] private float movementAccelerationXAxis;
     [SerializeField] private float movementAccelerationYAxis;
@@ -47,9 +61,11 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     [SerializeField] private float rotationCurrentXAxisSpeed;
     [SerializeField] private float rotationCurrentYAxisSpeed;
 
+    #endregion
+
     // photoCam movement restricted to rotation w/ seperate accel & speeds
 
-    
+
     [SerializeField] private float photoCam_rotationAccelerationZAxis;
     [SerializeField] private float photoCam_rotationAccelerationXAxis;
     [SerializeField] private float photoCam_rotationAccelerationYAxis;
@@ -72,6 +88,9 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         photoMode = false;
         //controls.FindActionMap("Space Ship Controls").Enable();
         controls.FindActionMap("photoCam Controls").Disable();
+
+        fuelSlider.value = maxFuel;
+        hullSlider.value = maxHull;
     }
 
     private void Awake()
@@ -183,33 +202,41 @@ public class Player_Space_Ship_Movement : MonoBehaviour
 
     // Update is called once per frame
 
-    void Update()
+    void FixedUpdate()
     {
         if (!photoMode)
         {
-            /*
+            if (fuelSlider.value > 0)
+            {
+                /*
              * PHOTO MODE DISENGAGED
              * resume normal flight movement
              */
 
-            // controls the movement speed during acceleration and deceleration.
-            movementCurrentZAxisSpeed = Mathf.Lerp(movementCurrentZAxisSpeed, movementZAxis * movementMaxZAxisSpeed, movementAccelerationZAxis * Time.deltaTime);
-            movementCurrentXAxisSpeed = Mathf.Lerp(movementCurrentXAxisSpeed, movementXAxis * movementMaxXAxisSpeed, movementAccelerationXAxis * Time.deltaTime);
-            movementCurrentYAxisSpeed = Mathf.Lerp(movementCurrentYAxisSpeed, movementYAxis * movementMaxYAxisSpeed, movementAccelerationYAxis * Time.deltaTime);
+                // controls the movement speed during acceleration and deceleration.
+                movementCurrentZAxisSpeed = Mathf.Lerp(movementCurrentZAxisSpeed, movementZAxis * movementMaxZAxisSpeed, movementAccelerationZAxis * Time.deltaTime);
+                movementCurrentXAxisSpeed = Mathf.Lerp(movementCurrentXAxisSpeed, movementXAxis * movementMaxXAxisSpeed, movementAccelerationXAxis * Time.deltaTime);
+                movementCurrentYAxisSpeed = Mathf.Lerp(movementCurrentYAxisSpeed, movementYAxis * movementMaxYAxisSpeed, movementAccelerationYAxis * Time.deltaTime);
 
-            // controls rotation speed during acceleration and deceleration.
-            rotationCurrentZAxisSpeed = Mathf.Lerp(rotationCurrentZAxisSpeed, rotationZAxis * rotationMaxZAxisSpeed, rotationAccelerationZAxis * Time.deltaTime);
-            rotationCurrentXAxisSpeed = Mathf.Lerp(rotationCurrentXAxisSpeed, rotationXAxis * rotationMaxXAxisSpeed, rotationAccelerationXAxis * Time.deltaTime);
-            rotationCurrentYAxisSpeed = Mathf.Lerp(rotationCurrentYAxisSpeed, rotationYAxis * rotationMaxYAxisSpeed, rotationAccelerationYAxis * Time.deltaTime);
+                // controls rotation speed during acceleration and deceleration.
+                rotationCurrentZAxisSpeed = Mathf.Lerp(rotationCurrentZAxisSpeed, rotationZAxis * rotationMaxZAxisSpeed, rotationAccelerationZAxis * Time.deltaTime);
+                rotationCurrentXAxisSpeed = Mathf.Lerp(rotationCurrentXAxisSpeed, rotationXAxis * rotationMaxXAxisSpeed, rotationAccelerationXAxis * Time.deltaTime);
+                rotationCurrentYAxisSpeed = Mathf.Lerp(rotationCurrentYAxisSpeed, rotationYAxis * rotationMaxYAxisSpeed, rotationAccelerationYAxis * Time.deltaTime);
 
-            controller.Move((transform.forward * movementCurrentZAxisSpeed * Time.deltaTime) +
-                            (transform.right * movementCurrentXAxisSpeed * Time.deltaTime) +
-                            (transform.up * movementCurrentYAxisSpeed * Time.deltaTime));
+                controller.Move((transform.forward * movementCurrentZAxisSpeed * Time.deltaTime) +
+                                (transform.right * movementCurrentXAxisSpeed * Time.deltaTime) +
+                                (transform.up * movementCurrentYAxisSpeed * Time.deltaTime));
 
-            playerShipTransform.Rotate(rotationCurrentZAxisSpeed * Time.deltaTime,
-                                       rotationCurrentXAxisSpeed * Time.deltaTime,
-                                       rotationCurrentYAxisSpeed * Time.deltaTime,
-                                       Space.Self);
+                playerShipTransform.Rotate(rotationCurrentZAxisSpeed * Time.deltaTime,
+                                           rotationCurrentXAxisSpeed * Time.deltaTime,
+                                           rotationCurrentYAxisSpeed * Time.deltaTime,
+                                           Space.Self);
+
+                //now we decrement the fuel in relation to absolute movement.
+                fuelSlider.value -= 0.0001f * (Mathf.Abs(movementCurrentZAxisSpeed) + Mathf.Abs(movementCurrentYAxisSpeed) + Mathf.Abs(movementCurrentXAxisSpeed));
+
+            }
+            
         }
         else
         {
@@ -241,6 +268,13 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     }
 
 
+    // the following is a function called by Hull Detector, meant
+    // to decrease the value of hull, relative to collioson strength
+
+    public void HullDamage()
+    {
+        hullSlider.value -= 0.1f * (Mathf.Abs(movementCurrentXAxisSpeed) + Mathf.Abs(movementCurrentYAxisSpeed) + Mathf.Abs(movementCurrentZAxisSpeed));
+    }
 
 
 
