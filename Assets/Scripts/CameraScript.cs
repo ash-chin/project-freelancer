@@ -46,6 +46,7 @@ public class CameraScript : MonoBehaviour
         }
         else
         {
+            Canvas.SetActive(false);
             blackReticle.SetActive(false);
             redReticle.SetActive(false);
         }
