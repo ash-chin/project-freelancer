@@ -12,6 +12,7 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     public Camera mainCam;
     public Camera noseCam;
 
+    public int money;
     // Hull and Fuel assets
     public Slider hullSlider;
     public Slider fuelSlider;
@@ -78,7 +79,6 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     bool photoMode;
     Quaternion lastRotation;
     
-
 
     private void Start()
     {
@@ -277,7 +277,15 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     }
 
 
+    public void PayTheMan(int payment)
+    {
+        money -= payment;
+    }
 
+    public void MoneyPweaaaaase(int payment)
+    {
+        money += payment;
+    }
 
 
     // END OF SCRIPT

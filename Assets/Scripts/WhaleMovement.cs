@@ -4,18 +4,35 @@ using UnityEngine;
 
 public class WhaleMovement : MonoBehaviour
 {
-    public Transform endpoint;
-    public float movSpeed;
-    public float rotSpeed;
-    private Vector3 direction;
+    public float damping;
+    public float speed;
+    public Transform[] loop;
+    private int loopIndex;
+    private Transform target;
+    private float distance;
 
-    // Update is called once per frame
+
+    private void Start()
+    {
+        loopIndex = 0;
+        target = loop[loopIndex];
+    }
+  
     void FixedUpdate()
     {
-        direction = (endpoint.position - transform.position);
-        direction.Normalize();
-        transform.Translate(direction * Time.deltaTime * movSpeed);
+        distance = Vector3.Distance(target.position, transform.position);
+        if (distance < 10)
+        {
+            loopIndex = (loopIndex + 1) % loop.Length;
+            target = loop[loopIndex];
+        }
 
-        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(direction), rotSpeed);
+        transform.Translate(Time.deltaTime * Vector3.back * speed, Space.Self);
+
+        var currentForward = transform.forward;
+        var lookpos = target.position - transform.position;
+
+        var rotation = Quaternion.LookRotation(-lookpos);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * damping);
     }
 }
