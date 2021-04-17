@@ -309,6 +309,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Take Photo",
+                    "type": "Button",
+                    "id": "5992ad4a-bb53-4f8f-8419-aeff94ddb85d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -419,6 +427,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Camera Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6714646e-b186-4288-b1ac-9443e213a068",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Take Photo",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

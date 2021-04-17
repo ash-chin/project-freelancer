@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using TMPro;
 
 [RequireComponent(typeof(CharacterController))]
 
@@ -11,6 +12,7 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     // Camera assets
     public Camera mainCam;
     public Camera noseCam;
+    public RawImage playerPhoto;    // object that holds the photo
 
     public int money;
     // Hull and Fuel assets
@@ -82,11 +84,11 @@ public class Player_Space_Ship_Movement : MonoBehaviour
 
     private void Start()
     {
+        // game does not start in photoMode
         mainCam.enabled = true;
         noseCam.enabled = false;
-        // reticleCanvas.SetActive(false);
         photoMode = false;
-        //controls.FindActionMap("Space Ship Controls").Enable();
+        playerPhoto.enabled = false;
         controls.FindActionMap("photoCam Controls").Disable();
 
         fuelSlider.value = maxFuel;
@@ -118,6 +120,19 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         controls.FindActionMap("Space Ship Controls").FindAction("Rotation Y Axis").canceled += cntxt => rotationYAxis = 0;
 
         controls.FindActionMap("Space Ship Controls").FindAction("Camera Switch").performed += cntxt => SwitchCamera();
+
+
+
+        controls.FindActionMap("photoCam Controls").Enable();
+        controls.FindActionMap("photoCam Controls").FindAction("Rotation Z Axis").performed += cntxt => rotationZAxis = cntxt.ReadValue<float>();
+        controls.FindActionMap("photoCam Controls").FindAction("Rotation Z Axis").canceled += cntxt => rotationZAxis = 0;
+        controls.FindActionMap("photoCam Controls").FindAction("Rotation X Axis").performed += cntxt => rotationXAxis = cntxt.ReadValue<float>();
+        controls.FindActionMap("photoCam Controls").FindAction("Rotation X Axis").canceled += cntxt => rotationXAxis = 0;
+        controls.FindActionMap("photoCam Controls").FindAction("Rotation Y Axis").performed += cntxt => rotationYAxis = cntxt.ReadValue<float>();
+        controls.FindActionMap("photoCam Controls").FindAction("Rotation Y Axis").canceled += cntxt => rotationYAxis = 0;
+        controls.FindActionMap("photoCam Controls").FindAction("Camera Switch").performed += cntxt => SwitchCamera();
+        controls.FindActionMap("photoCam Controls").FindAction("Take Photo").performed += cntxt => TakePhoto();
+
     }
 
     void SwitchCamera()
@@ -137,24 +152,16 @@ public class Player_Space_Ship_Movement : MonoBehaviour
             mainCam.enabled = false;
             noseCam.enabled = true;
             photoMode = true;
-            // reticleCanvas.SetActive(true);
 
-            // need to Enable specific actions for PhotoMode.
+            // moved photoMode actions activation into start()
+
             controls.FindActionMap("Space Ship Controls").Disable();
             controls.FindActionMap("photoCam Controls").Enable();
-            controls.FindActionMap("photoCam Controls").FindAction("Rotation Z Axis").performed += cntxt => rotationZAxis = cntxt.ReadValue<float>();
-            controls.FindActionMap("photoCam Controls").FindAction("Rotation Z Axis").canceled += cntxt => rotationZAxis = 0;
-            controls.FindActionMap("photoCam Controls").FindAction("Rotation X Axis").performed += cntxt => rotationXAxis = cntxt.ReadValue<float>();
-            controls.FindActionMap("photoCam Controls").FindAction("Rotation X Axis").canceled += cntxt => rotationXAxis = 0;
-            controls.FindActionMap("photoCam Controls").FindAction("Rotation Y Axis").performed += cntxt => rotationYAxis = cntxt.ReadValue<float>();
-            controls.FindActionMap("photoCam Controls").FindAction("Rotation Y Axis").canceled += cntxt => rotationYAxis = 0;
-            controls.FindActionMap("photoCam Controls").FindAction("Camera Switch").performed += cntxt => SwitchCamera();
 
         }
         else
         {
             // reset back to original rotation
-            // reticleCanvas.SetActive(false);
             transform.rotation = Quaternion.Slerp(transform.rotation, lastRotation, Time.time * rotationResetSpeed);
             mainCam.enabled = true;
             noseCam.enabled = false;
@@ -164,19 +171,22 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         }
         
     }
-    /*
-    void photoModeEngaged()
-    {
 
-        controls.FindActionMap("photoCam Controls").FindAction("Rotation Z Axis").performed += cntxt => rotationZAxis = cntxt.ReadValue<float>();
-        controls.FindActionMap("photoCam Controls").FindAction("Rotation Z Axis").canceled += cntxt => rotationZAxis = 0;
-        controls.FindActionMap("photoCam Controls").FindAction("Rotation X Axis").performed += cntxt => rotationXAxis = cntxt.ReadValue<float>();
-        controls.FindActionMap("photoCam Controls").FindAction("Rotation X Axis").canceled += cntxt => rotationXAxis = 0;
-        controls.FindActionMap("photoCam Controls").FindAction("Rotation Y Axis").performed += cntxt => rotationYAxis = cntxt.ReadValue<float>();
-        controls.FindActionMap("photoCam Controls").FindAction("Rotation Y Axis").canceled += cntxt => rotationYAxis = 0;
-        controls.FindActionMap("photoCam Controls").FindAction("Camera Switch").performed += cntxt => SwitchCamera();
+    void TakePhoto()
+    {
+        /*
+         * Literally just sets the playerPhoto object to enabled when the player
+         * hits the 'P' key. Then inside the SnapPhoto.cs script (on the playerPhoto object),
+         * LateUpdate() checks to see if it's enabled. That is the script responsible for
+         * taking photos. Please look at it for context. Thank you for listening to my TED Talk.
+         * 
+         * P.S
+         * Look, I know this is stupid, and I know I could consolidate the code into
+         * this script, but also... kinda wanna try to not pile everything into one script.
+         */
+        playerPhoto.enabled = true;
     }
-    */
+
 
     private void OnEnable()
     {
@@ -187,6 +197,8 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         controls.FindAction("Rotation X Axis").Enable();
         controls.FindAction("Rotation Y Axis").Enable();
         controls.FindAction("Camera Switch").Enable();
+        controls.FindAction("Take Photo").Enable();
+
     }
 
     private void OnDisable()
@@ -198,6 +210,11 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         controls.FindAction("Rotation X Axis").Disable();
         controls.FindAction("Rotation Y Axis").Disable();
         controls.FindAction("Camera Switch").Disable();
+        controls.FindAction("Take Photo").Disable();
+
+        // this will not cause a memory leak... You're welcome!
+        Object.Destroy(playerPhoto.texture);
+
     }
 
     // Update is called once per frame
@@ -266,7 +283,6 @@ public class Player_Space_Ship_Movement : MonoBehaviour
                            Space.Self);
         }
     }
-
 
     // the following is a function called by Hull Detector, meant
     // to decrease the value of hull, relative to collioson strength

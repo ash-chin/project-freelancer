@@ -11,7 +11,6 @@ public class CameraScript : MonoBehaviour
     public GameObject blackReticle;
     public GameObject redReticle;
 
-
     Camera cam;
 
 
