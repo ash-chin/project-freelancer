@@ -29,7 +29,6 @@ public class WhaleMovement : MonoBehaviour
 
         transform.Translate(Time.deltaTime * Vector3.back * speed, Space.Self);
 
-        var currentForward = transform.forward;
         var lookpos = target.position - transform.position;
 
         var rotation = Quaternion.LookRotation(-lookpos);
