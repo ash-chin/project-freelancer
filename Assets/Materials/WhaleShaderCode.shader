@@ -3,7 +3,7 @@ Shader "Custom/NewSurfaceShader"
     Properties
     {
         _Color("Color", Color) = (1,1,1,1)
-        _MainTex("Albedo (RGB)", 2D) = "white" {}
+        _MainTex("Albedo (RGB)", 2D) = "pink" {}
         _Glossiness("Smoothness", Range(0,1)) = 0.5
         _Metallic("Metallic", Range(0,1)) = 0.0
         _Saturation("Saturation", Range(0,4)) = 0.0
@@ -45,12 +45,12 @@ Shader "Custom/NewSurfaceShader"
 
 
                 //uv.y += sin(uv.y * _Multiplier +_Time.y);
-                //uv.x += sin(uv.y * _Multiplier+_Time.y);
+                uv.x += sin(uv.y * _Multiplier+_Time.y);
                 // Albedo comes from a texture tinted by color
                 fixed4 c = tex2D(_MainTex, uv) * _Color;
 
                 float saturation = sin(uv.y * 7);
-                o.Albedo = lerp(cos(c.g + c.b + c.r + _Time.y * 3), c, saturation);
+                o.Albedo = lerp(cos(c.g + c.b + c.r + _Time.y * 3)+1, c, saturation);
                 // Metallic and smoothness come from slider variables
                 o.Metallic = _Metallic;
                 o.Smoothness = _Glossiness;
