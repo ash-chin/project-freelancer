@@ -1418,7 +1418,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588956999}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -2636,7 +2636,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectName: {fileID: 1593055908}
-  Canvas: {fileID: 1711106891}
+  ThisCanvas: {fileID: 1711106891}
+  OuterHud: {fileID: 947667821}
   blackReticle: {fileID: 741532376}
   redReticle: {fileID: 1457483791}
 --- !u!114 &1820793269

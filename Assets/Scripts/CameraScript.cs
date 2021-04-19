@@ -6,46 +6,53 @@ using TMPro;
 
 public class CameraScript : MonoBehaviour
 {
-    public TextMeshProUGUI ObjectName;
-    public GameObject Canvas;
+    public TextMeshProUGUI ObjectName;    // Textfied to readout object tag
+    public GameObject ThisCanvas;    // Canvas the textfield lives in
+    public GameObject OuterHud;    // Canvas that hoilds hull, fuel gauges
     public GameObject blackReticle;
     public GameObject redReticle;
 
-    Camera cam;
+    Camera photoCam;
 
 
     void Start()
     {
-        cam = GetComponent<Camera>();
-        Canvas.SetActive(false);
+        photoCam = GetComponent<Camera>();
+        ThisCanvas.SetActive(false);
+        OuterHud.SetActive(true);
         blackReticle.SetActive(false);
         redReticle.SetActive(false);
     }
 
     void Update()
     {
-        if (cam.enabled == true)
+
+        // PhotoMode Enabled
+        if (photoCam.enabled == true)
         {
+            OuterHud.SetActive(false);
             blackReticle.SetActive(true);
-            Ray ray = cam.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
+            Ray ray = photoCam.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
             RaycastHit hit;
+
+            // if the camera spots an object
             if (Physics.Raycast(ray, out hit))
             {
-                Canvas.SetActive(true);
-                // blackReticle.SetActive(true);
+                ThisCanvas.SetActive(true);
                 redReticle.SetActive(true);
                 ObjectName.text = hit.transform.tag.ToString();
             }
             else
             {
-                Canvas.SetActive(false);
+                ThisCanvas.SetActive(false);
                 // blackReticle.SetActive(false);
                 redReticle.SetActive(false);
             }
         }
-        else
+        else    // PhotoMode Disabled
         {
-            Canvas.SetActive(false);
+            OuterHud.SetActive(true);
+            ThisCanvas.SetActive(false);
             blackReticle.SetActive(false);
             redReticle.SetActive(false);
         }
