@@ -8,6 +8,8 @@ public class SnapPhoto : MonoBehaviour
 {
     // public Camera photoRender;
     public RenderTexture renderTexture;
+    public GameObject reticleCanvas;
+    public GameObject readOut;
     RawImage thePhoto;
 
     // Start is called before the first frame update
@@ -31,13 +33,15 @@ public class SnapPhoto : MonoBehaviour
          * Again, very important unless you like memory leaks.
          */
         yield return new WaitForEndOfFrame();
-
-        renderTexture = new RenderTexture(Screen.width, Screen.height, 0);
+        // renderTexture = new RenderTexture(Screen.width, Screen.height, 16, RenderTextureFormat.ARGB32);
+        renderTexture = new RenderTexture(Screen.width, Screen.height, 24, RenderTextureFormat.DefaultHDR);
         ScreenCapture.CaptureScreenshotIntoRenderTexture(renderTexture);
         thePhoto.texture = renderTexture;
         thePhoto.enabled = false;
+        reticleCanvas.SetActive(true);
+        readOut.SetActive(true);
 
-        /* old stuff
+        /* 
         Texture2D texture = ScreenCapture.CaptureScreenshotAsTexture();
         thePhoto.texture = texture;
         thePhoto.enabled = false;
@@ -49,6 +53,8 @@ public class SnapPhoto : MonoBehaviour
     {
         if (thePhoto.enabled == true)
         {
+            reticleCanvas.SetActive(false);
+            readOut.SetActive(false);
             StartCoroutine(SnapShot());
         }
     }
