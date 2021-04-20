@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Rendering;
 
 public class SnapPhoto : MonoBehaviour
 {
+    // public Camera photoRender;
+    public RenderTexture renderTexture;
     RawImage thePhoto;
 
     // Start is called before the first frame update
@@ -28,9 +31,17 @@ public class SnapPhoto : MonoBehaviour
          * Again, very important unless you like memory leaks.
          */
         yield return new WaitForEndOfFrame();
+
+        renderTexture = new RenderTexture(Screen.width, Screen.height, 0);
+        ScreenCapture.CaptureScreenshotIntoRenderTexture(renderTexture);
+        thePhoto.texture = renderTexture;
+        thePhoto.enabled = false;
+
+        /*
         Texture2D texture = ScreenCapture.CaptureScreenshotAsTexture();
         thePhoto.texture = texture;
         thePhoto.enabled = false;
+        */
     }
 
     // Update is called once per frame
