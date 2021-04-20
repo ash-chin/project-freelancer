@@ -37,7 +37,7 @@ public class SnapPhoto : MonoBehaviour
         thePhoto.texture = renderTexture;
         thePhoto.enabled = false;
 
-        /*
+        /* old stuff
         Texture2D texture = ScreenCapture.CaptureScreenshotAsTexture();
         thePhoto.texture = texture;
         thePhoto.enabled = false;
