@@ -687,7 +687,7 @@ RectTransform:
   m_GameObject: {fileID: 401156245}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 1628117957}
   - {fileID: 1471154557}
@@ -697,7 +697,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 310, y: -115}
+  m_AnchoredPosition: {x: 342.9, y: -187.2}
   m_SizeDelta: {x: 180, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &401156247
@@ -996,7 +996,7 @@ RectTransform:
   m_GameObject: {fileID: 763866105}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 1587403669}
   - {fileID: 1634774349}
@@ -1006,7 +1006,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -90, y: 15}
+  m_AnchoredPosition: {x: -58.4, y: 13.7}
   m_SizeDelta: {x: 180, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &763866107
@@ -1493,6 +1493,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7712052426326418364, guid: fc1e29d5287dbf04a878ba5241a9df1f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7712052426326418366, guid: fc1e29d5287dbf04a878ba5241a9df1f, type: 3}
+      propertyPath: readOut
+      value: 
+      objectReference: {fileID: 1711106891}
+    - target: {fileID: 7712052426326418366, guid: fc1e29d5287dbf04a878ba5241a9df1f, type: 3}
+      propertyPath: renderTexture
+      value: 
+      objectReference: {fileID: 8400000, guid: f715c6e6e8bf59c48a71da084b5e1642, type: 2}
+    - target: {fileID: 7712052426326418366, guid: fc1e29d5287dbf04a878ba5241a9df1f, type: 3}
+      propertyPath: reticleCanvas
+      value: 
+      objectReference: {fileID: 1362368870}
+    - target: {fileID: 7712052426977475378, guid: fc1e29d5287dbf04a878ba5241a9df1f, type: 3}
+      propertyPath: m_Name
+      value: photoCam
+      objectReference: {fileID: 0}
     - target: {fileID: 7712052426977475380, guid: fc1e29d5287dbf04a878ba5241a9df1f, type: 3}
       propertyPath: Canvas
       value: 
@@ -1511,6 +1531,11 @@ PrefabInstance:
       objectReference: {fileID: 1711106891}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc1e29d5287dbf04a878ba5241a9df1f, type: 3}
+--- !u!1 &1362368870 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7712052425673708241, guid: fc1e29d5287dbf04a878ba5241a9df1f, type: 3}
+  m_PrefabInstance: {fileID: 1362368869}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1471154556
 GameObject:
   m_ObjectHideFlags: 0
@@ -1907,7 +1932,7 @@ GameObject:
   - component: {fileID: 1711106893}
   - component: {fileID: 1711106892}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: ObjectReadout
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
