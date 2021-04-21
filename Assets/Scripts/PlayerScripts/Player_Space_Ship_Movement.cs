@@ -21,6 +21,11 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     public float maxHull;
     public float maxFuel;
 
+    // these are the buttons for refueling and whatnot
+    // the timer is to ensure that the player doesn't get caught in the cylce endlessly
+    public GameObject stationButtons;
+
+
 
     // public GameObject reticleCanvas;
     
@@ -303,7 +308,36 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         money += payment;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "SpaceStation")
+        {
+            Time.timeScale = 0f;
+            stationButtons.SetActive(true);
+        }
+    }
 
+    public void LeaveStation()
+    {
+        stationButtons.SetActive(false);
+        Time.timeScale = 1f;
+    }
+
+    public void RefuelTen()
+    {
+        if (fuelSlider.value < 100)
+        {
+            fuelSlider.value += 10;
+        }
+    }
+
+    public void RepairHull()
+    {
+        if (hullSlider.value < 100)
+        {
+            hullSlider.value += 10;
+        }
+    }
     // END OF SCRIPT
 }
 
