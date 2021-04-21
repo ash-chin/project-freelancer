@@ -60,6 +60,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "First Person Switch",
+                    "type": "PassThrough",
+                    "id": "4d909fab-5dc3-4a9f-b47c-bc6756f4d8b0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -269,6 +277,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Camera Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5ab6d3d9-9041-4f9c-b5cb-2ac771bbc775",
+                    "path": "<Keyboard>/k",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "First Person Switch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

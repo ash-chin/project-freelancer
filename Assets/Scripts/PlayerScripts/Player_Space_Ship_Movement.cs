@@ -10,6 +10,7 @@ using TMPro;
 public class Player_Space_Ship_Movement : MonoBehaviour
 {
     // Camera assets
+    public Camera firstPersonCam;
     public Camera mainCam;
     public Camera noseCam;
     public RawImage playerPhoto;    // object that holds the photo
@@ -20,6 +21,9 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     public Slider fuelSlider;
     public float maxHull;
     public float maxFuel;
+
+    public GameObject firstPersonHud;
+    private bool firstPersonIsActive;
 
     // these are the buttons for refueling and whatnot
     // the timer is to ensure that the player doesn't get caught in the cylce endlessly
@@ -90,6 +94,9 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     private void Start()
     {
         // game does not start in photoMode
+        firstPersonCam.enabled = false;
+        firstPersonHud.SetActive(false);
+        firstPersonIsActive = false;
         mainCam.enabled = true;
         noseCam.enabled = false;
         photoMode = false;
@@ -126,6 +133,8 @@ public class Player_Space_Ship_Movement : MonoBehaviour
 
         controls.FindActionMap("Space Ship Controls").FindAction("Camera Switch").performed += cntxt => SwitchCamera();
 
+        controls.FindActionMap("Space Ship Controls").FindAction("First Person Switch").performed += cntxt => FirstPersonSwitch();
+
 
 
         controls.FindActionMap("photoCam Controls").Enable();
@@ -138,6 +147,22 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         controls.FindActionMap("photoCam Controls").FindAction("Camera Switch").performed += cntxt => SwitchCamera();
         controls.FindActionMap("photoCam Controls").FindAction("Take Photo").performed += cntxt => TakePhoto();
 
+    }
+
+    private void FirstPersonSwitch()
+    {
+        mainCam.enabled = !mainCam.enabled;
+        firstPersonCam.enabled = !firstPersonCam.enabled;
+        if (firstPersonIsActive)
+        {
+            firstPersonIsActive = false;
+            firstPersonHud.SetActive(false);
+        }
+        else
+        {
+            firstPersonIsActive = true;
+            firstPersonHud.SetActive(true);
+        }
     }
 
     void SwitchCamera()
