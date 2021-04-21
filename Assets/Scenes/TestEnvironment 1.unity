@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 349, y: -124.6}
+  m_AnchoredPosition: {x: 345.1, y: -147.3}
   m_SizeDelta: {x: 200, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &12833539
@@ -866,7 +866,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 349, y: -145}
+  m_AnchoredPosition: {x: 342.9, y: -168.8}
   m_SizeDelta: {x: 200, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &181208972
@@ -1172,7 +1172,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.82812506}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1.4999847}
+  m_AnchoredPosition: {x: 0, y: -1.5}
   m_SizeDelta: {x: -48, y: -25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &263093885
@@ -2985,8 +2985,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderTexture: {fileID: 8400000, guid: f715c6e6e8bf59c48a71da084b5e1642, type: 2}
-  reticleCanvas: {fileID: 0}
-  readOut: {fileID: 0}
+  reticleCanvas: {fileID: 852619345}
+  readOut: {fileID: 1711106891}
 --- !u!1 &1457483791
 GameObject:
   m_ObjectHideFlags: 0
@@ -3098,7 +3098,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.2875}
-  m_AnchoredPosition: {x: 0.000015258789, y: -0.000030517578}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -48, y: -62}
   m_Pivot: {x: 0.5, y: 0.5000002}
 --- !u!114 &1529259746
@@ -3364,7 +3364,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.053750005, y: 0}
   m_AnchorMax: {x: 0.31375, y: 1}
-  m_AnchoredPosition: {x: -0.48858643, y: 0}
+  m_AnchoredPosition: {x: -0.4885254, y: 0}
   m_SizeDelta: {x: 0.9772, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1711106891
