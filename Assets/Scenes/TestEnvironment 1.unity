@@ -487,7 +487,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 2000
+  far clip plane: 4000
   field of view: 90
   orthographic: 0
   orthographic size: 5
@@ -1604,7 +1604,7 @@ MonoBehaviour:
     FieldOfView: 90
     OrthographicSize: 5
     NearClipPlane: 0.3
-    FarClipPlane: 2000
+    FarClipPlane: 4000
     Dutch: 0
     LensShift: {x: 0, y: 0}
   m_Transitions:
@@ -1689,7 +1689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f90f5935b22c29949898aba88b282752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 0.5
+  rotateSpeed: 19
 --- !u!4 &389287060
 Transform:
   m_ObjectHideFlags: 0
@@ -2511,12 +2511,12 @@ MonoBehaviour:
   firstPersonHud: {fileID: 1016553584}
   stationButtons: {fileID: 1685088585}
   controls: {fileID: -944628639613478452, guid: 03bce27c72270f947b6188dd3a7df09c, type: 3}
-  movementAccelerationZAxis: 0.5
+  movementAccelerationZAxis: 0.2
   movementAccelerationXAxis: 2.5
   movementAccelerationYAxis: 2.5
   movementMaxZAxisSpeed: 100
-  movementMaxXAxisSpeed: 10
-  movementMaxYAxisSpeed: 10
+  movementMaxXAxisSpeed: 20
+  movementMaxYAxisSpeed: 60
   movementZAxis: 0
   movementXAxis: 0
   movementYAxis: 0
@@ -2526,9 +2526,9 @@ MonoBehaviour:
   rotationAccelerationZAxis: 2.5
   rotationAccelerationXAxis: 2.5
   rotationAccelerationYAxis: 2.5
-  rotationMaxZAxisSpeed: 40
-  rotationMaxXAxisSpeed: 20
-  rotationMaxYAxisSpeed: 60
+  rotationMaxZAxisSpeed: 100
+  rotationMaxXAxisSpeed: 100
+  rotationMaxYAxisSpeed: 100
   rotationZAxis: 0
   rotationXAxis: 0
   rotationYAxis: 0
@@ -4348,8 +4348,20 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3693778905882435571, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3693778905882435571, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3693778905882435571, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3693778905882435571, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1011
       objectReference: {fileID: 0}
     - target: {fileID: 3693778905882435571, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
       propertyPath: m_LocalPosition.y
