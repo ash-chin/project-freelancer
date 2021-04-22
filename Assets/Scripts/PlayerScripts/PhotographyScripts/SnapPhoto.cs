@@ -61,6 +61,7 @@ public class SnapPhoto : MonoBehaviour
             //galleryCanvas.SetActive(false);
             galleryCanvas.enabled = false;
             StopCoroutine(SnapShot());
+            yield break;
         }
         DebugText.text = "Taking Photo!";
         thePhoto = photoGallery[i];
@@ -74,11 +75,13 @@ public class SnapPhoto : MonoBehaviour
         reticleCanvas.SetActive(true);
         nameCanvas.SetActive(true);
 
-        galleryCanvas.enabled = false;
-        //galleryCanvas.SetActive(false);
 
         i++;
         numPhotos++;
+        DebugText.text = numPhotos.ToString();
+
+        galleryCanvas.enabled = false;
+        //galleryCanvas.SetActive(false);
 
         /* 
         Texture2D texture = ScreenCapture.CaptureScreenshotAsTexture();
