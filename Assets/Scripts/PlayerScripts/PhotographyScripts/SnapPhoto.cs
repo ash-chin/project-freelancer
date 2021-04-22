@@ -2,22 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using UnityEngine.Rendering;
 
 public class SnapPhoto : MonoBehaviour
 {
-    // public Camera photoRender;
-    public RenderTexture renderTexture;
+
+
+    // public RenderTexture renderTexture;
+    public TextMeshProUGUI DebugText;
     public GameObject reticleCanvas;
-    public GameObject readOut;
+    public GameObject nameCanvas;
+    public TextMeshProUGUI objectName;
+    public int maxPhotos;
+    public RawImage[] photoGallery;
+    public RenderTexture[] photoTextures;
+
+    private int numPhotos;
+    private int i;
+
+    // variables that will hold specific items pulled from lists
     RawImage thePhoto;
+    RenderTexture renderTexture;
+    Canvas galleryCanvas;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         // this is the object the script is on
-        thePhoto = GetComponent<RawImage>();
+        numPhotos = 0;
+        i = 0;
+        DebugText.enabled = true;
+        galleryCanvas = GetComponent<Canvas>();
+        //galleryCanvas.SetActive(false);
+        galleryCanvas.enabled = false;
+        //thePhoto = GetComponent<RawImage>();
     }
+
 
     IEnumerator SnapShot()
     {
@@ -33,13 +54,31 @@ public class SnapPhoto : MonoBehaviour
          * Again, very important unless you like memory leaks.
          */
         yield return new WaitForEndOfFrame();
-        // renderTexture = new RenderTexture(Screen.width, Screen.height, 16, RenderTextureFormat.ARGB32);
+
+        if (numPhotos == maxPhotos)
+        {
+            DebugText.text = "Out of Room!";
+            //galleryCanvas.SetActive(false);
+            galleryCanvas.enabled = false;
+            StopCoroutine(SnapShot());
+        }
+        DebugText.text = "Taking Photo!";
+        thePhoto = photoGallery[i];
+        thePhoto.enabled = true;
+        renderTexture = photoTextures[i];
+
         renderTexture = new RenderTexture(Screen.width, Screen.height, 24, RenderTextureFormat.DefaultHDR);
         ScreenCapture.CaptureScreenshotIntoRenderTexture(renderTexture);
         thePhoto.texture = renderTexture;
         thePhoto.enabled = false;
         reticleCanvas.SetActive(true);
-        readOut.SetActive(true);
+        nameCanvas.SetActive(true);
+
+        galleryCanvas.enabled = false;
+        //galleryCanvas.SetActive(false);
+
+        i++;
+        numPhotos++;
 
         /* 
         Texture2D texture = ScreenCapture.CaptureScreenshotAsTexture();
@@ -51,11 +90,24 @@ public class SnapPhoto : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if (thePhoto.enabled == true)
+        // if (thePhoto.enabled == true)
+        if (galleryCanvas.enabled == true)
         {
             reticleCanvas.SetActive(false);
-            readOut.SetActive(false);
+            nameCanvas.SetActive(false);
             StartCoroutine(SnapShot());
+        }
+    }
+
+    private void OnDisable()
+    {
+        // to do
+        // Object.Destroy(playerPhoto.texture);
+        for (i = 0; i < numPhotos; i++)
+        {
+            //stuff
+            thePhoto = photoGallery[i];
+            Object.Destroy(thePhoto.texture);
         }
     }
 }

@@ -13,7 +13,7 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     public Camera firstPersonCam;
     public Camera mainCam;
     public Camera noseCam;
-    public RawImage playerPhoto;    // object that holds the photo
+    public Canvas playerGallery;    // object that holds the photo
 
     public int money;
     // Hull and Fuel assets
@@ -100,7 +100,8 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         mainCam.enabled = true;
         noseCam.enabled = false;
         photoMode = false;
-        playerPhoto.enabled = false;
+        playerGallery.enabled = false;
+        //playerPhoto.SetActive(false);
         controls.FindActionMap("photoCam Controls").Disable();
 
         fuelSlider.value = maxFuel;
@@ -214,7 +215,9 @@ public class Player_Space_Ship_Movement : MonoBehaviour
          * Look, I know this is stupid, and I know I could consolidate the code into
          * this script, but also... kinda wanna try to not pile everything into one script.
          */
-        playerPhoto.enabled = true;
+
+        playerGallery.enabled = true;
+        //playerPhoto.SetActive(true);
     }
 
 
@@ -243,7 +246,8 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         controls.FindAction("Take Photo").Disable();
 
         // this will not cause a memory leak... You're welcome!
-        Object.Destroy(playerPhoto.texture);
+        // Object.Destroy(playerPhoto.texture);
+        // moved to OnDisable function in SnapPhoto.cs script
 
     }
 
