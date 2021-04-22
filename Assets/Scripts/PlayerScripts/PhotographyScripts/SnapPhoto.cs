@@ -29,14 +29,16 @@ public class SnapPhoto : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        // this is the object the script is on
         numPhotos = 0;
         i = 0;
-        DebugText.enabled = true;
         galleryCanvas = GetComponent<Canvas>();
-        //galleryCanvas.SetActive(false);
         galleryCanvas.enabled = false;
-        //thePhoto = GetComponent<RawImage>();
+        DebugText.enabled = false;
+
+        for(int j = 0; j < maxPhotos; j++)
+        {
+            photoGallery[j].enabled = false;
+        }
     }
 
 
@@ -60,10 +62,12 @@ public class SnapPhoto : MonoBehaviour
             DebugText.text = "Out of Room!";
             //galleryCanvas.SetActive(false);
             galleryCanvas.enabled = false;
+            reticleCanvas.SetActive(true);
+            nameCanvas.SetActive(true);
             StopCoroutine(SnapShot());
             yield break;
         }
-        DebugText.text = "Taking Photo!";
+
         thePhoto = photoGallery[i];
         thePhoto.enabled = true;
         renderTexture = photoTextures[i];
@@ -75,10 +79,8 @@ public class SnapPhoto : MonoBehaviour
         reticleCanvas.SetActive(true);
         nameCanvas.SetActive(true);
 
-
         i++;
         numPhotos++;
-        DebugText.text = numPhotos.ToString();
 
         galleryCanvas.enabled = false;
         //galleryCanvas.SetActive(false);
