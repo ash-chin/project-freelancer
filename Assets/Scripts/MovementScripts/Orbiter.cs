@@ -9,7 +9,7 @@ public class Orbiter : MonoBehaviour
 
     private void Start()
     {
-        rotation = new Vector3(1f, 0f, 0f);
+        rotation = new Vector3(0f, 1f, 0f);
     }
 
     // Update is called once per frame
