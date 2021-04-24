@@ -315,7 +315,7 @@ public class Player_Space_Ship_Movement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "SpaceStation")
+        if (other.tag == "Refueling Depot")
         {
             Time.timeScale = 0f;
             stationButtons.SetActive(true);

@@ -269,6 +269,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 8307603157612568338, guid: 0daf96c15d4c97b4e9e526f6acfce2f0, type: 3}
+      propertyPath: m_TagString
+      value: Refueling Depot
+      objectReference: {fileID: 0}
     - target: {fileID: 8671314449669891661, guid: 0daf96c15d4c97b4e9e526f6acfce2f0, type: 3}
       propertyPath: m_Layer
       value: 14
@@ -301,6 +305,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4465035140963908, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4465035140963908, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4465035140963908, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4465035140963908, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
+      propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4465035140963908, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
@@ -832,7 +848,7 @@ Transform:
   m_GameObject: {fileID: 874782937}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 24.88, y: 0, z: 62.86}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 1, y: 1, z: 0.2}
   m_Children:
   - {fileID: 588957000}
   - {fileID: 879646311}
@@ -1443,9 +1459,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 51969180, guid: 5c990ffdae45b9f40bc75771b6dfd1bf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 874782938}
+    - target: {fileID: 51969180, guid: 5c990ffdae45b9f40bc75771b6dfd1bf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RepairHull
+      objectReference: {fileID: 0}
+    - target: {fileID: 286061985, guid: 5c990ffdae45b9f40bc75771b6dfd1bf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 874782938}
+    - target: {fileID: 286061985, guid: 5c990ffdae45b9f40bc75771b6dfd1bf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LeaveStation
+      objectReference: {fileID: 0}
+    - target: {fileID: 1302850798, guid: 5c990ffdae45b9f40bc75771b6dfd1bf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 874782938}
+    - target: {fileID: 1302850798, guid: 5c990ffdae45b9f40bc75771b6dfd1bf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RefuelTen
+      objectReference: {fileID: 0}
     - target: {fileID: 2670416903043136592, guid: 5c990ffdae45b9f40bc75771b6dfd1bf, type: 3}
       propertyPath: m_Name
       value: RefuelCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670416903043136592, guid: 5c990ffdae45b9f40bc75771b6dfd1bf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2670416903043136604, guid: 5c990ffdae45b9f40bc75771b6dfd1bf, type: 3}
       propertyPath: m_Pivot.x
