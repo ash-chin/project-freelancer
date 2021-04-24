@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Orbiter : MonoBehaviour
 {
+    public float xSpin;
+    public float ySpin;
+    public float zSpin;
     public float rotateSpeed;
     private Vector3 rotation;
 
     private void Start()
     {
-        rotation = new Vector3(0f, 1f, 0f);
+        rotation = new Vector3(xSpin, ySpin, zSpin);
     }
 
     // Update is called once per frame
