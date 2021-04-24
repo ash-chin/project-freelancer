@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class POCStartMenu : MonoBehaviour
 {
-
+    public string sceneChoice;
     public void StartGame()
     {
-
+        SceneManager.LoadScene(sceneChoice);
     }
 }
