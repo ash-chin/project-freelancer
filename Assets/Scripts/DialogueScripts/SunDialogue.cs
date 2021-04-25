@@ -20,7 +20,7 @@ public class SunDialogue : MonoBehaviour
 
     private void Update()
     {
-        if (Vector3.Distance(transform.position, player.transform.position) <= 3000)
+        if (Vector3.Distance(transform.position, player.transform.position) <= 2000)
         {
             playerHull.VariableDamage(10 * Time.deltaTime);
         }
