@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Space Station
   - Refueling Depot
+  - Onikaza
   layers:
   - Default
   - TransparentFX
