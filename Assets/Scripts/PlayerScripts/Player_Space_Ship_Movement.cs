@@ -343,6 +343,11 @@ public class Player_Space_Ship_Movement : MonoBehaviour
             hullSlider.value += 10;
         }
     }
+
+    public void VariableDamage(float damage)
+    {
+        hullSlider.value -= damage;
+    }
     // END OF SCRIPT
 }
 

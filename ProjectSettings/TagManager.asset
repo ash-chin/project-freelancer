@@ -10,6 +10,7 @@ TagManager:
   - Space Station
   - Refueling Depot
   - Onikaza
+  - Fuel Depot Dialogue
   layers:
   - Default
   - TransparentFX
