@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+//using UnityEngine.UI;
 
 
 public class BountyNetwork : MonoBehaviour
 {
     public BountyItem[] bounties;
     public TextMeshProUGUI[] titles;
+    public TextMeshProUGUI description;
+    
 
     /*
      * 
@@ -15,6 +18,8 @@ public class BountyNetwork : MonoBehaviour
      */
 
     // Start is called before the first frame update
+
+    
     void Start()
     {
         //TODO
@@ -23,14 +28,10 @@ public class BountyNetwork : MonoBehaviour
         foreach(BountyItem b in bounties)
         {
             titles[t++].text = b.request;
-            b.status = false;
+            b.isComplete = false;
         }
 
     }
+    
 
-    // Update is called once per frame
-    void Update()
-    {
-        //TODO
-    }
 }
