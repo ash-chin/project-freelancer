@@ -6,13 +6,13 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    public Text nameText;
+    public GameObject startDialogue;
     public TMP_Text dialogueText;
     private Queue<string> sentences;
     public GameObject background;
     private string currentSentence;
 
-    private void Start()
+    private void Awake()
     {
         sentences = new Queue<string>();
     }
@@ -20,7 +20,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         background.SetActive(true);
-        nameText.text = dialogue.characterName;
+        Time.timeScale = 0f;
         
         sentences.Clear();
 
@@ -47,5 +47,6 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         background.SetActive(false);
+        Time.timeScale = 1f;
     }
 }

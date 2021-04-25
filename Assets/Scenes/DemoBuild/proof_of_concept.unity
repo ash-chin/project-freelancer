@@ -1707,6 +1707,52 @@ MonoBehaviour:
   ySpin: 1
   zSpin: 0.5
   rotateSpeed: 2
+--- !u!1 &433791784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 433791786}
+  - component: {fileID: 433791785}
+  m_Layer: 0
+  m_Name: DialogueManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &433791785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433791784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12536fada73c00840b92c99810bf75a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startDialogue: {fileID: 0}
+  dialogueText: {fileID: 289724133}
+  background: {fileID: 1083108506}
+--- !u!4 &433791786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433791784}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 532.91486, y: 258.2305, z: -44.667175}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &512637108
 GameObject:
   m_ObjectHideFlags: 0
@@ -1718,6 +1764,7 @@ GameObject:
   - component: {fileID: 512637109}
   - component: {fileID: 512637111}
   - component: {fileID: 512637110}
+  - component: {fileID: 512637112}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1813,6 +1860,32 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &512637112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512637108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa023b51c3078942b288f61a0e2f785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    stenences:
+    - Once again I find myself on the edge of explored space with a nearly empty
+      gas tank, and bounty list of photography work.
+    - I've got a little bit of scrip left. I should probably fly close to that fuel
+      depot over their and refill my tank before I go any further.
+    - To fly Forward I just need to press W. To roll left or right I should press
+      A or D. Turning is bound to the Q and E keys.
+    - To Yaw up or Down I or K. To slide left or right, J or L. and to descend or
+      ascend, U or O.
+    - I should probably get to that fuel depo quickly. It looks like it's orbiting
+      that moon, and it could slide out of range if I don't hurry. Wouldn't want
+      to ge caught floating in space.
+  manager: {fileID: 433791785}
 --- !u!1001 &533091757
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3032,7 +3105,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!135 &647289865
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4960,7 +5033,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1083108507
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11424,7 +11497,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2096468936}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 433791785}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: DisplayNextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2096468936
 MonoBehaviour:
   m_ObjectHideFlags: 0

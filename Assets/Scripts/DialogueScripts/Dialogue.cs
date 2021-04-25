@@ -7,5 +7,4 @@ public class Dialogue
 {
     [TextArea(3, 12)]
     public string[] stenences;
-    public string characterName;
 }
