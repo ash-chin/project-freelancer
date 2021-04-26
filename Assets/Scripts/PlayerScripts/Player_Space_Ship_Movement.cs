@@ -22,12 +22,16 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     public Camera noseCam;
     public Canvas playerGallery;    // object that holds the photo
 
-    public int money;
+    
     // Hull and Fuel assets
     public Slider hullSlider;
     public Slider fuelSlider;
     public float maxHull;
     public float maxFuel;
+
+    // scrip resources
+    public Text scripReadout;
+    public int money;
 
     // these are the buttons for refueling and whatnot
     // the timer is to ensure that the player doesn't get caught in the cylce endlessly
@@ -107,6 +111,8 @@ public class Player_Space_Ship_Movement : MonoBehaviour
 
         fuelSlider.value = maxFuel;
         hullSlider.value = maxHull;
+
+        scripReadout.text = "Scrip: " + money.ToString();
     }
 
     private void Awake()
@@ -335,11 +341,13 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     public void PayTheMan(int payment)
     {
         money -= payment;
+        scripReadout.text = "Scrip: " + money.ToString();
     }
 
     public void MoneyPweaaaaase(int payment)
     {
         money += payment;
+        scripReadout.text = "Scrip: " + money.ToString();
     }
 
     private void OnTriggerEnter(Collider other)

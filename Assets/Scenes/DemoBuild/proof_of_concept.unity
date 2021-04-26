@@ -648,8 +648,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc72efbe2ad85649a5941a986ebfb34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damping: 0.3
-  speed: 3
+  damping: 0.1
+  speed: 50
   loop:
   - {fileID: 121272942}
   - {fileID: 1501746600}
@@ -1263,7 +1263,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280288584}
-  m_LocalRotation: {x: 0.118438914, y: 0.000000021689246, z: -0.0000000025870603, w: 0.99296135}
+  m_LocalRotation: {x: 0.118438914, y: 0.00000002168925, z: -0.0000000025870606, w: 0.99296135}
   m_LocalPosition: {x: 0, y: 2.42, z: -6529.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1900,6 +1900,7 @@ Transform:
   - {fileID: 894623320}
   - {fileID: 1836759391}
   - {fileID: 712617091}
+  - {fileID: 1209325776}
   m_Father: {fileID: 2079507406}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
@@ -2022,11 +2023,12 @@ MonoBehaviour:
   mainCam: {fileID: 280288586}
   noseCam: {fileID: 671572679}
   playerGallery: {fileID: 231198872}
-  money: 0
   hullSlider: {fileID: 1971472744}
   fuelSlider: {fileID: 1971472745}
   maxHull: 100
   maxFuel: 100
+  scripReadout: {fileID: 1971472747}
+  money: 0
   stationButtons: {fileID: 1971472746}
   controls: {fileID: -944628639613478452, guid: 03bce27c72270f947b6188dd3a7df09c, type: 3}
   movementAccelerationZAxis: 1
@@ -3476,7 +3478,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &647289865
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4178,7 +4180,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784164472}
-  m_LocalRotation: {x: 0.118438914, y: 0.000000021689246, z: -0.0000000025870603, w: 0.99296135}
+  m_LocalRotation: {x: 0.118438914, y: 0.00000002168925, z: -0.0000000025870606, w: 0.99296135}
   m_LocalPosition: {x: 0, y: 2.42, z: -6529.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6146,6 +6148,68 @@ MonoBehaviour:
   ySpin: 1
   zSpin: 0
   rotateSpeed: 0.1
+--- !u!1 &1209325775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1209325776}
+  - component: {fileID: 1209325778}
+  - component: {fileID: 1209325777}
+  m_Layer: 13
+  m_Name: AsteroidDialogueManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1209325776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209325775}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 424319416}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1209325777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209325775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 538ca70cd375bac49ae499c94c5b0c1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    stenences:
+    - It looks like this is the debris that depot captain was speaking about. I can
+      probably find the core they're looking for somewhere in the wreckage.
+  manager: {fileID: 0}
+--- !u!135 &1209325778
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209325775}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 200
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1220588524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11133,6 +11197,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1106790539}
     m_Modifications:
+    - target: {fileID: 3889368277690211677, guid: 049b6628fb3dc6245b7b530cea0115b7, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4362243777615471580, guid: 049b6628fb3dc6245b7b530cea0115b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -11265,6 +11333,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: RepairHull
       objectReference: {fileID: 0}
+    - target: {fileID: 8405863977329241938, guid: 049b6628fb3dc6245b7b530cea0115b7, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 049b6628fb3dc6245b7b530cea0115b7, type: 3}
 --- !u!114 &1971472744 stripped
@@ -11294,6 +11366,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4362243779415225576, guid: 049b6628fb3dc6245b7b530cea0115b7, type: 3}
   m_PrefabInstance: {fileID: 1971472743}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1971472747 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8133186333824633879, guid: 049b6628fb3dc6245b7b530cea0115b7, type: 3}
+  m_PrefabInstance: {fileID: 1971472743}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1977544877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11592,16 +11675,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4712067997318460, guid: bc7409e9271e6b84d9f9bab4e88410ab, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4712067997318460, guid: bc7409e9271e6b84d9f9bab4e88410ab, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4712067997318460, guid: bc7409e9271e6b84d9f9bab4e88410ab, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4712067997318460, guid: bc7409e9271e6b84d9f9bab4e88410ab, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.149994
       objectReference: {fileID: 0}
     - target: {fileID: 4712067997318460, guid: bc7409e9271e6b84d9f9bab4e88410ab, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.630005
+      value: -2.6300132
       objectReference: {fileID: 0}
     - target: {fileID: 4712067997318460, guid: bc7409e9271e6b84d9f9bab4e88410ab, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.719971
+      value: -11.719974
       objectReference: {fileID: 0}
     - target: {fileID: 4712067997318460, guid: bc7409e9271e6b84d9f9bab4e88410ab, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11613,7 +11708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4712067997318460, guid: bc7409e9271e6b84d9f9bab4e88410ab, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.021404454
+      value: -0.021404456
       objectReference: {fileID: 0}
     - target: {fileID: 4712067997318460, guid: bc7409e9271e6b84d9f9bab4e88410ab, type: 3}
       propertyPath: m_LocalRotation.z
