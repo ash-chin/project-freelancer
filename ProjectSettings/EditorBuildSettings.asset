@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AsteroidField.unity
     guid: 3604ce72cd40ed347b9432d232d2acdb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: dcc9a40f38236704e928bdfd2131d06a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestEnvironment 1.unity
     guid: 9c3a6727aebdc37419bbab1018203c60
   - enabled: 1
