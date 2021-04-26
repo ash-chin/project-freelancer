@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tumble: 0.25
-  appliedForce: 1000
+  rotationSpeed: 0
 --- !u!64 &8275663626598981115
 MeshCollider:
   m_ObjectHideFlags: 0

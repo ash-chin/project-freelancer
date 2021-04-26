@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3396308}
   - component: {fileID: 2330530}
   - component: {fileID: 8757003290160669518}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: test_asteroid2_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 446090}
   - component: {fileID: 5499024}
   - component: {fileID: 11421226}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Asteroid 2
   m_TagString: Asteroid
   m_Icon: {fileID: 0}
@@ -121,9 +121,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 141316}
-  m_LocalRotation: {x: -0.72502416, y: -0, z: -0, w: 0.68872344}
+  m_LocalRotation: {x: -0.7250259, y: 0, z: 0, w: 0.68872166}
   m_LocalPosition: {x: 0, y: 0.2929502, z: -0.06412325}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 453352}
   m_Father: {fileID: 0}
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tumble: 0.25
-  rotationSpeed: 0
+  rotationSpeed: 1
 --- !u!1 &146874
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 431242}
   - component: {fileID: 3326240}
   - component: {fileID: 2336382}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: test_asteroid2_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,7 +251,7 @@ GameObject:
   - component: {fileID: 499402}
   - component: {fileID: 3333138}
   - component: {fileID: 2329180}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: test_asteroid2_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 453352}
   - component: {fileID: 20511958}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: test_asteroid_LODGroup
   m_TagString: Untagged
   m_Icon: {fileID: 0}

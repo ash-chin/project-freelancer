@@ -33,10 +33,11 @@ public class CameraScript : MonoBehaviour
             OuterHud.SetActive(false);
             blackReticle.SetActive(true);
             Ray ray = photoCam.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
+           // Vector3 fwd = transform.TransformDirection(Vector3.forward);
             RaycastHit hit;
 
             // if the camera spots an object
-            if (Physics.Raycast(ray, out hit))
+            if (Physics.Raycast(ray, out hit, 8000))
             {
                 ThisCanvas.SetActive(true);
                 redReticle.SetActive(true);
