@@ -696,7 +696,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -705,9 +705,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 4000
+  MaxDistance: 2000
   Pan2D: 0
-  rolloffMode: 1
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -715,94 +715,22 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.002
-      value: 1
-      inSlope: -500.20065
-      outSlope: -500.20065
+      time: 0.0049438477
+      value: 0.5228462
+      inSlope: -1.9196433
+      outSlope: -1.9196433
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0
+      outWeight: 0.05589068
     - serializedVersion: 3
-      time: 0.004
-      value: 0.5
-      inSlope: Infinity
-      outSlope: Infinity
+      time: 0.9554672
+      value: 0.098342896
+      inSlope: -0.79992247
+      outSlope: -0.79992247
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.008
-      value: 0.25
-      inSlope: -31.26254
-      outSlope: -31.26254
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.016
-      value: 0.125
-      inSlope: -7.815635
-      outSlope: -7.815635
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.032
-      value: 0.0625
-      inSlope: -1.9539088
-      outSlope: -1.9539088
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.064
-      value: 0.03125
-      inSlope: -0.4884772
-      outSlope: -0.4884772
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.128
-      value: 0.015625
-      inSlope: -0.1221193
-      outSlope: -0.1221193
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.256
-      value: 0.0078125
-      inSlope: -0.030529825
-      outSlope: -0.030529825
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.512
-      value: 0.00390625
-      inSlope: -0.0076324563
-      outSlope: -0.0076324563
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 0.002
-      inSlope: -0.002000801
-      outSlope: -0.002000801
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
+      inWeight: 0.14844143
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -841,8 +769,8 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 1
+      time: 0.009895325
+      value: 1.0764885
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1327,7 +1255,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280288584}
-  m_LocalRotation: {x: 0.11843894, y: -0.000000009343244, z: 0.0000000011144484, w: 0.99296135}
+  m_LocalRotation: {x: 0.118438914, y: 0.000000021689246, z: -0.0000000025870603, w: 0.99296135}
   m_LocalPosition: {x: 0, y: 2.42, z: -6529.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1959,7 +1887,6 @@ Transform:
   - {fileID: 894623320}
   - {fileID: 1836759391}
   - {fileID: 712617091}
-  - {fileID: 854391635}
   m_Father: {fileID: 2079507406}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2073,6 +2000,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24302a79f7589d343a27fe5ccd02af0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bountyList:
+  - {fileID: 1485815426}
+  - {fileID: 1205149795}
   mainCam: {fileID: 280288586}
   noseCam: {fileID: 671572679}
   playerGallery: {fileID: 231198872}
@@ -2561,6 +2491,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 1565492286652992, guid: 334a6f449fcdbf845b8fd132b0583c8c, type: 3}
+      propertyPath: m_TagString
+      value: Space Station
+      objectReference: {fileID: 0}
     - target: {fileID: 1570610453111546, guid: 334a6f449fcdbf845b8fd132b0583c8c, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -2783,7 +2717,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4583350148985946, guid: 334a6f449fcdbf845b8fd132b0583c8c, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4583350148985946, guid: 334a6f449fcdbf845b8fd132b0583c8c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3814,6 +3748,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 854391635}
   - {fileID: 1720418036}
   - {fileID: 998846860}
   - {fileID: 1498533718}
@@ -4075,7 +4010,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784164472}
-  m_LocalRotation: {x: 0.11843894, y: -0.000000009343244, z: 0.0000000011144484, w: 0.99296135}
+  m_LocalRotation: {x: 0.118438914, y: 0.000000021689246, z: -0.0000000025870603, w: 0.99296135}
   m_LocalPosition: {x: 0, y: 2.42, z: -6529.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4472,7 +4407,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 424319416}
+    m_TransformParent: {fileID: 712617091}
     m_Modifications:
     - target: {fileID: 1361757123250578, guid: f0c1a7c4de192d8478475b7722726970, type: 3}
       propertyPath: m_Name
@@ -4482,13 +4417,17 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 1361757123250578, guid: f0c1a7c4de192d8478475b7722726970, type: 3}
+      propertyPath: m_TagString
+      value: Space Station
+      objectReference: {fileID: 0}
     - target: {fileID: 1871993168580234, guid: f0c1a7c4de192d8478475b7722726970, type: 3}
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4881025290514040, guid: f0c1a7c4de192d8478475b7722726970, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4881025290514040, guid: f0c1a7c4de192d8478475b7722726970, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5235,13 +5174,17 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 1105755010150120, guid: eb678a6033e4e4e4cad08391ffd8fe91, type: 3}
+      propertyPath: m_TagString
+      value: Space Station
+      objectReference: {fileID: 0}
     - target: {fileID: 1333631725208166, guid: eb678a6033e4e4e4cad08391ffd8fe91, type: 3}
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4885750822806404, guid: eb678a6033e4e4e4cad08391ffd8fe91, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4885750822806404, guid: eb678a6033e4e4e4cad08391ffd8fe91, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6428,6 +6371,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 1527531349051568, guid: f2401672428848e4cb14a9daafb7aacc, type: 3}
+      propertyPath: m_TagString
+      value: Space Station
+      objectReference: {fileID: 0}
     - target: {fileID: 1528143750799290, guid: f2401672428848e4cb14a9daafb7aacc, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -6666,7 +6613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4938277856681272, guid: f2401672428848e4cb14a9daafb7aacc, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4938277856681272, guid: f2401672428848e4cb14a9daafb7aacc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8234,6 +8181,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 1520431576721272, guid: 60db8c45aa08acd449a7a49854773ba2, type: 3}
+      propertyPath: m_TagString
+      value: SpaceStation
+      objectReference: {fileID: 0}
     - target: {fileID: 1523311706830944, guid: 60db8c45aa08acd449a7a49854773ba2, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -8400,7 +8351,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4377898936349960, guid: 60db8c45aa08acd449a7a49854773ba2, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4377898936349960, guid: 60db8c45aa08acd449a7a49854773ba2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9478,6 +9429,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 1269610062419458, guid: 61c716c59a3a4b9469dabe82e9f0b869, type: 3}
+      propertyPath: m_TagString
+      value: Space Station
+      objectReference: {fileID: 0}
     - target: {fileID: 1275477179600062, guid: 61c716c59a3a4b9469dabe82e9f0b869, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -9752,7 +9707,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4579566650450318, guid: 61c716c59a3a4b9469dabe82e9f0b869, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4579566650450318, guid: 61c716c59a3a4b9469dabe82e9f0b869, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10118,6 +10073,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 1716888869384812, guid: 62efc24454c516e4eb91947a3223ffa4, type: 3}
+      propertyPath: m_TagString
+      value: Space Station
+      objectReference: {fileID: 0}
     - target: {fileID: 1725490053809724, guid: 62efc24454c516e4eb91947a3223ffa4, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -10212,7 +10171,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4021124350383186, guid: 62efc24454c516e4eb91947a3223ffa4, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4021124350383186, guid: 62efc24454c516e4eb91947a3223ffa4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10647,7 +10606,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 120, y: 60, z: 150}
+  m_Size: {x: 120, y: 70, z: 150}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1855241566
 MonoBehaviour:
@@ -11388,13 +11347,17 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 1033159535267228, guid: bc7409e9271e6b84d9f9bab4e88410ab, type: 3}
+      propertyPath: m_TagString
+      value: Old Station Core
+      objectReference: {fileID: 0}
     - target: {fileID: 1762304840459918, guid: bc7409e9271e6b84d9f9bab4e88410ab, type: 3}
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4712067997318460, guid: bc7409e9271e6b84d9f9bab4e88410ab, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4712067997318460, guid: bc7409e9271e6b84d9f9bab4e88410ab, type: 3}
       propertyPath: m_LocalPosition.x

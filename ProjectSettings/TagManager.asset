@@ -11,6 +11,7 @@ TagManager:
   - Refueling Depot
   - Onikaza
   - Fuel Depot Dialogue
+  - Old Station Core
   layers:
   - Default
   - TransparentFX

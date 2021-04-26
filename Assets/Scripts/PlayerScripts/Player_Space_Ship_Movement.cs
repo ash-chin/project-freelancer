@@ -9,6 +9,11 @@ using TMPro;
 
 public class Player_Space_Ship_Movement : MonoBehaviour
 {
+    // bounty system
+    public List<Transform> bountyList = new List<Transform>();
+    private Ray camRay;
+    private Vector3 cameraVector = new Vector3(0.5f, 0.5f, 0.0f);
+
     // Camera assets
     public Camera mainCam;
     public Camera noseCam;
@@ -181,6 +186,24 @@ public class Player_Space_Ship_Movement : MonoBehaviour
 
     void TakePhoto()
     {
+        Debug.Log("Are we entering the right loop?");
+        if (noseCam.enabled == true)
+        {
+            Debug.Log("We are in nose Cam");
+            camRay = noseCam.ViewportPointToRay(cameraVector);
+            RaycastHit hit;
+
+            if (Physics.Raycast(camRay, out hit))
+            {
+                Debug.Log("The Raycase has hit something");
+                if (bountyList.Contains(hit.transform))
+                {
+                    Debug.Log("We have at least managed to enter the bounty list contains loop");
+                    bountyList.Remove(hit.transform);
+                    MoneyPweaaaaase(200);
+                }
+            }
+        }
         /*
          * Literally just sets the playerPhoto object to enabled when the player
          * hits the 'P' key. Then inside the SnapPhoto.cs script (on the playerPhoto object),
@@ -207,6 +230,7 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         controls.FindAction("Rotation Y Axis").Enable();
         controls.FindAction("Camera Switch").Enable();
         controls.FindAction("Take Photo").Enable();
+        controls.FindAction("Take Photo Money").Enable();
 
     }
 
@@ -220,6 +244,7 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         controls.FindAction("Rotation Y Axis").Disable();
         controls.FindAction("Camera Switch").Disable();
         controls.FindAction("Take Photo").Disable();
+        controls.FindAction("Take Photo Money").Disable();
 
         // this will not cause a memory leak... You're welcome!
         // Object.Destroy(playerPhoto.texture);
