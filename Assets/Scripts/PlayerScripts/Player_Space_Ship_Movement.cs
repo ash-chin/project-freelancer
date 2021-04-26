@@ -240,7 +240,6 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         controls.FindAction("Rotation Y Axis").Enable();
         controls.FindAction("Camera Switch").Enable();
         controls.FindAction("Take Photo").Enable();
-        controls.FindAction("Take Photo Money").Enable();
 
     }
 
@@ -254,7 +253,6 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         controls.FindAction("Rotation Y Axis").Disable();
         controls.FindAction("Camera Switch").Disable();
         controls.FindAction("Take Photo").Disable();
-        controls.FindAction("Take Photo Money").Disable();
 
         // this will not cause a memory leak... You're welcome!
         // Object.Destroy(playerPhoto.texture);
