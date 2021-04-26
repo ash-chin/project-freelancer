@@ -12,6 +12,7 @@ TagManager:
   - Onikaza
   - Fuel Depot Dialogue
   - Old Station Core
+  - Asteroid
   layers:
   - Default
   - TransparentFX

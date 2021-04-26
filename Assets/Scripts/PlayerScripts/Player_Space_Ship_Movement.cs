@@ -9,6 +9,9 @@ using TMPro;
 
 public class Player_Space_Ship_Movement : MonoBehaviour
 {
+    // sound source
+    public PlayerAudio playerAudioSource;
+
     // bounty system
     public List<Transform> bountyList = new List<Transform>();
     private Ray camRay;
@@ -186,6 +189,7 @@ public class Player_Space_Ship_Movement : MonoBehaviour
 
     void TakePhoto()
     {
+        playerAudioSource.ShutterNoise();
         Debug.Log("Are we entering the right loop?");
         if (noseCam.enabled == true)
         {

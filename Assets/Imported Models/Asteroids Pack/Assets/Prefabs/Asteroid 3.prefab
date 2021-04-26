@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 3004358593390410103}
   m_Layer: 0
   m_Name: Asteroid 3
-  m_TagString: Enemy
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tumble: 0.25
-  appliedForce: 1000
+  rotationSpeed: 0
 --- !u!64 &3004358593390410103
 MeshCollider:
   m_ObjectHideFlags: 0

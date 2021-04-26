@@ -6,14 +6,13 @@ public class Fueldepottrigger : MonoBehaviour
 {
     public Dialogue dialogue;
     public DialogueManager manager;
-    private bool firstTime = true;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && firstTime == true)
+        if (other.tag == "Player")
         {
             manager.StartDialogue(dialogue);
-            firstTime = false;
+            this.enabled = false;
         }
     }
 }
