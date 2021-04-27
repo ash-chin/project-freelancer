@@ -49,20 +49,11 @@ public class BountyItem : MonoBehaviour
         }
     }
 
-    
-    void OnMouseEnter()
-    {
-        descField.enabled = true;
-        descField.text = description;
-        //descHolder.SetActive(true);
-        //descField.text = description;
-    }
-    
-
     public void OnMouseOver()
     {
         descField.enabled = true;
         descField.text = description;
+        Debug.Log("Mouse is over GameObject.");
         //descHolder.SetActive(true);
         //descField.text = description;
     }
@@ -71,9 +62,10 @@ public class BountyItem : MonoBehaviour
     {
         descField.text = "";
         descField.enabled = false;
+        Debug.Log("Mouse is no longer on GameObject.");
         //descHolder.SetActive(false);
         //descField.text = "";
     }
-
+    
     
 }
