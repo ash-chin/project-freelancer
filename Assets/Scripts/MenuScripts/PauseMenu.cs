@@ -20,7 +20,7 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
-
+    public GameObject bountyMenuUI; // Ash addition
 
     void Update()
     {
@@ -74,9 +74,17 @@ public class PauseMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void ViewAlbum()
+    // ASH ADDITIONS
+    public void ViewBounties()
     {
-        // DO STUFF
+        pauseMenuUI.SetActive(false);
+        bountyMenuUI.SetActive(true);
     }
 
+    public void bountiesBack()
+    {
+        // Use to go back to the pause menu
+        pauseMenuUI.SetActive(true);
+        bountyMenuUI.SetActive(false);
+    }
 }

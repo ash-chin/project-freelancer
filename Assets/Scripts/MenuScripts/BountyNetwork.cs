@@ -8,18 +8,20 @@ using TMPro;
 public class BountyNetwork : MonoBehaviour
 {
     public BountyItem[] bounties;
-    public TextMeshProUGUI[] titles;
-    public TextMeshProUGUI description;
-    
+    // public TextMeshProUGUI[] titles;
+    //public GameObject descriptionField;
+
+    private void Start()
+    {
+        //descriptionField.SetActive(false);
+
+        foreach (BountyItem b in bounties)
+        {
+            b.fillFields();
+        }
+    }
 
     /*
-     * 
-     *  Just toying with some stuff don't mind me....
-     */
-
-    // Start is called before the first frame update
-
-    
     void Start()
     {
         //TODO
@@ -32,6 +34,6 @@ public class BountyNetwork : MonoBehaviour
         }
 
     }
-    
+    */
 
 }
