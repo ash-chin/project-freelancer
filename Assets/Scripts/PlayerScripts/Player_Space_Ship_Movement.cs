@@ -365,16 +365,18 @@ public class Player_Space_Ship_Movement : MonoBehaviour
 
     public void RefuelTen()
     {
-        if (fuelSlider.value < 100)
+        if (fuelSlider.value < 100 && money > 50)
         {
-            fuelSlider.value += 10;
+            fuelSlider.value += 25;
+            PayTheMan(50);
         }
     }
 
     public void RepairHull()
     {
-        if (hullSlider.value < 100)
+        if (hullSlider.value < 100 && money > 50)
         {
+            PayTheMan(50);
             hullSlider.value += 10;
         }
     }

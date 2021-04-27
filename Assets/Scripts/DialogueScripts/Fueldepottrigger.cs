@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Fueldepottrigger : MonoBehaviour
 {
+    public BoxCollider colider;
     public Dialogue dialogue;
     public DialogueManager manager;
 
@@ -12,7 +13,7 @@ public class Fueldepottrigger : MonoBehaviour
         if (other.tag == "Player")
         {
             manager.StartDialogue(dialogue);
-            this.enabled = false;
+            colider.enabled = false;
         }
     }
 }
