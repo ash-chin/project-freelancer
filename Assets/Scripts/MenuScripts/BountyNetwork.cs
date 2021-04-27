@@ -21,19 +21,5 @@ public class BountyNetwork : MonoBehaviour
         }
     }
 
-    /*
-    void Start()
-    {
-        //TODO
-        int t = 0;
-
-        foreach(BountyItem b in bounties)
-        {
-            titles[t++].text = b.request;
-            b.isComplete = false;
-        }
-
-    }
-    */
 
 }

@@ -25,7 +25,6 @@ public class BountyItem : MonoBehaviour
     
     public TextMeshProUGUI reqField;
     public TextMeshProUGUI descField;
-    //public GameObject descHolder;
     public TextMeshProUGUI rewardField;
     public TextMeshProUGUI statusField;
 
@@ -40,10 +39,30 @@ public class BountyItem : MonoBehaviour
     {
         reqField.text = request;
         rewardField.text = "reward: " + reward.ToString();
+        updateStatus();
+        /*
         if (isComplete)
         {
             statusField.text = "Completed";
         } else
+        {
+            statusField.text = "Open Bounty";
+        }
+        */
+    }
+
+    public void updateStatus()
+    {
+        /*
+         * This is used to update the status text field in the Photo-Bounty Network menu
+         * The actual completion status can simply be updated by typing:
+         *     bountyVar.isComplete = true/false;
+         */
+        if (isComplete)
+        {
+            statusField.text = "Completed";
+        }
+        else
         {
             statusField.text = "Open Bounty";
         }
@@ -53,7 +72,7 @@ public class BountyItem : MonoBehaviour
     {
         descField.enabled = true;
         descField.text = description;
-        Debug.Log("Mouse is over GameObject.");
+        reqField.color = Color.black;
         //descHolder.SetActive(true);
         //descField.text = description;
     }
@@ -62,7 +81,7 @@ public class BountyItem : MonoBehaviour
     {
         descField.text = "";
         descField.enabled = false;
-        Debug.Log("Mouse is no longer on GameObject.");
+        reqField.color = Color.white;
         //descHolder.SetActive(false);
         //descField.text = "";
     }
