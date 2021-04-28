@@ -44,13 +44,13 @@ Shader "Custom/NewSurfaceShader"
                 float2 uv = IN.uv_MainTex;
 
 
-                //uv.y += sin(uv.y * _Multiplier +_Time.y);
-                uv.x += sin(uv.y * _Multiplier+_Time.y);
+                //uv.y += sin(uv.y * _Multiplier +_Time.y)*.2;
+                //uv.x += sin(uv.y * _Multiplier + _Time.y)*.1;
                 // Albedo comes from a texture tinted by color
                 fixed4 c = tex2D(_MainTex, uv) * _Color;
 
                 float saturation = sin(uv.y * 7);
-                o.Albedo = lerp(cos(c.g + c.b + c.r + _Time.y * 3)+1, c, saturation);
+                o.Albedo = lerp(float4(0, -sin(c.g*c.b * _Time.y), sin(c.b*c.g*_Time.y), 0)*.5 ,c, sin(_Time.y*.5)*20);
                 // Metallic and smoothness come from slider variables
                 o.Metallic = _Metallic;
                 o.Smoothness = _Glossiness;
@@ -60,3 +60,5 @@ Shader "Custom/NewSurfaceShader"
         }
             FallBack "Diffuse"
 }
+
+//c.g + c.b + c.r + _Time.y * 3)+.2
