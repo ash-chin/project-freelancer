@@ -62,6 +62,7 @@ public class PauseMenu : MonoBehaviour
     {
         //resuming so disable menu
         pauseMenuUI.SetActive(false);
+        bountyMenuUI.SetActive(false);
         //this line is what restarts the game after pausing
         Time.timeScale = 1f;
         GameIsPaused = false;

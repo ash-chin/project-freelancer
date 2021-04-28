@@ -8,8 +8,7 @@ using TMPro;
 public class BountyNetwork : MonoBehaviour
 {
     public BountyItem[] bounties;
-    // public TextMeshProUGUI[] titles;
-    //public GameObject descriptionField;
+    public Player_Space_Ship_Movement freelancer;
 
     private void Start()
     {
@@ -31,6 +30,7 @@ public class BountyNetwork : MonoBehaviour
             {
                 b.isComplete = true;
                 b.updateStatus();
+                freelancer.MoneyPweaaaaase(b.reward);
             }
         }
     }

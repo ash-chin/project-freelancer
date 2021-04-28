@@ -2296,11 +2296,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAudioSource: {fileID: 512637113}
-  bountyList:
-  - {fileID: 2032034499}
-  - {fileID: 1739887701}
-  - {fileID: 647289868}
-  - {fileID: 152377428}
   mainCam: {fileID: 280288586}
   photoCam: {fileID: 671572679}
   photocamScript: {fileID: 1700655190}
@@ -3795,9 +3790,9 @@ GameObject:
   - component: {fileID: 647289867}
   - component: {fileID: 647289866}
   - component: {fileID: 647289865}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Sun_Antoliach
-  m_TagString: Untagged
+  m_TagString: Antoliach Star
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3979,6 +3974,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8449805696972137050, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 8449805696972137050, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
     - target: {fileID: 8449805697310083245, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
       propertyPath: m_BlockingMask.m_Bits
       value: 0
@@ -6458,7 +6461,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1205149795}
   - component: {fileID: 1205149796}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Onikaza_Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8837,7 +8840,7 @@ GameObject:
   - component: {fileID: 1485815429}
   - component: {fileID: 1485815428}
   - component: {fileID: 1485815427}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Onikaza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12469,7 +12472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2061626577}
   - component: {fileID: 2061626578}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SpaceStationCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12946,6 +12949,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1106790539}
     m_Modifications:
+    - target: {fileID: 2226486580187023545, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
+      propertyPath: freelancer
+      value: 
+      objectReference: {fileID: 512637110}
     - target: {fileID: 2729233937276626177, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
       propertyPath: m_IsActive
       value: 0

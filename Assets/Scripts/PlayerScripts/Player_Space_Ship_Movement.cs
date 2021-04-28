@@ -13,9 +13,11 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     public PlayerAudio playerAudioSource;
 
     // bounty system
+    /*
     public List<Transform> bountyList = new List<Transform>();
     private Ray camRay;
     private Vector3 cameraVector = new Vector3(0.5f, 0.5f, 0.0f);
+    */
 
     // Camera assets
     public Camera mainCam;
@@ -197,25 +199,10 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     void TakePhoto()
     {
         playerAudioSource.ShutterNoise();
-        Debug.Log("Are we entering the right loop?");
-        if (photoCam.enabled == true)
-        {
-            Debug.Log("We are in nose Cam");
-            camRay = photoCam.ViewportPointToRay(cameraVector);
-            RaycastHit hit;
-            photocamScript.verifyBounty();
+        photocamScript.verifyBounty();
 
-            if (Physics.Raycast(camRay, out hit))
-            {
-                Debug.Log("The Raycase has hit something");
-                if (bountyList.Contains(hit.transform))
-                {
-                    Debug.Log("We have at least managed to enter the bounty list contains loop");
-                    bountyList.Remove(hit.transform);
-                    MoneyPweaaaaase(200);
-                }
-            }
-        }
+
+        //ASH ORIGINAL STUFF
         /*
          * Literally just sets the playerPhoto object to enabled when the player
          * hits the 'P' key. Then inside the SnapPhoto.cs script (on the playerPhoto object),
