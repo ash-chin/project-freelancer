@@ -1449,7 +1449,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 8000
-  field of view: 90
+  field of view: 50
   orthographic: 0
   orthographic size: 5
   m_Depth: 1
@@ -1474,8 +1474,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280288584}
-  m_LocalRotation: {x: 9.902963e-16, y: -0.2600468, z: 2.6669888e-16, w: 0.965596}
-  m_LocalPosition: {x: 3346.2075, y: 1858, z: 2737.9814}
+  m_LocalRotation: {x: -1e-45, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -6557}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1979,25 +1979,25 @@ MonoBehaviour:
   music:
   - name: Door4
     clip: {fileID: 8300000, guid: 70b85f371d81d034fae415df694373d9, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 0
     loop: 0
     source: {fileID: 0}
   - name: Key_1
     clip: {fileID: 8300000, guid: 75b32cf8861e40d41aed4a23256161ec, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 0
     loop: 0
     source: {fileID: 0}
   - name: Living Mice
     clip: {fileID: 8300000, guid: c88c93823fb505342b929d1bb33d161c, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 0
     loop: 0
     source: {fileID: 0}
   - name: Subwoofer
     clip: {fileID: 8300000, guid: 0b9f77c368f113248a2622bc728c5327, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 0
     loop: 0
     source: {fileID: 0}
@@ -2128,6 +2128,7 @@ GameObject:
   - component: {fileID: 512637112}
   - component: {fileID: 512637113}
   - component: {fileID: 512637114}
+  - component: {fileID: 512637115}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2142,8 +2143,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 512637108}
-  m_LocalRotation: {x: -0, y: -0.2600491, z: -0, w: 0.9655954}
-  m_LocalPosition: {x: 3341.1855, y: 1858, z: 2746.629}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -6547}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 231198871}
@@ -2154,7 +2155,7 @@ Transform:
   - {fileID: 1405913815}
   m_Father: {fileID: 0}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: -30.146, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &512637110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2169,15 +2170,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerAudioSource: {fileID: 512637113}
   bountyList:
-  - {fileID: 1485815426}
-  - {fileID: 1205149795}
+  - {fileID: 2032034499}
+  - {fileID: 1739887701}
+  - {fileID: 647289868}
+  - {fileID: 152377428}
   mainCam: {fileID: 280288586}
   noseCam: {fileID: 671572679}
   playerGallery: {fileID: 231198872}
   hullSlider: {fileID: 1971472744}
   fuelSlider: {fileID: 1971472745}
   maxHull: 100
-  maxFuel: 50
+  maxFuel: 40
   scripReadout: {fileID: 1971472747}
   money: 100
   stationButtons: {fileID: 1971472746}
@@ -2402,6 +2405,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &512637115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512637108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98e5f1a47393a89469083c260df3aed8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hull: {fileID: 1971472744}
+  fuel: {fileID: 1971472745}
+  fadeTime: 5
+  hangTime: 5
+  endScreen: {fileID: 1470221883}
 --- !u!1 &526698537 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1033159535267228, guid: bc7409e9271e6b84d9f9bab4e88410ab, type: 3}
@@ -4334,7 +4354,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 512637109}
   m_Follow: {fileID: 512637109}
   m_Lens:
-    FieldOfView: 90
+    FieldOfView: 50
     OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 8000
@@ -4355,8 +4375,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784164472}
-  m_LocalRotation: {x: 9.902963e-16, y: -0.2600468, z: 2.6669888e-16, w: 0.965596}
-  m_LocalPosition: {x: 3346.2075, y: 1858, z: 2737.9814}
+  m_LocalRotation: {x: -1e-45, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -6557}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1189876947}
@@ -8547,6 +8567,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1381583131, guid: 0daf96c15d4c97b4e9e526f6acfce2f0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0daf96c15d4c97b4e9e526f6acfce2f0, type: 3}
+--- !u!225 &1470221883 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 1470221883, guid: 049b6628fb3dc6245b7b530cea0115b7, type: 3}
+  m_PrefabInstance: {fileID: 1971472743}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1483864938
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11637,10 +11662,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 512637110}
-    - target: {fileID: 4362243779415225576, guid: 049b6628fb3dc6245b7b530cea0115b7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 049b6628fb3dc6245b7b530cea0115b7, type: 3}
 --- !u!114 &1971472744 stripped
@@ -12513,6 +12534,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1106790539}
     m_Modifications:
+    - target: {fileID: 2729233937276626177, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7448387197063100937, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
       propertyPath: m_Pivot.x
       value: 0
