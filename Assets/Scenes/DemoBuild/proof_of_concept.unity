@@ -764,19 +764,19 @@ MonoBehaviour:
   whaleSounds:
   - name: HumpBack1
     clip: {fileID: 8300000, guid: 865b83ed56a08484e8deee0bcd3d400d, type: 3}
-    volume: 0
+    volume: 1
     pitch: 0
     loop: 0
     source: {fileID: 0}
   - name: HumpBack2
     clip: {fileID: 8300000, guid: e3c62386a616b7f46a915b894c92ed4d, type: 3}
-    volume: 0
+    volume: 1
     pitch: 0
     loop: 0
     source: {fileID: 0}
   - name: HumpBack3
     clip: {fileID: 8300000, guid: 7dc02a2e829dc0c4f9eeee5ae3a03f7f, type: 3}
-    volume: 0
+    volume: 1
     pitch: 0
     loop: 0
     source: {fileID: 0}
@@ -804,7 +804,7 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 0
   MinDistance: 1
   MaxDistance: 2000
   Pan2D: 0
@@ -816,14 +816,41 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.0049476624
-      value: 0.22418594
-      inSlope: -0.26634228
-      outSlope: -0.26634228
+      time: 0.13495399
+      value: 0.98571396
+      inSlope: 0.123627044
+      outSlope: 0.123627044
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.75385183
+    - serializedVersion: 3
+      time: 0.3252212
+      value: 0.97919846
+      inSlope: -0.04854302
+      outSlope: -0.04854302
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.44099826
+    - serializedVersion: 3
+      time: 0.61117744
+      value: 0.88158035
+      inSlope: -0.925168
+      outSlope: -0.925168
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.789708
+      outWeight: 0.5353696
+    - serializedVersion: 3
+      time: 0.78783065
+      value: 0.6715349
+      inSlope: -1.9525951
+      outSlope: -1.9525951
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.35321787
     - serializedVersion: 3
       time: 0.9876404
       value: 0
@@ -841,7 +868,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1447,8 +1474,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280288584}
-  m_LocalRotation: {x: -3e-45, y: -1e-45, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -6529.81}
+  m_LocalRotation: {x: 9.902963e-16, y: -0.2600468, z: 2.6669888e-16, w: 0.965596}
+  m_LocalPosition: {x: 3346.2075, y: 1858, z: 2737.9814}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2115,8 +2142,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 512637108}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -6519.81}
+  m_LocalRotation: {x: -0, y: -0.2600491, z: -0, w: 0.9655954}
+  m_LocalPosition: {x: 3341.1855, y: 1858, z: 2746.629}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 231198871}
@@ -2127,7 +2154,7 @@ Transform:
   - {fileID: 1405913815}
   m_Father: {fileID: 0}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -30.146, z: 0}
 --- !u!114 &512637110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4328,8 +4355,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784164472}
-  m_LocalRotation: {x: -3e-45, y: -1e-45, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -6529.81}
+  m_LocalRotation: {x: 9.902963e-16, y: -0.2600468, z: 2.6669888e-16, w: 0.965596}
+  m_LocalPosition: {x: 3346.2075, y: 1858, z: 2737.9814}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1189876947}
