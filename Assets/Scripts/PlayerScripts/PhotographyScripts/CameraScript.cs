@@ -11,9 +11,10 @@ public class CameraScript : MonoBehaviour
     public GameObject OuterHud;    // Canvas that hoilds hull, fuel gauges
     public GameObject blackReticle;
     public GameObject redReticle;
+    public BountyNetwork bountyNetwork;
 
     Camera photoCam;
-
+    string objTag;
 
     void Start()
     {
@@ -24,7 +25,8 @@ public class CameraScript : MonoBehaviour
         redReticle.SetActive(false);
     }
 
-    void Update()
+
+    public void Update()
     {
 
         // PhotoMode Enabled
@@ -33,7 +35,8 @@ public class CameraScript : MonoBehaviour
             OuterHud.SetActive(false);
             blackReticle.SetActive(true);
             Ray ray = photoCam.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
-           // Vector3 fwd = transform.TransformDirection(Vector3.forward);
+            // Ray ray = new Ray(transform.position, transform.forward);
+            // Vector3 fwd = transform.TransformDirection(Vector3.forward);
             RaycastHit hit;
 
             // if the camera spots an object
@@ -42,6 +45,7 @@ public class CameraScript : MonoBehaviour
                 ThisCanvas.SetActive(true);
                 redReticle.SetActive(true);
                 ObjectName.text = hit.transform.tag.ToString();
+                objTag = hit.transform.tag.ToString();
             }
             else
             {
@@ -57,13 +61,14 @@ public class CameraScript : MonoBehaviour
             blackReticle.SetActive(false);
             redReticle.SetActive(false);
         }
-
-        /*
-            print("I'm looking at " + hit.transform.name);
-        else
-            print("I'm looking at nothing!");
     }
-        */
+
+    public void verifyBounty()
+    {
+        /*
+         * Lol this is absurd, I am absurd
+         */
+        bountyNetwork.bountyCheck(objTag);
     }
 
 }

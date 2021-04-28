@@ -21,5 +21,17 @@ public class BountyNetwork : MonoBehaviour
         }
     }
 
+    public void bountyCheck(string objTag)
+    {
+        foreach(BountyItem b in bounties)
+        {
+            if (b.isComplete) { continue; }
 
+            if(b.m_tag == objTag)
+            {
+                b.isComplete = true;
+                b.updateStatus();
+            }
+        }
+    }
 }

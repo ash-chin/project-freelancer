@@ -19,7 +19,8 @@ public class Player_Space_Ship_Movement : MonoBehaviour
 
     // Camera assets
     public Camera mainCam;
-    public Camera noseCam;
+    public Camera photoCam;
+    public CameraScript photocamScript;
     public Canvas playerGallery;    // object that holds the photo
 
     
@@ -103,7 +104,7 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     {
         // game does not start in photoMode
         mainCam.enabled = true;
-        noseCam.enabled = false;
+        photoCam.enabled = false;
         photoMode = false;
         playerGallery.enabled = false;
         //playerPhoto.SetActive(false);
@@ -171,7 +172,7 @@ public class Player_Space_Ship_Movement : MonoBehaviour
             // save quaternion value to reset back to original rotation later
             lastRotation = transform.rotation;
             mainCam.enabled = false;
-            noseCam.enabled = true;
+            photoCam.enabled = true;
             photoMode = true;
 
             // moved photoMode actions activation into start()
@@ -185,7 +186,7 @@ public class Player_Space_Ship_Movement : MonoBehaviour
             // reset back to original rotation
             transform.rotation = Quaternion.Slerp(transform.rotation, lastRotation, Time.time * rotationResetSpeed);
             mainCam.enabled = true;
-            noseCam.enabled = false;
+            photoCam.enabled = false;
             photoMode = false;
             controls.FindActionMap("Space Ship Controls").Enable();
             controls.FindActionMap("photoCam Controls").Disable();
@@ -197,11 +198,12 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     {
         playerAudioSource.ShutterNoise();
         Debug.Log("Are we entering the right loop?");
-        if (noseCam.enabled == true)
+        if (photoCam.enabled == true)
         {
             Debug.Log("We are in nose Cam");
-            camRay = noseCam.ViewportPointToRay(cameraVector);
+            camRay = photoCam.ViewportPointToRay(cameraVector);
             RaycastHit hit;
+            photocamScript.verifyBounty();
 
             if (Physics.Raycast(camRay, out hit))
             {

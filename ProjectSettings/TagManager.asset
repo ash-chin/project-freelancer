@@ -5,7 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - SpaceStation
-  - LargeDistant
   - Enemy
   - Space Station
   - Refueling Depot
@@ -13,6 +12,8 @@ TagManager:
   - Fuel Depot Dialogue
   - Old Station Core
   - Asteroid
+  - SpaceWhale
+  - SotoroCenter
   layers:
   - Default
   - TransparentFX
