@@ -5,32 +5,27 @@ using UnityEngine.SceneManagement;
 
 public class GameEnd : MonoBehaviour
 {
-    public CanvasGroup endscreen;
+    public CanvasGroup endImage;
+    public float preTime;
+    public float fadeTime;
+    public float lastTime;
+
     private float timer = 0;
-    public float fadeDuration;
-    public float endDuration;
 
-    private void Start()
-    {
-        endscreen.alpha = 0;
-    }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         timer += Time.deltaTime;
-
-        if (timer > 6)
+        if (timer >= preTime)
         {
-            EndSequence();
+            GameEnding();
         }
     }
 
-    private void EndSequence()
+    private void GameEnding()
     {
-        endscreen.alpha = timer / fadeDuration;
+        endImage.alpha = (timer - preTime) / fadeTime;
 
-        if (timer > (fadeDuration + endDuration))
+        if (timer >= preTime + fadeTime + lastTime)
         {
             SceneManager.LoadScene("POCIntro");
         }

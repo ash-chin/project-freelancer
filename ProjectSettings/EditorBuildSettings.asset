@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DemoBuild/proof_of_concept.unity
     guid: 6facc56e7f5d8cd49bd43349fa0a432c
+  - enabled: 1
+    path: Assets/Scenes/DemoBuild/DemoEnd.unity
+    guid: 21b7d27a61f101a41a77c4fd7a2056cb
   m_configObjects: {}
