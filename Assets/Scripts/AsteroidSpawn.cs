@@ -25,12 +25,16 @@ public class AsteroidSpawn : MonoBehaviour
     }
 
     void InstantiateAsteroid(Transform asteroid)
-    {
-        temp = Instantiate(asteroid, Random.onUnitSphere * sphereRadius, Random.rotation);
-        temp.localScale = temp.localScale * Random.Range(0.5f, 20f);
+    {   
+        //add transform.position because Random.onUnitSphere will default to origin
+        temp = Instantiate(asteroid, (Random.onUnitSphere * sphereRadius)+transform.position, Random.rotation);
+
+        //set random range of sizes of asteroids
+        temp.localScale = temp.localScale * Random.Range(0.5f, 15f);
         rotatorRef = temp.GetComponent<RandomRotator>();
         rotatorRef.SetSphere(GetComponent<Transform>());
         rotatorRef.SetRotationSpeed(rotationSpeed);
+        
     }
 
     // Update is called once per frame
