@@ -18,9 +18,15 @@ EditorBuildSettings:
     path: Assets/Scenes/DemoBuild/POCIntro.unity
     guid: ba5cbced3ec98844399c690b0ef3a674
   - enabled: 1
-    path: Assets/Scenes/DemoBuild/proof_of_concept.unity
+    path: Assets/Scenes/ZacsEnvAssets/POC_CLONE.unity
     guid: 6facc56e7f5d8cd49bd43349fa0a432c
   - enabled: 1
     path: Assets/Scenes/DemoBuild/DemoEnd.unity
     guid: 21b7d27a61f101a41a77c4fd7a2056cb
+  - enabled: 1
+    path: Assets/Scenes/AlphaBuild/AlphaIntro.unity
+    guid: 83d219f4503332847a12ba96fd9e1f5b
+  - enabled: 1
+    path: Assets/Scenes/AlphaBuild/AlphaDemoScene1.unity
+    guid: 2209b24b7dd4f03489afcc2f0d93895c
   m_configObjects: {}
