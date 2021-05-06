@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sphere
       objectReference: {fileID: 0}
+    - target: {fileID: 3525801804468247644, guid: 6fc55de3eaaab63439962efa12ba5fbb, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3525801804468247647, guid: 6fc55de3eaaab63439962efa12ba5fbb, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -122,7 +126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3615299658928278287, guid: 24a99d217d21b334b8785898edae2993, type: 3}
       propertyPath: m_Name
-      value: SpaceStation19
+      value: PortalStation
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24a99d217d21b334b8785898edae2993, type: 3}
