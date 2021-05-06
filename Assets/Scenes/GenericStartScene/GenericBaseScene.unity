@@ -672,7 +672,6 @@ GameObject:
   - component: {fileID: 512637109}
   - component: {fileID: 512637111}
   - component: {fileID: 512637110}
-  - component: {fileID: 512637112}
   - component: {fileID: 512637113}
   - component: {fileID: 512637114}
   - component: {fileID: 512637115}
@@ -777,32 +776,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &512637112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 512637108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fa023b51c3078942b288f61a0e2f785, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    stenences:
-    - Once again I find myself on the edge of explored space with a nearly empty
-      gas tank, and bounty list of photography work.
-    - I've got a little bit of scrip left. I should probably fly close to that fuel
-      depot over their and refill my tank before I go any further.
-    - To fly Forward I just need to press W. To roll left or right I should press
-      A or D. Turning is bound to the Q and E keys.
-    - To Yaw up or Down I or K. To slide left or right, J or L. and to descend or
-      ascend, U or O.
-    - I should probably get to that fuel depo quickly. It looks like it's orbiting
-      that moon, and it could slide out of range if I don't hurry. Wouldn't want
-      to ge caught floating in space.
-  manager: {fileID: 433791785}
 --- !u!114 &512637113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1298,15 +1271,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4465035140963908, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4465035140963908, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4465035140963908, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4465035140963908, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
       propertyPath: m_LocalPosition.x

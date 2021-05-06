@@ -672,10 +672,10 @@ GameObject:
   - component: {fileID: 512637109}
   - component: {fileID: 512637111}
   - component: {fileID: 512637110}
-  - component: {fileID: 512637112}
   - component: {fileID: 512637113}
   - component: {fileID: 512637114}
   - component: {fileID: 512637115}
+  - component: {fileID: 512637112}
   m_Layer: 2
   m_Name: Player
   m_TagString: Player
@@ -710,7 +710,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 512637108}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24302a79f7589d343a27fe5ccd02af0b, type: 3}
   m_Name: 
@@ -723,7 +723,7 @@ MonoBehaviour:
   hullSlider: {fileID: 1971472744}
   fuelSlider: {fileID: 1971472745}
   maxHull: 100
-  maxFuel: 50
+  maxFuel: 3
   scripReadout: {fileID: 1971472747}
   money: 100
   stationButtons: {fileID: 1971472746}
@@ -786,23 +786,51 @@ MonoBehaviour:
   m_GameObject: {fileID: 512637108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fa023b51c3078942b288f61a0e2f785, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f3b54e0550b2bd42baea8e01c94e46f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    stenences:
-    - Once again I find myself on the edge of explored space with a nearly empty
-      gas tank, and bounty list of photography work.
-    - I've got a little bit of scrip left. I should probably fly close to that fuel
-      depot over their and refill my tank before I go any further.
-    - To fly Forward I just need to press W. To roll left or right I should press
-      A or D. Turning is bound to the Q and E keys.
-    - To Yaw up or Down I or K. To slide left or right, J or L. and to descend or
-      ascend, U or O.
-    - I should probably get to that fuel depo quickly. It looks like it's orbiting
-      that moon, and it could slide out of range if I don't hurry. Wouldn't want
-      to ge caught floating in space.
-  manager: {fileID: 433791785}
+  movementAccelerationZAxis: 2.5
+  movementAccelerationXAxis: 2.5
+  movementAccelerationYAxis: 2.5
+  movementMaxZAxisSpeed: 100
+  movementMaxXAxisSpeed: 40
+  movementMaxYAxisSpeed: 40
+  movementZAxis: 0
+  movementXAxis: 0
+  movementYAxis: 0
+  movementCurrentZAxisSpeed: 0
+  movementCurrentXAxisSpeed: 0
+  movementCurrentYAxisSpeed: 0
+  rotationAccelerationZAxis: 2.5
+  rotationAccelerationXAxis: 2.5
+  rotationAccelerationYAxis: 2.5
+  rotationMaxZAxisSpeed: 100
+  rotationMaxXAxisSpeed: 100
+  rotationMaxYAxisSpeed: 100
+  rotationZAxis: 0
+  rotationXAxis: 0
+  rotationYAxis: 0
+  rotationCurrentZAxisSpeed: 0
+  rotationCurrentXAxisSpeed: 0
+  rotationCurrentYAxisSpeed: 0
+  photoCam_rotationAccelerationZAxis: 2.5
+  photoCam_rotationAccelerationXAxis: 2.5
+  photoCam_rotationAccelerationYAxis: 2.5
+  photoCam_rotationMaxZAxisSpeed: 20
+  photoCam_rotationMaxXAxisSpeed: 20
+  photoCam_rotationMaxYAxisSpeed: 20
+  mainCamera: {fileID: 280288586}
+  photographyCamera: {fileID: 671572679}
+  playerGallery: {fileID: 231198872}
+  rotationResetSpeed: 1
+  photoCameraScript: {fileID: 1700655190}
+  hullSlider: {fileID: 1971472744}
+  fuelSlider: {fileID: 1971472745}
+  sceneHull: 100
+  sceneFuel: 100
+  scripTracker: {fileID: 1971472747}
+  scrip: 100
+  controls: {fileID: -944628639613478452, guid: 03bce27c72270f947b6188dd3a7df09c, type: 3}
 --- !u!114 &512637113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1172,6 +1200,82 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &798607192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 798607193}
+  - component: {fileID: 798607195}
+  - component: {fileID: 798607194}
+  m_Layer: 5
+  m_Name: TutorialBacking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &798607193
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798607192}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.2203125, y: 1.2203125, z: 1.2203125}
+  m_Children:
+  - {fileID: 950441991}
+  m_Father: {fileID: 1520598749}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -334.97583, y: 183.3844}
+  m_SizeDelta: {x: 251, y: 126.5868}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &798607194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798607192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a69163ca2eb6c934c87ebe5deea5b747, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &798607195
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798607192}
+  m_CullTransparentMesh: 1
 --- !u!1 &817032980
 GameObject:
   m_ObjectHideFlags: 0
@@ -1281,6 +1385,85 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaDirect: 0.5
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
+--- !u!1 &950441990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 950441991}
+  - component: {fileID: 950441993}
+  - component: {fileID: 950441992}
+  m_Layer: 5
+  m_Name: TutorialText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &950441991
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950441990}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 798607193}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0, y: 0.4823}
+  m_SizeDelta: {x: 215.9478, y: 90.771}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &950441992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950441990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: aed50e92c52f8a84ba7de5b067f22196, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: boop boop
+--- !u!222 &950441993
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950441990}
+  m_CullTransparentMesh: 1
 --- !u!1001 &952660161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1384,6 +1567,7 @@ Transform:
   m_Children:
   - {fileID: 1917346248}
   - {fileID: 129170765}
+  - {fileID: 1520598749}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1625,6 +1809,106 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2905510648631565902, guid: 6763947fbfd453c4d977de3f24b4fe20, type: 3}
   m_PrefabInstance: {fileID: 1426428166}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1520598748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1520598749}
+  - component: {fileID: 1520598752}
+  - component: {fileID: 1520598751}
+  - component: {fileID: 1520598750}
+  m_Layer: 0
+  m_Name: TutorialCanvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1520598749
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520598748}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 798607193}
+  m_Father: {fileID: 1106790539}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &1520598750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520598748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1520598751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520598748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1520598752
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520598748}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!4 &1529971783 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4465035140963908, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
@@ -1641,6 +1925,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1648864854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1648864855}
+  - component: {fileID: 1648864856}
+  m_Layer: 0
+  m_Name: TutorialObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1648864855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648864854}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 492.0395, y: 265.93954, z: -53.497158}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1648864856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648864854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21f14e5fdf6065b46969aa046cedbba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sentences:
+  - 'Press W to go Forward
+
+    Press S to go backwards'
+  - Press A or D to slide left or right
+  - Press Q or E to descend or ascend
+  - Press I or K to yaw up or down
+  - Press J or L to roll left or right
+  - Press U or O to turn left or right
+  - Great job! now press the T key to tranfer to camera mode
+  - Solid work. If you press P you'll take a photo of whatever you're aiming at.
+  - Solid work, Now press T to go back to main camera
+  - If you fly into that portal over there it will teleport you to the next zone.
+  instructions: {fileID: 798607192}
+  instructionText: {fileID: 950441992}
+  timeFraction: 3
 --- !u!114 &1700655190 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
