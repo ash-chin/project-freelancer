@@ -66,10 +66,10 @@ public class EnemyShoalPatrolParent : MonoBehaviour
             // move the subject forward by the given speed. This is agnostic of the direction to the target
             // by keeping forward movement agnostic of the direction to the target we get this nice smooth
             // swimming motion that turns naturally as patrol points are reached.
-            transform.Translate(Time.deltaTime * Vector3.forward * speed, Space.Self);
+            transform.Translate(Time.deltaTime * Vector3.forward * speed);
 
             // find the rotation to the current target
-            var rotation = Quaternion.LookRotation(target.position, transform.position);
+            var rotation = Quaternion.LookRotation(target.position - transform.position);
             // rotate to face it at the given speed if not already facing it.
             transform.rotation = Quaternion.Slerp(transform.rotation, rotation, turnDamping * Time.deltaTime);
         }

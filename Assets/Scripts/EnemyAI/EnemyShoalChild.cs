@@ -28,6 +28,7 @@ public class EnemyShoalChild : MonoBehaviour
 
     private void Start()
     {
+        player = speedParent.player;
         damage = attackParent.damage;
         damageDistance = attackParent.damageDistance;
         speed = speedParent.speed;

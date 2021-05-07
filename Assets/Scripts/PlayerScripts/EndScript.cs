@@ -15,7 +15,6 @@ public class EndScript : MonoBehaviour
     private float timer = 0;
     private void Update()
     {
-        Debug.Log("This is updating");
         if (hull.value == 0 | fuel.value == 0)
         {
             EndGame();

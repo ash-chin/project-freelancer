@@ -63,7 +63,6 @@ public class AudioManager : MonoBehaviour
         Sound s = music[0];
         s.source.Play();
         currentTrackSrc = s.source;
-        Debug.Log("Name of current track is " + s.name);
 
     }
 

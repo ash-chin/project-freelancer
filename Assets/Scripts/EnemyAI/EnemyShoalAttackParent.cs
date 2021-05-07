@@ -20,20 +20,12 @@ public class EnemyShoalAttackParent : MonoBehaviour
     public EnemyShoalPatrolParent patrol;
     // this is the distance the subject needs to be from the target to break patrol
     // note that it NEEDS TO BE IDENTICAL TO THE DISTANCE DETERMINING ENGAGEMENT
-    private float breakEnagementDistance;
+    public float breakEnagementDistance;
     // the speed of the subject
-    private float speed;
+    public float speed;
     // the turn damping of the subject
-    private float turnDamping;
-    // notice that I have set these to be private, and set them equal to the patrol values.
-    // DO NOT OVERRIDE THIS, I BEG OF YOU.
+    public float turnDamping;
 
-    private void Start()
-    {
-        breakEnagementDistance = patrol.attackDistance;
-        speed = patrol.speed;
-        turnDamping = patrol.turnDamping;
-    }
 
     private void FixedUpdate()
     {
@@ -60,10 +52,10 @@ public class EnemyShoalAttackParent : MonoBehaviour
         }
 
         // move the subject forward relative to itself. 
-        transform.Translate(Time.deltaTime * speed * Vector3.forward, Space.Self);
+        transform.Translate(Time.deltaTime * speed * Vector3.forward);
 
         // find the rotation to face the enemy
-        var rotation = Quaternion.LookRotation(player.transform.position, transform.position);
+        var rotation = Quaternion.LookRotation(player.transform.position - transform.position);
         // rotate by interpolation to face the enemy
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, turnDamping * Time.deltaTime);
     }
