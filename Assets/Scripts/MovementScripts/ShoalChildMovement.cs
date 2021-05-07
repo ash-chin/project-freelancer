@@ -13,7 +13,7 @@ public class ShoalChildMovement : MonoBehaviour
     void FixedUpdate()
     {
         // push the object relatively forward in space at the speed of the parent
-        transform.Translate(Vector3.forward * Time.deltaTime * speed);
+        transform.Translate(Vector3.forward * Time.deltaTime * speed, Space.Self);
 
         // match the child rotation identically to the parent rotation.
         transform.rotation = parent.transform.rotation;
