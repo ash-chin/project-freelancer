@@ -374,6 +374,11 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     {
         hullSlider.value -= damage;
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        HullDamage();
+    }
     // END OF SCRIPT
 }
 
