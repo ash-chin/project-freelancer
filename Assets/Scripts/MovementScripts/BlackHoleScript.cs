@@ -11,6 +11,7 @@ public class BlackHoleScript : MonoBehaviour
     private Vector3 relativePosition;
     private CharacterController controller;
     private float speed;
+    private float damage;
 
     private void Start()
     {
@@ -20,15 +21,16 @@ public class BlackHoleScript : MonoBehaviour
     private void FixedUpdate()
     {
         distance = Vector3.Distance(transform.position, player.transform.position);
-        if (distance <= maxDistance)
+        if (distance < maxDistance)
         {
             if (distance < 500)
             {
-                player.VariableDamage((500 / distance) * Time.deltaTime);
+                damage = 10f * ((maxDistance - distance) / maxDistance) * Time.deltaTime;
+                player.VariableDamage(damage);
             }
 
 
-            speed = 0.1f * (maxDistance / distance);
+            speed = 0.5f * ((maxDistance  - distance) / maxDistance);
             relativePosition = transform.position - player.transform.position;
             controller.Move(relativePosition * Time.deltaTime * speed);
             

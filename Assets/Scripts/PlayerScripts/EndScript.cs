@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class EndScript : MonoBehaviour
 {
+    public string restart;
     public Slider hull;
     public Slider fuel;
     public float fadeTime;
@@ -28,7 +29,7 @@ public class EndScript : MonoBehaviour
 
         if (timer >= (fadeTime + hangTime))
         {
-            SceneManager.LoadScene("POCIntro");
+            SceneManager.LoadScene(restart);
         }
     }
 }
