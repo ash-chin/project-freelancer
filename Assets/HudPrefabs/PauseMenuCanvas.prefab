@@ -2392,7 +2392,7 @@ GameObject:
   - component: {fileID: 7448387197063100950}
   m_Layer: 5
   m_Name: PauseMenuCanvas
-  m_TagString: Untagged
+  m_TagString: Onikaza
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

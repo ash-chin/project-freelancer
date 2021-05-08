@@ -14,16 +14,12 @@ public class CameraScript : MonoBehaviour
     public GameObject redReticle;
     public BountyNetwork bountyNetwork;
     // new members
-    public GameObject tutorialCanvas;
     public Player_Space_Ship_Movement freelancer;
     public PlayerAudio playerAudioSource;
     public Canvas galleryCanvas;
     public int maxPhotos;
     public RawImage previewPic;
     public RawImage[] photoGallery;
-    //public RenderTexture[] photoTextures;
-    public Texture2D[] photoTextures;
-    //public GameObject BountyNotification;
 
     private int numPhotos;
     private int i;
@@ -32,7 +28,6 @@ public class CameraScript : MonoBehaviour
     string objTag;
     // new variables
     RawImage thePhoto;
-    //RenderTexture renderTexture;
     Texture2D photoTexture;
     RenderTexture tempRender;
 
@@ -74,9 +69,8 @@ public class CameraScript : MonoBehaviour
         photoCam.Render();
         RenderTexture.active = tempRender;
 
-        // grab empty photo and texture from gallery
+        // grab empty photo from gallery
         thePhoto = photoGallery[i];
-        photoTexture = photoTextures[i];
 
         // read pixels from screen into photoTexture
         // scales down size and flips so not upside down
