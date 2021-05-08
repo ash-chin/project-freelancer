@@ -84,8 +84,6 @@ public class AudioManager : MonoBehaviour
        
         if (!currentTrackSrc.isPlaying)
         {
-            Debug.Log("why ");
-            
             if (currentTrackNumber < 3)
                 currentTrackNumber++;
 

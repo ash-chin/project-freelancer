@@ -45,6 +45,7 @@ public class EnemyShoalAttackParent : MonoBehaviour
         // if the subject is close enough to the player to deal damage
         if (enemyDistance <= damageDistance && timer >= damageInterval)
         {
+            Debug.Log("damage has been dealt");
             // reset the timer
             timer = 0;
             // damage the player
