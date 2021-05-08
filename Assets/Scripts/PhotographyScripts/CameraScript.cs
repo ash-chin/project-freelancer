@@ -23,6 +23,7 @@ public class CameraScript : MonoBehaviour
     public RawImage[] photoGallery;
     //public RenderTexture[] photoTextures;
     public Texture2D[] photoTextures;
+    //public GameObject BountyNotification;
 
     private int numPhotos;
     private int i;
@@ -37,6 +38,7 @@ public class CameraScript : MonoBehaviour
 
     void Start()
     {
+        //BountyNotification.SetActive(false);
         photoCam = GetComponent<Camera>();
         ObjectReadOut.SetActive(false);
         OuterHud.SetActive(true);

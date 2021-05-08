@@ -191,10 +191,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectName: {fileID: 8449805696972137050}
-  ThisCanvas: {fileID: 8449805696585814965}
+  ObjectReadOut: {fileID: 0}
   OuterHud: {fileID: 0}
+  reticleCanvas: {fileID: 0}
   blackReticle: {fileID: 8449805697823955494}
   redReticle: {fileID: 8449805696839698673}
+  bountyNetwork: {fileID: 0}
+  tutorialCanvas: {fileID: 0}
+  freelancer: {fileID: 0}
+  playerAudioSource: {fileID: 0}
+  galleryCanvas: {fileID: 0}
+  maxPhotos: 0
+  previewPic: {fileID: 0}
+  photoGallery: []
+  photoTextures: []
 --- !u!114 &8449805696742695243
 MonoBehaviour:
   m_ObjectHideFlags: 0
