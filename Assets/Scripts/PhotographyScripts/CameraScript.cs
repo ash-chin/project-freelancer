@@ -19,8 +19,10 @@ public class CameraScript : MonoBehaviour
     public PlayerAudio playerAudioSource;
     public Canvas galleryCanvas;
     public int maxPhotos;
+    public RawImage previewPic;
     public RawImage[] photoGallery;
-    public RenderTexture[] photoTextures;
+    //public RenderTexture[] photoTextures;
+    public Texture2D[] photoTextures;
 
     private int numPhotos;
     private int i;
@@ -29,7 +31,9 @@ public class CameraScript : MonoBehaviour
     string objTag;
     // new variables
     RawImage thePhoto;
-    RenderTexture renderTexture;
+    //RenderTexture renderTexture;
+    Texture2D photoTexture;
+    RenderTexture tempRender;
 
     void Start()
     {
@@ -53,18 +57,46 @@ public class CameraScript : MonoBehaviour
         playerAudioSource.ShutterNoise();
         if (numPhotos == maxPhotos)
         {
-            //galleryCanvas.enabled = false;
-            reticleCanvas.SetActive(true);
-            ObjectReadOut.SetActive(true);
             return;
         }
 
-        if (tutorialCanvas)
-        {
-            tutorialCanvas.SetActive(false);
-        }
+        reticleCanvas.SetActive(false);
+        // creating temp texture for photo
+        int sqr = 1024;
+        int width = Screen.width;
+        int height = Screen.height;
+        tempRender = new RenderTexture(width, height, 24);
 
-        StartCoroutine(capturePhoto());
+        // temporarily render camera to this texture
+        photoCam.targetTexture = tempRender;
+        photoCam.Render();
+        RenderTexture.active = tempRender;
+
+        // grab empty photo and texture from gallery
+        thePhoto = photoGallery[i];
+        photoTexture = photoTextures[i];
+
+        // read pixels from screen into photoTexture
+        // scales down size and flips so not upside down
+        photoTexture = new Texture2D(sqr, sqr, TextureFormat.RGB24, false);
+        photoTexture.ReadPixels(new Rect(width / 2 - sqr / 2, height / 2 - sqr / 2, sqr, sqr), 0, 0);
+        photoTexture.Apply();
+
+        RenderTexture.active = null;    // helps avoid errors
+        photoCam.targetTexture = null;
+        
+        thePhoto.texture = photoTexture;    // "save" pic to gallery
+        reticleCanvas.SetActive(true);    // turn reticle back on
+
+        // increase photo count
+        i++;
+        numPhotos++;
+
+        // show the player a preview of the photo they just took
+        previewPic.texture = photoTexture;
+        StartCoroutine(showPhoto());
+
+        // check if a bounty was completed
         if (objTag != "Untagged")
         {
             bountyNetwork.bountyCheck(objTag);
@@ -72,35 +104,12 @@ public class CameraScript : MonoBehaviour
         
     }
 
-/*    public void verifyBounty()
+    IEnumerator showPhoto()
     {
-        *//*
-         * Lol this is absurd, I am absurd
-         *//*
-        bountyNetwork.bountyCheck(objTag);
-    }*/
-
-    IEnumerator capturePhoto()
-    {
-        //blah
-        yield return new WaitForEndOfFrame();
-        tutorialCanvas.SetActive(false);
-        thePhoto = photoGallery[i];
-        thePhoto.enabled = true;
-        renderTexture = photoTextures[i];
-
-        renderTexture = new RenderTexture(Screen.width, Screen.height, 24, RenderTextureFormat.DefaultHDR);
-        ScreenCapture.CaptureScreenshotIntoRenderTexture(renderTexture);
-        thePhoto.texture = renderTexture;
-        thePhoto.enabled = false;
-        reticleCanvas.SetActive(true);
-        ObjectReadOut.SetActive(true);
-
-        i++;
-        numPhotos++;
-        //galleryCanvas.enabled = false;
-        tutorialCanvas.SetActive(true);
-        StopCoroutine(capturePhoto());
+        //stuff
+        galleryCanvas.enabled = true;
+        yield return new WaitForSeconds(2);
+        galleryCanvas.enabled = false;
     }
 
     public void Update()
@@ -144,6 +153,7 @@ public class CameraScript : MonoBehaviour
     {
         // to do
         // Object.Destroy(playerPhoto.texture);
+        Destroy(tempRender);
         for (i = 0; i < numPhotos; i++)
         {
             //stuff
