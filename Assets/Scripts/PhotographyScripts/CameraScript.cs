@@ -6,25 +6,102 @@ using TMPro;
 
 public class CameraScript : MonoBehaviour
 {
-    public TextMeshProUGUI ObjectName;    // Textfied to readout object tag
-    public GameObject ThisCanvas;    // Canvas the textfield lives in
+    public TextMeshProUGUI ObjectName;    // Textfield to readout object tag
+    public GameObject ObjectReadOut;    // Canvas the textfield lives in
     public GameObject OuterHud;    // Canvas that hoilds hull, fuel gauges
+    public GameObject reticleCanvas;
     public GameObject blackReticle;
     public GameObject redReticle;
     public BountyNetwork bountyNetwork;
+    // new members
+    public GameObject tutorialCanvas;
+    public Player_Space_Ship_Movement freelancer;
+    public PlayerAudio playerAudioSource;
+    public Canvas galleryCanvas;
+    public int maxPhotos;
+    public RawImage[] photoGallery;
+    public RenderTexture[] photoTextures;
+
+    private int numPhotos;
+    private int i;
 
     Camera photoCam;
     string objTag;
+    // new variables
+    RawImage thePhoto;
+    RenderTexture renderTexture;
 
     void Start()
     {
         photoCam = GetComponent<Camera>();
-        ThisCanvas.SetActive(false);
+        ObjectReadOut.SetActive(false);
         OuterHud.SetActive(true);
         blackReticle.SetActive(false);
         redReticle.SetActive(false);
+
+        numPhotos = 0;
+        galleryCanvas.enabled = false;
+        for (int j = 0; j < maxPhotos; j++)
+        {
+            photoGallery[j].enabled = false;
+        }
     }
 
+
+    public void takePhoto()
+    {
+        playerAudioSource.ShutterNoise();
+        if (numPhotos == maxPhotos)
+        {
+            //galleryCanvas.enabled = false;
+            reticleCanvas.SetActive(true);
+            ObjectReadOut.SetActive(true);
+            return;
+        }
+
+        if (tutorialCanvas)
+        {
+            tutorialCanvas.SetActive(false);
+        }
+
+        StartCoroutine(capturePhoto());
+        if (objTag != "Untagged")
+        {
+            bountyNetwork.bountyCheck(objTag);
+        }
+        
+    }
+
+/*    public void verifyBounty()
+    {
+        *//*
+         * Lol this is absurd, I am absurd
+         *//*
+        bountyNetwork.bountyCheck(objTag);
+    }*/
+
+    IEnumerator capturePhoto()
+    {
+        //blah
+        yield return new WaitForEndOfFrame();
+        tutorialCanvas.SetActive(false);
+        thePhoto = photoGallery[i];
+        thePhoto.enabled = true;
+        renderTexture = photoTextures[i];
+
+        renderTexture = new RenderTexture(Screen.width, Screen.height, 24, RenderTextureFormat.DefaultHDR);
+        ScreenCapture.CaptureScreenshotIntoRenderTexture(renderTexture);
+        thePhoto.texture = renderTexture;
+        thePhoto.enabled = false;
+        reticleCanvas.SetActive(true);
+        ObjectReadOut.SetActive(true);
+
+        i++;
+        numPhotos++;
+        //galleryCanvas.enabled = false;
+        tutorialCanvas.SetActive(true);
+        StopCoroutine(capturePhoto());
+    }
 
     public void Update()
     {
@@ -42,14 +119,14 @@ public class CameraScript : MonoBehaviour
             // if the camera spots an object
             if (Physics.Raycast(ray, out hit, 8000))
             {
-                ThisCanvas.SetActive(true);
+                ObjectReadOut.SetActive(true);
                 redReticle.SetActive(true);
                 ObjectName.text = hit.transform.tag.ToString();
                 objTag = hit.transform.tag.ToString();
             }
             else
             {
-                ThisCanvas.SetActive(false);
+                ObjectReadOut.SetActive(false);
                 // blackReticle.SetActive(false);
                 redReticle.SetActive(false);
             }
@@ -57,18 +134,22 @@ public class CameraScript : MonoBehaviour
         else    // PhotoMode Disabled
         {
             OuterHud.SetActive(true);
-            ThisCanvas.SetActive(false);
+            ObjectReadOut.SetActive(false);
             blackReticle.SetActive(false);
             redReticle.SetActive(false);
         }
     }
 
-    public void verifyBounty()
+    private void OnDisable()
     {
-        /*
-         * Lol this is absurd, I am absurd
-         */
-        bountyNetwork.bountyCheck(objTag);
+        // to do
+        // Object.Destroy(playerPhoto.texture);
+        for (i = 0; i < numPhotos; i++)
+        {
+            //stuff
+            thePhoto = photoGallery[i];
+            Object.Destroy(thePhoto.texture);
+        }
     }
 
 }

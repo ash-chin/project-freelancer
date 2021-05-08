@@ -59,7 +59,7 @@ public class AlphaDemoControls : MonoBehaviour
 
     public float rotationResetSpeed = 1.0f;
 
-    public CameraScript photoCameraScript;
+    public CameraScript photocamScript;
     #endregion
 
     #region UI Essentials
@@ -134,7 +134,7 @@ public class AlphaDemoControls : MonoBehaviour
         controls.FindActionMap("photoCam Controls").FindAction("Rotation Y Axis").performed += cntxt => rotationYAxis = cntxt.ReadValue<float>();
         controls.FindActionMap("photoCam Controls").FindAction("Rotation Y Axis").canceled += cntxt => rotationYAxis = 0;
         controls.FindActionMap("photoCam Controls").FindAction("Camera Switch").performed += cntxt => SwitchCamera();
-        controls.FindActionMap("photoCam Controls").FindAction("Take Photo").performed += cntxt => TakePhoto();
+        controls.FindActionMap("photoCam Controls").FindAction("Take Photo").performed += cntxt => photocamScript.takePhoto();
         #endregion
     }
 
@@ -174,13 +174,13 @@ public class AlphaDemoControls : MonoBehaviour
         }
     }
 
-    private void TakePhoto()
+/*    private void TakePhoto()
     {
-        photoCameraScript.verifyBounty();
+        photocamScript.verifyBounty();
 
 
         //ASH ORIGINAL STUFF
-        /*
+        *//*
          * Literally just sets the playerPhoto object to enabled when the player
          * hits the 'P' key. Then inside the SnapPhoto.cs script (on the playerPhoto object),
          * LateUpdate() checks to see if it's enabled. That is the script responsible for
@@ -189,11 +189,11 @@ public class AlphaDemoControls : MonoBehaviour
          * P.S
          * Look, I know this is stupid, and I know I could consolidate the code into
          * this script, but also... kinda wanna try to not pile everything into one script.
-         */
+         *//*
 
         playerGallery.enabled = true;
         //playerPhoto.SetActive(true);
-    }
+    }*/
 
     public void OnCollisionEnter(Collision collision)
     {

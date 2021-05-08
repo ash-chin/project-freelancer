@@ -23,7 +23,7 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     public Camera mainCam;
     public Camera photoCam;
     public CameraScript photocamScript;
-    public Canvas playerGallery;    // object that holds the photo
+    // public Canvas playerGallery;    // object that holds the photo
 
     
     // Hull and Fuel assets
@@ -108,7 +108,7 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         mainCam.enabled = true;
         photoCam.enabled = false;
         photoMode = false;
-        playerGallery.enabled = false;
+        //playerGallery.enabled = false;
         //playerPhoto.SetActive(false);
         controls.FindActionMap("photoCam Controls").Disable();
 
@@ -154,7 +154,7 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         controls.FindActionMap("photoCam Controls").FindAction("Rotation Y Axis").performed += cntxt => rotationYAxis = cntxt.ReadValue<float>();
         controls.FindActionMap("photoCam Controls").FindAction("Rotation Y Axis").canceled += cntxt => rotationYAxis = 0;
         controls.FindActionMap("photoCam Controls").FindAction("Camera Switch").performed += cntxt => SwitchCamera();
-        controls.FindActionMap("photoCam Controls").FindAction("Take Photo").performed += cntxt => TakePhoto();
+        controls.FindActionMap("photoCam Controls").FindAction("Take Photo").performed += cntxt => photocamScript.takePhoto();
 
     }
 
@@ -196,14 +196,14 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         
     }
 
-    void TakePhoto()
+/*    void TakePhoto()
     {
         playerAudioSource.ShutterNoise();
         photocamScript.verifyBounty();
 
 
         //ASH ORIGINAL STUFF
-        /*
+        *//*
          * Literally just sets the playerPhoto object to enabled when the player
          * hits the 'P' key. Then inside the SnapPhoto.cs script (on the playerPhoto object),
          * LateUpdate() checks to see if it's enabled. That is the script responsible for
@@ -212,12 +212,12 @@ public class Player_Space_Ship_Movement : MonoBehaviour
          * P.S
          * Look, I know this is stupid, and I know I could consolidate the code into
          * this script, but also... kinda wanna try to not pile everything into one script.
-         */
+         *//*
 
         playerGallery.enabled = true;
         //playerPhoto.SetActive(true);
     }
-
+*/
 
     private void OnEnable()
     {
