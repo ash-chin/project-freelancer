@@ -9,7 +9,7 @@ public class ShoalFleeFleeing : MonoBehaviour
     // the distance it has to be away to return to patrol mode
     public float maxChaseDistance;
     // distance from the predator
-    public float predatorDistance;
+    private float predatorDistance;
     // the speed of the subject
     public float speed;
     // the turn speed of the subject

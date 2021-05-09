@@ -12,13 +12,6 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     // sound source
     public PlayerAudio playerAudioSource;
 
-    // bounty system
-    /*
-    public List<Transform> bountyList = new List<Transform>();
-    private Ray camRay;
-    private Vector3 cameraVector = new Vector3(0.5f, 0.5f, 0.0f);
-    */
-
     // Camera assets
     public Camera mainCam;
     public Camera photoCam;
@@ -39,11 +32,6 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     // these are the buttons for refueling and whatnot
     // the timer is to ensure that the player doesn't get caught in the cylce endlessly
     public GameObject stationButtons;
-
-
-
-    // public GameObject reticleCanvas;
-    
 
     // player controls, and input assets
     private CharacterController controller;
@@ -196,28 +184,6 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         
     }
 
-/*    void TakePhoto()
-    {
-        playerAudioSource.ShutterNoise();
-        photocamScript.verifyBounty();
-
-
-        //ASH ORIGINAL STUFF
-        *//*
-         * Literally just sets the playerPhoto object to enabled when the player
-         * hits the 'P' key. Then inside the SnapPhoto.cs script (on the playerPhoto object),
-         * LateUpdate() checks to see if it's enabled. That is the script responsible for
-         * taking photos. Please look at it for context. Thank you for listening to my TED Talk.
-         * 
-         * P.S
-         * Look, I know this is stupid, and I know I could consolidate the code into
-         * this script, but also... kinda wanna try to not pile everything into one script.
-         *//*
-
-        playerGallery.enabled = true;
-        //playerPhoto.SetActive(true);
-    }
-*/
 
     private void OnEnable()
     {
@@ -244,7 +210,6 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         controls.FindAction("Take Photo").Disable();
 
         // this will not cause a memory leak... You're welcome!
-        // Object.Destroy(playerPhoto.texture);
         // moved to OnDisable function in SnapPhoto.cs script
 
     }
@@ -282,7 +247,7 @@ public class Player_Space_Ship_Movement : MonoBehaviour
                                            Space.Self);
 
                 //now we decrement the fuel in relation to absolute movement.
-                fuelSlider.value -= 0.0001f * (Mathf.Abs(movementCurrentZAxisSpeed) + Mathf.Abs(movementCurrentYAxisSpeed) + Mathf.Abs(movementCurrentXAxisSpeed));
+                fuelSlider.value -= 0.00005f * (Mathf.Abs(movementCurrentZAxisSpeed) + Mathf.Abs(movementCurrentYAxisSpeed) + Mathf.Abs(movementCurrentXAxisSpeed));
 
             }
             
@@ -298,12 +263,6 @@ public class Player_Space_Ship_Movement : MonoBehaviour
             rotationCurrentZAxisSpeed = Mathf.Lerp(rotationCurrentZAxisSpeed, rotationZAxis * photoCam_rotationMaxZAxisSpeed, photoCam_rotationAccelerationZAxis * Time.deltaTime);
             rotationCurrentXAxisSpeed = Mathf.Lerp(rotationCurrentXAxisSpeed, rotationXAxis * photoCam_rotationMaxXAxisSpeed, photoCam_rotationAccelerationXAxis * Time.deltaTime);
             rotationCurrentYAxisSpeed = Mathf.Lerp(rotationCurrentYAxisSpeed, rotationYAxis * photoCam_rotationMaxYAxisSpeed, photoCam_rotationAccelerationYAxis * Time.deltaTime);
-
-            /*
-            controller.Move((transform.forward * movementCurrentZAxisSpeed * Time.deltaTime) +
-                (transform.right * movementCurrentXAxisSpeed * Time.deltaTime) +
-                (transform.up * movementCurrentYAxisSpeed * Time.deltaTime));
-            */
 
             movementCurrentZAxisSpeed = Mathf.Lerp(movementCurrentZAxisSpeed, movementZAxis * movementMaxZAxisSpeed, movementAccelerationZAxis * Time.deltaTime);
 
@@ -373,11 +332,6 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     public void VariableDamage(float damage)
     {
         hullSlider.value -= damage;
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        HullDamage();
     }
     // END OF SCRIPT
 }

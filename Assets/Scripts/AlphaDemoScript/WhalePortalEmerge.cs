@@ -5,7 +5,7 @@ using UnityEngine;
 public class WhalePortalEmerge : MonoBehaviour
 {
     // the whale which will be activated when the player 
-    public WhaleMovement whaleActivity;
+    public WhaleMovement whale;
     // this determines how long the portal lasts
     public float portalDuration;
     // this is the timer used to track duration
@@ -19,7 +19,7 @@ public class WhalePortalEmerge : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            whaleActivity.enabled = true;
+            whale.enabled = true;
             playerHasEntered = true;
         }
     }
@@ -27,7 +27,8 @@ public class WhalePortalEmerge : MonoBehaviour
     private void Start()
     {
         timer = 0;
-        whaleActivity.enabled = true;
+        whale.enabled = false;
+        playerHasEntered = false;
     }
 
     private void FixedUpdate()

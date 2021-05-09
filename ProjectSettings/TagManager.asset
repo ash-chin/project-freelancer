@@ -19,6 +19,8 @@ TagManager:
   - Black Hole
   - Aneras
   - Astoriana
+  - Active Missile
+  - Inactive Missile
   layers:
   - Default
   - TransparentFX

@@ -55,6 +55,7 @@ public class ShoalFleePatrol : MonoBehaviour
         {
             // index in a looping fashion using modulo
             index = (index + 1) % patrolPoints.Length;
+            target = patrolPoints[index];
         }
 
         this.transform.Translate(Vector3.forward * Time.deltaTime * speed, Space.Self);

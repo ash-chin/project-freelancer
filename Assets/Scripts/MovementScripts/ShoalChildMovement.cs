@@ -6,7 +6,7 @@ public class ShoalChildMovement : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public ShoalParentMovement parent;
+    public GameObject parent;
 
     public float speed;
     // Update is called once per frame
