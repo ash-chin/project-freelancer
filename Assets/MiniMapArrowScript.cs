@@ -5,23 +5,53 @@ using UnityEngine;
 public class MiniMapArrowScript : MonoBehaviour
 {
     public Transform pointingAt;
-    private Vector3 _angle;
-    private Vector3 direction;
-    private Quaternion zeroOut;
+    public Transform playerPos;
+
+    private float sinVal;
 
     void Start()
     {
-        zeroOut = new Quaternion (1.0f, 1.0f, 0.0f, 1.0f);
+        sinVal = 0;
     }
 
 
     void Update()
     {
-        transform.LookAt(new Vector3(pointingAt.position.x, transform.position.y, pointingAt.position.z));
+        Rotate();
+
+        ArrowAnimation();
+
+        FollowPlayer();
+    }
+
+    void Rotate()
+    {
+
+        transform.LookAt(new Vector3(pointingAt.position.x, pointingAt.position.y, pointingAt.position.z));
 
         Vector3 eulerRotation = transform.rotation.eulerAngles;
 
-        transform.rotation = Quaternion.Euler(90f, 0.0f, eulerRotation.z);
+        transform.rotation = Quaternion.Euler(90f, eulerRotation.y, eulerRotation.z);
+    }
 
+    void ArrowAnimation()
+    {
+        sinVal += 0.03f;
+
+        if (sinVal >= 2 * Mathf.PI)
+            sinVal = 0;
+
+        transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y + Mathf.Sin(sinVal) * 2, transform.localScale.z);
+    }
+
+    void FollowPlayer()
+    {
+        Vector3 newPosition = playerPos.position;
+
+        newPosition.z += 400;
+
+        newPosition.y = transform.position.y;
+
+        transform.position = newPosition;
     }
 }
