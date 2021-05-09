@@ -8,10 +8,13 @@ public class MiniMapArrowScript : MonoBehaviour
     public Transform playerPos;
 
     private float sinVal;
+    private float startY;
 
     void Start()
     {
         sinVal = 0;
+        startY = transform.position.y;
+
     }
 
 
@@ -41,7 +44,7 @@ public class MiniMapArrowScript : MonoBehaviour
         if (sinVal >= 2 * Mathf.PI)
             sinVal = 0;
 
-        transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y + Mathf.Sin(sinVal) * 2, transform.localScale.z);
+        transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y + Mathf.Sin(sinVal) * 4, transform.localScale.z);
     }
 
     void FollowPlayer()
@@ -50,7 +53,7 @@ public class MiniMapArrowScript : MonoBehaviour
 
         newPosition.z += 400;
 
-        newPosition.y = transform.position.y;
+        //newPosition.y = transform.position.y;
 
         transform.position = newPosition;
     }
