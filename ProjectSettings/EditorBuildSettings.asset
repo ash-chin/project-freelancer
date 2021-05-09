@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AlphaBuild/AlphaDemoScene1.unity
     guid: 2209b24b7dd4f03489afcc2f0d93895c
+  - enabled: 1
+    path: Assets/Scenes/AlphaBuild/AlphaAstoria.unity
+    guid: 1243a1018581c9446a782deafce672ba
   m_configObjects: {}

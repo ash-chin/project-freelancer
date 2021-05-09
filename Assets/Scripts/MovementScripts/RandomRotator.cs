@@ -31,7 +31,7 @@ public class RandomRotator : MonoBehaviour
 
     private void Update()
     {
-        //transform.RotateAround(transform.position, Vector3.up, (0.5f*rotationSpeed)*Time.deltaTime);
-        transform.RotateAround(sphereCenter.position, Vector3.down, rotationSpeed * Time.deltaTime);
+        transform.RotateAround(transform.position, Vector3.up, (0.5f*rotationSpeed)*Time.deltaTime);
+        //transform.RotateAround(sphereCenter.position, Vector3.down, rotationSpeed * Time.deltaTime);
     }
 }
