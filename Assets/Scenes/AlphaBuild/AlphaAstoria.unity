@@ -197,6 +197,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 13220850}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &18724717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 18724718}
+  m_Layer: 0
+  m_Name: WhalePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &18724718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18724717}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.37, y: 6.09, z: 9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2019271369}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &34441668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -745,7 +775,7 @@ Transform:
   - {fileID: 614635531}
   - {fileID: 2044456081}
   m_Father: {fileID: 1530915000}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &124029625
 MonoBehaviour:
@@ -858,6 +888,7 @@ GameObject:
   - component: {fileID: 158936915}
   - component: {fileID: 158936914}
   - component: {fileID: 158936913}
+  - component: {fileID: 158936916}
   m_Layer: 0
   m_Name: WhaleEmergentPoint
   m_TagString: Untagged
@@ -874,7 +905,7 @@ Transform:
   m_GameObject: {fileID: 158936911}
   m_LocalRotation: {x: -0.22652201, y: -0, z: -0, w: 0.97400606}
   m_LocalPosition: {x: 11.975769, y: 61, z: -1369}
-  m_LocalScale: {x: 200, y: 200, z: 1}
+  m_LocalScale: {x: 200, y: 200, z: 200}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -890,7 +921,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2.5
+  m_Radius: 1.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &158936914
 MeshRenderer:
@@ -941,6 +972,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158936911}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &158936916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158936911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a15a4b806c0c7a4ab1f4ff302d36a85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whaleActivity: {fileID: 467661239}
+  portalDuration: 10
+  portal: {fileID: 158936911}
 --- !u!1001 &171484502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2670,6 +2716,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 381275223}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &387656416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 387656417}
+  m_Layer: 0
+  m_Name: WhalePoint (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &387656417
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387656416}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.9128, y: -4, z: -20.01864}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2019271369}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &388539194
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3239,6 +3315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: humpback_whale_model23
       objectReference: {fileID: 0}
+    - target: {fileID: 367511215123131872, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3693778905882435571, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3257,15 +3337,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3693778905882435571, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.120003
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 3693778905882435571, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 44
+      value: 76
       objectReference: {fileID: 0}
     - target: {fileID: 3693778905882435571, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1473.3
+      value: -1360
       objectReference: {fileID: 0}
     - target: {fileID: 3693778905882435571, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3295,8 +3375,78 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8518634110159417195, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
+      propertyPath: speed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8518634110159417195, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
+      propertyPath: loop.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8518634110159417195, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
+      propertyPath: loop.Array.data[0]
+      value: 
+      objectReference: {fileID: 18724718}
+    - target: {fileID: 8518634110159417195, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
+      propertyPath: loop.Array.data[1]
+      value: 
+      objectReference: {fileID: 1467646556}
+    - target: {fileID: 8518634110159417195, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
+      propertyPath: loop.Array.data[2]
+      value: 
+      objectReference: {fileID: 1079280336}
+    - target: {fileID: 8518634110159417195, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
+      propertyPath: loop.Array.data[3]
+      value: 
+      objectReference: {fileID: 1432723745}
+    - target: {fileID: 8518634110159417195, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
+      propertyPath: loop.Array.data[4]
+      value: 
+      objectReference: {fileID: 387656417}
+    - target: {fileID: 8518634110159417195, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
+      propertyPath: loop.Array.data[5]
+      value: 
+      objectReference: {fileID: 539620140}
+    - target: {fileID: 8518634110159417195, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
+      propertyPath: loop.Array.data[6]
+      value: 
+      objectReference: {fileID: 766718055}
+    - target: {fileID: 8518634110159417195, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
+      propertyPath: loop.Array.data[7]
+      value: 
+      objectReference: {fileID: 1440508047}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
+--- !u!1 &467661238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 367511215123131872, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
+  m_PrefabInstance: {fileID: 467661237}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &467661239 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8518634110159417195, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
+  m_PrefabInstance: {fileID: 467661237}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467661238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fc72efbe2ad85649a5941a986ebfb34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &467661240
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467661238}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.78672165
+  m_Height: 5.0137916
+  m_Direction: 2
+  m_Center: {x: 0, y: -0.2867216, z: 0.23819867}
 --- !u!1 &475902479
 GameObject:
   m_ObjectHideFlags: 0
@@ -3993,6 +4143,36 @@ MonoBehaviour:
   fadeTime: 5
   hangTime: 5
   endScreen: {fileID: 2068523004}
+--- !u!1 &539620139
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 539620140}
+  m_Layer: 0
+  m_Name: WhalePoint (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &539620140
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539620139}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -22, y: 0, z: -16.83}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2019271369}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &585098804 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8449805697310083247, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
@@ -4105,7 +4285,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1530915000}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &591173212
 Light:
@@ -5307,6 +5487,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 737660677}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &766718054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 766718055}
+  m_Layer: 0
+  m_Name: WhalePoint (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &766718055
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766718054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -26.1523, y: 6.5, z: 11.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2019271369}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &784164472
 GameObject:
   m_ObjectHideFlags: 0
@@ -7380,6 +7590,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8278932446890550475, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_PrefabInstance: {fileID: 1078972045}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1079280335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1079280336}
+  m_Layer: 0
+  m_Name: WhalePoint (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1079280336
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079280335}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 31.4016, y: -5.31, z: -10.27}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2019271369}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1080173390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8195,7 +8435,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1530915000}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!199 &1212641244
 ParticleSystemRenderer:
@@ -14490,6 +14730,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2905510648631565902, guid: 6763947fbfd453c4d977de3f24b4fe20, type: 3}
   m_PrefabInstance: {fileID: 1426428166}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1432723744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1432723745}
+  m_Layer: 0
+  m_Name: WhalePoint (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1432723745
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432723744}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.7393, y: -2, z: -22.97775}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2019271369}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1435174871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14638,6 +14908,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8278932446890550475, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_PrefabInstance: {fileID: 1436558788}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1440508046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1440508047}
+  m_Layer: 0
+  m_Name: WhalePoint (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1440508047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440508046}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.8, y: 4.8, z: 32.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2019271369}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1441020626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14860,6 +15160,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 1459511191}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1467646555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1467646556}
+  m_Layer: 0
+  m_Name: WhalePoint (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1467646556
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467646555}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.93, y: 6.72, z: 9.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2019271369}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1471475377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15327,6 +15657,7 @@ Transform:
   m_LocalPosition: {x: -300, y: 80, z: -300}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
+  - {fileID: 2019271369}
   - {fileID: 591173211}
   - {fileID: 1212641243}
   - {fileID: 124029624}
@@ -18136,6 +18467,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1133986318023041413, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_PrefabInstance: {fileID: 2012605019}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2019271368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2019271369}
+  m_Layer: 0
+  m_Name: WhaleLoop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2019271369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019271368}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 18724718}
+  - {fileID: 1467646556}
+  - {fileID: 1079280336}
+  - {fileID: 1432723745}
+  - {fileID: 387656417}
+  - {fileID: 539620140}
+  - {fileID: 766718055}
+  - {fileID: 1440508047}
+  m_Father: {fileID: 1530915000}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2020387369
 PrefabInstance:
   m_ObjectHideFlags: 0
