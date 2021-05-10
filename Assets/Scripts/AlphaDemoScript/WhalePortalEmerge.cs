@@ -4,44 +4,47 @@ using UnityEngine;
 
 public class WhalePortalEmerge : MonoBehaviour
 {
-    // the whale which will be activated when the player 
-    public WhaleMovement whale;
-    // this determines how long the portal lasts
-    public float portalDuration;
-    // this is the timer used to track duration
-    private float timer = 0;
-    // bool used to alternate timer;
-    private bool playerHasEntered;
-    // the portal it emerges from;
+    // how much time the portal exists for before the whale emerges
+    public float pretime;
+    // how long the portal lasts for
+    public float portalEndurance;
+    // the whale object;
+    public GameObject whale;
+    // the portal object;
     public GameObject portal;
+    // the timer being updated;
+    private float timer;
+
+
+    private void Start()
+    {
+        whale.SetActive(false);
+        portal.SetActive(false);
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            whale.enabled = true;
-            playerHasEntered = true;
+            portal.SetActive(true);
         }
-    }
-
-    private void Start()
-    {
-        timer = 0;
-        whale.enabled = false;
-        playerHasEntered = false;
     }
 
     private void FixedUpdate()
     {
-        if (playerHasEntered)
+        if (portal.activeInHierarchy == true)
         {
             timer += Time.deltaTime;
-        }
 
-        if (timer >= portalDuration)
-        {
-            portal.SetActive(false);
-            this.enabled = false;
+            if (timer >= pretime)
+            {
+                whale.SetActive(true);
+                if (timer >= portalEndurance)
+                {
+                    portal.SetActive(false);
+                    this.enabled = false;
+                }
+            }
         }
     }
 }
