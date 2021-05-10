@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//Ash is the GOAT
 public class MiniMapArrowScript : MonoBehaviour
 {
     public Transform pointingAt;
