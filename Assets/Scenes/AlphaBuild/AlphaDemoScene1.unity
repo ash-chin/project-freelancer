@@ -363,6 +363,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gallery
       objectReference: {fileID: 0}
+    - target: {fileID: 5720933651964443686, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5720933651964443689, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1032,10 +1036,10 @@ MonoBehaviour:
   money: 100
   stationButtons: {fileID: 1971472746}
   controls: {fileID: -944628639613478452, guid: 03bce27c72270f947b6188dd3a7df09c, type: 3}
-  movementAccelerationZAxis: 1
+  movementAccelerationZAxis: 0.2
   movementAccelerationXAxis: 2.5
   movementAccelerationYAxis: 2.5
-  movementMaxZAxisSpeed: 25
+  movementMaxZAxisSpeed: 100
   movementMaxXAxisSpeed: 20
   movementMaxYAxisSpeed: 20
   movementZAxis: 0
@@ -1418,6 +1422,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Space Station
       objectReference: {fileID: 0}
+    - target: {fileID: 8307603157612568338, guid: 0daf96c15d4c97b4e9e526f6acfce2f0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0daf96c15d4c97b4e9e526f6acfce2f0, type: 3}
 --- !u!1 &784164472
@@ -1522,8 +1530,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -334.97583, y: 183.3844}
-  m_SizeDelta: {x: 251, y: 126.5868}
+  m_AnchoredPosition: {x: -267.02408, y: 159.23752}
+  m_SizeDelta: {x: 170.0399, y: 62.4149}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &798607194
 MonoBehaviour:
@@ -1545,7 +1553,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a69163ca2eb6c934c87ebe5deea5b747, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 924b79d1038db16469f6e4b934854548, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1706,8 +1714,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: 0.4823}
-  m_SizeDelta: {x: 215.9478, y: 90.771}
+  m_AnchoredPosition: {x: -0.2719, y: 0.0256}
+  m_SizeDelta: {x: 162.3202, y: 54.9398}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &950441992
 MonoBehaviour:
@@ -1731,10 +1739,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: aed50e92c52f8a84ba7de5b067f22196, type: 3}
-    m_FontSize: 14
+    m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -2006,7 +2014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46c2acba5b3aee2438bbc0372987590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: AlphaAstoria
+  targetScene: AlphaDemoScene2
 --- !u!1 &1029459255 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7130293731035720816, guid: 0daf96c15d4c97b4e9e526f6acfce2f0, type: 3}
@@ -2380,7 +2388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
