@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.043674428, g: 0.044857424, b: 0.059592403, a: 1}
+  m_IndirectSpecularColor: {r: 0.043411914, g: 0.044258617, b: 0.05935309, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &8402716 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 389429473}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8402717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8402716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &13220850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -190,7 +209,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &13220851 stripped
 Transform:
@@ -227,11 +247,49 @@ Transform:
   m_Father: {fileID: 2019271369}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &20552096 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 209492646}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &20552097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20552096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!4 &24899363 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4649404866995468, guid: abd597ae29f8f25449d1cb7a0035b700, type: 3}
   m_PrefabInstance: {fileID: 1635814652}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &26591099 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1065708310}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &26591100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26591099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &34441668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -299,13 +357,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (15)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &34441669 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1133986318023041413, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_PrefabInstance: {fileID: 34441668}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &41990266 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1646035215}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &41990267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41990266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &48121140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 13220850}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &48121141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48121140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &51459036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -394,7 +491,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 36.00386
+  m_Radius: 50
   m_Height: 169.65927
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
@@ -500,13 +597,52 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &57033154 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8278932446890550475, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_PrefabInstance: {fileID: 57033153}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &63256579 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 339868934}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &63256580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63256579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &68547500 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 877003507}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &68547501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68547500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &71545588
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -574,13 +710,71 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &71545589 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8278932446890550475, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_PrefabInstance: {fileID: 71545588}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &81996728 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1337712560}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &81996729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81996728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &88095367 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 977813604}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &88095368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88095367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &89764456 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1054962860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &89764457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89764456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &91741317
 GameObject:
   m_ObjectHideFlags: 0
@@ -1139,13 +1333,32 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &105171318 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1133986318023041413, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_PrefabInstance: {fileID: 105171317}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &111137373 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8193170613614800557, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+  m_PrefabInstance: {fileID: 1262506405}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &111137374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111137373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46c2acba5b3aee2438bbc0372987590c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetScene: AlphaIntro
 --- !u!1001 &121860551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1217,7 +1430,8 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &121860552 stripped
 Transform:
@@ -1277,6 +1491,25 @@ MonoBehaviour:
   ySpin: 1
   zSpin: 0
   rotateSpeed: -1
+--- !u!1 &126570880 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 998931446}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &126570881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126570880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &127502505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1348,7 +1581,8 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &127502506 stripped
 Transform:
@@ -2179,13 +2413,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &171484503 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1133986318023041413, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_PrefabInstance: {fileID: 171484502}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &179935452 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1342352601}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &179935453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179935452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &182774758
 GameObject:
   m_ObjectHideFlags: 0
@@ -2361,7 +2615,8 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &192710392 stripped
 Transform:
@@ -2435,7 +2690,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &192766164 stripped
 Transform:
@@ -2539,7 +2795,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &204035670 stripped
 Transform:
@@ -2613,7 +2870,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &209492647 stripped
 Transform:
@@ -2687,13 +2945,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &210277138 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 210277137}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &217740105 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 683472908}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &217740106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217740105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &230467471 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1228109677786820, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
@@ -3073,7 +3351,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &235960472 stripped
 Transform:
@@ -3147,7 +3426,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &235974101 stripped
 Transform:
@@ -3247,6 +3527,25 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &240826774 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 817006683}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &240826775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240826774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &242408245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3318,7 +3617,8 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &242408246 stripped
 Transform:
@@ -3392,7 +3692,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &261821949 stripped
 Transform:
@@ -3466,13 +3767,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &261912901 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1133986318023041413, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_PrefabInstance: {fileID: 261912900}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &275170619 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1327647095}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &275170620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275170619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &275706329 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 891258393}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &275706330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275706329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &280288584
 GameObject:
   m_ObjectHideFlags: 0
@@ -3665,6 +4005,63 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!1 &282672739 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 2071946421}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &282672740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282672739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &288759238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1023647538}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &288759239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288759238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &288839075 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 410660802}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &288839076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288839075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!114 &289724133 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 289724133, guid: 049b6628fb3dc6245b7b530cea0115b7, type: 3}
@@ -3676,6 +4073,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &294709266 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 671667546}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &294709267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294709266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &307915240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3743,13 +4159,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &307915241 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8278932446890550475, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_PrefabInstance: {fileID: 307915240}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &311667128 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 242408245}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &311667129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311667128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &316124973
 GameObject:
   m_ObjectHideFlags: 0
@@ -3811,11 +4247,87 @@ MonoBehaviour:
   portalEndurance: 15
   whale: {fileID: 467661238}
   portal: {fileID: 158936911}
+--- !u!1 &316685984 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1207787335}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &316685985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316685984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!4 &326993347 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4874831770636634, guid: fd8236eae60036246b5d8b17bc7dfe14, type: 3}
   m_PrefabInstance: {fileID: 1569783059}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &331058330 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 392820065}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &331058331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331058330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &334098564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 677040162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &334098565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334098564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &336652939 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 388539194}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &336652940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336652939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &338397650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3883,7 +4395,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &338397651 stripped
 Transform:
@@ -3957,7 +4470,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &339868935 stripped
 Transform:
@@ -3969,6 +4483,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1362674066119386050, guid: c7afb62320028634f8a0c853e648e3d4, type: 3}
   m_PrefabInstance: {fileID: 1552933209}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &351952429 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 105171317}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &351952430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351952429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &354127939 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1436558788}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &354127940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354127939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &365882767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4036,13 +4588,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &365882768 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 365882767}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &375414315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 261912900}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &375414316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375414315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &379384224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4110,7 +4682,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &379384225 stripped
 Transform:
@@ -4184,13 +4757,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &381275224 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 381275223}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &381640610 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1359363768}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &381640611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381640610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &387319348 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1145498993}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &387319349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387319348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &387656416
 GameObject:
   m_ObjectHideFlags: 0
@@ -4288,7 +4900,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &388539195 stripped
 Transform:
@@ -4362,13 +4975,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &389429474 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 389429473}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &389893861 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1579805895}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &389893862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389893861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &391842357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4436,7 +5069,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &391842358 stripped
 Transform:
@@ -4510,7 +5144,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &392820066 stripped
 Transform:
@@ -4584,13 +5219,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &410660803 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 410660802}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &414884158 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 307915240}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &414884159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414884158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &419429526
 GameObject:
   m_ObjectHideFlags: 0
@@ -4726,13 +5381,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fuel Rock 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &422169275 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1133986318023041413, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_PrefabInstance: {fileID: 422169274}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &424853244 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1475418732}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &424853245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424853244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &433384342 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1923245819}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &433384343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433384342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &433791784
 GameObject:
   m_ObjectHideFlags: 0
@@ -4890,6 +5584,44 @@ CapsuleCollider:
   m_Height: 2.517171
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &455690530 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1448021558}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &455690531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455690530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &459523204 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 365882767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &459523205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459523204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!4 &463665911 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4832545720156458, guid: e49a4ef7c1cc1104da427f6686ba0c2c, type: 3}
@@ -5252,7 +5984,8 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &488713913 stripped
 Transform:
@@ -5330,13 +6063,33 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &494496359 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8278932446890550475, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_PrefabInstance: {fileID: 494496358}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &507882218 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 508830715}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &507882219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507882218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &508830715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5404,7 +6157,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &508830716 stripped
 Transform:
@@ -5704,7 +6458,8 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &510200554 stripped
 Transform:
@@ -5800,7 +6555,8 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &511764731 stripped
 Transform:
@@ -6084,6 +6840,44 @@ MonoBehaviour:
   fadeTime: 5
   hangTime: 5
   endScreen: {fileID: 2068523004}
+--- !u!1 &517950005 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1908723759}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &517950006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517950005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &538143580 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1352566541}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &538143581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538143580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &539620139
 GameObject:
   m_ObjectHideFlags: 0
@@ -6114,11 +6908,87 @@ Transform:
   m_Father: {fileID: 2019271369}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &540598797 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1529016893}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &540598798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540598797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!4 &557296460 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4506087525375264, guid: 9e6b07c5753836d4f87cb670f8298e1b, type: 3}
   m_PrefabInstance: {fileID: 1407455267}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &559761033 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 2055056314}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &559761034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559761033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &559771174 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 708238402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &559771175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559771174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &566459180 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 391842357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &566459181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566459180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &572158966
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6708,7 +7578,8 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &589929875 stripped
 Transform:
@@ -6808,6 +7679,25 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &592516324 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 662500882}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &592516325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592516324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &596061692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6875,7 +7765,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &596061693 stripped
 Transform:
@@ -6945,6 +7836,44 @@ Transform:
   m_Father: {fileID: 124029624}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 110, z: 0}
+--- !u!1 &618130614 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1720923711}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &618130615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618130614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &630830901 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1471475377}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &630830902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630830901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &636529533
 GameObject:
   m_ObjectHideFlags: 0
@@ -6991,6 +7920,25 @@ Transform:
   m_Father: {fileID: 2044456081}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &655931602 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1368004569}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &655931603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655931602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &660082967
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7058,7 +8006,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &660082968 stripped
 Transform:
@@ -7132,13 +8081,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &662500883 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8278932446890550475, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_PrefabInstance: {fileID: 662500882}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &666989522 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 737660677}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &666989523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666989522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &670031807
 GameObject:
   m_ObjectHideFlags: 0
@@ -12181,13 +13150,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &671667547 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1133986318023041413, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_PrefabInstance: {fileID: 671667546}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &674546579 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1723812554}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &674546580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674546579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &677040162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12259,7 +13248,8 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &677040163 stripped
 Transform:
@@ -12333,13 +13323,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &680948795 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 680948794}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &683047250 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1247876095}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &683047251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683047250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &683472908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12407,13 +13417,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &683472909 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 683472908}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &684377161 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1980669939}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &684377162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684377161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &686994109
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12481,13 +13511,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &686994110 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 686994109}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &700357040 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1078972045}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &700357041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700357040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &703943937 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1041391491}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &703943938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703943937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &708238402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12555,7 +13624,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &708238403 stripped
 Transform:
@@ -12629,13 +13699,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &711075724 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1133986318023041413, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_PrefabInstance: {fileID: 711075723}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &717246464 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1597273756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &717246465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717246464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &721084090 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 338397650}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &721084091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721084090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &721263120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12703,13 +13812,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &721263121 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1133986318023041413, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_PrefabInstance: {fileID: 721263120}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &723249450 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1441020626}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &723249451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723249450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &728990158 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 2020387369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &728990159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728990158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &735115639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13226,13 +14374,90 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &737660678 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 737660677}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &743676991 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 57033153}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &743676992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743676991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &748249991 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 235960471}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &748249992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748249991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &748719244 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1617640911}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &748719245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748719244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &762552759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1095480267}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &762552760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762552759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &766718054
 GameObject:
   m_ObjectHideFlags: 0
@@ -13263,6 +14488,25 @@ Transform:
   m_Father: {fileID: 2019271369}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &767844687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1070338723}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &767844688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767844687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &784164472
 GameObject:
   m_ObjectHideFlags: 0
@@ -13330,6 +14574,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &785139631 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 995640535}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &785139632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785139631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &786112954
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13397,13 +14660,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &786112955 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 786112954}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &788924067 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1097199187}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &788924068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788924067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &791484647 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1595158415}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &791484648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791484647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &799464637
 GameObject:
   m_ObjectHideFlags: 0
@@ -13434,6 +14736,25 @@ Transform:
   m_Father: {fileID: 1249395055}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &809370153 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 261821948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &809370154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809370153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &816144654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13501,7 +14822,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &816144655 stripped
 Transform:
@@ -13575,7 +14897,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &817006684 stripped
 Transform:
@@ -13762,13 +15085,52 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &851693838 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8278932446890550475, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_PrefabInstance: {fileID: 851693837}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &861133324 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 596061692}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &861133325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861133324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &864607115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 888780899}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &864607116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864607115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!850595691 &866424051
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -13897,7 +15259,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &877003508 stripped
 Transform:
@@ -14452,7 +15815,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &888780900 stripped
 Transform:
@@ -14526,13 +15890,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &891258394 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1133986318023041413, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_PrefabInstance: {fileID: 891258393}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &893445599 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 204035669}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &893445600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893445599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &893601217 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 121860551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &893601218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893601217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &896081196
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14600,7 +16003,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &896081197 stripped
 Transform:
@@ -15363,7 +16767,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (15)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &915913431 stripped
 Transform:
@@ -15437,7 +16842,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &917095206 stripped
 Transform:
@@ -15511,13 +16917,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &918554198 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8278932446890550475, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_PrefabInstance: {fileID: 918554197}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &935824246 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1459511191}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &935824247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935824246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &936198474
 GameObject:
   m_ObjectHideFlags: 0
@@ -15564,6 +16990,25 @@ Transform:
   m_Father: {fileID: 2044456081}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &938141935 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1547489223}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &938141936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938141935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &940697124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15631,13 +17076,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &940697125 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8278932446890550475, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_PrefabInstance: {fileID: 940697124}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &945357724 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 660082967}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &945357725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945357724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &952353484
 GameObject:
   m_ObjectHideFlags: 0
@@ -15825,7 +17290,8 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &963798856 stripped
 Transform:
@@ -16340,13 +17806,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &977813605 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1133986318023041413, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_PrefabInstance: {fileID: 977813604}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &981634187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1749655273}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &981634188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981634187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &995640535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16414,7 +17900,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &995640536 stripped
 Transform:
@@ -16929,7 +18416,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &998931447 stripped
 Transform:
@@ -17000,6 +18488,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1016967598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1112955012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1016967599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016967598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &1019840594
 GameObject:
   m_ObjectHideFlags: 0
@@ -17178,7 +18685,8 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1023647539 stripped
 Transform:
@@ -17282,7 +18790,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1030701568 stripped
 Transform:
@@ -17356,7 +18865,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1041391492 stripped
 Transform:
@@ -17430,13 +18940,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1054962861 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 1054962860}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1063963698 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 940697124}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1063963699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063963698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1065708310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17504,7 +19034,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1065708311 stripped
 Transform:
@@ -17582,13 +19113,52 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1070338724 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8278932446890550475, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_PrefabInstance: {fileID: 1070338723}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1071890022 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1616354173}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1071890023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071890022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &1073574401 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 510200553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1073574402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073574401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1078972045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17656,7 +19226,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1078972046 stripped
 Transform:
@@ -17760,7 +19331,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1080173391 stripped
 Transform:
@@ -17772,6 +19344,44 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1083108506, guid: 049b6628fb3dc6245b7b530cea0115b7, type: 3}
   m_PrefabInstance: {fileID: 1971472743}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1084283726 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1664924789}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1084283727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084283726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &1087005779 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1176801045}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1087005780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087005779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1095480267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17839,13 +19449,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1095480268 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8278932446890550475, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_PrefabInstance: {fileID: 1095480267}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1095691202 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1386064145}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1095691203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095691202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1095864963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17913,7 +19543,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1095864964 stripped
 Transform:
@@ -17987,13 +19618,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1097199188 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1133986318023041413, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_PrefabInstance: {fileID: 1097199187}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1104067496 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 816144654}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1104067497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104067496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &1104081638 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1324487285}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1104081639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104081638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &1106790538
 GameObject:
   m_ObjectHideFlags: 0
@@ -18093,7 +19763,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1112955013 stripped
 Transform:
@@ -18162,6 +19833,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1122756323 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 71545588}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1122756324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122756323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1145498993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18229,13 +19919,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1145498994 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 1145498993}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1151347461 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1615644945}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1151347462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151347461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &1155230315
 GameObject:
   m_ObjectHideFlags: 0
@@ -18296,6 +20006,25 @@ Transform:
   m_Father: {fileID: 1249395055}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1160055780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1949365543}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1160055781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160055780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &1168429075
 GameObject:
   m_ObjectHideFlags: 0
@@ -18393,13 +20122,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1176801046 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1133986318023041413, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_PrefabInstance: {fileID: 1176801045}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1177060172 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1507066213}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1177060173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177060172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &1179006775 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 918554197}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1179006776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179006775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &1189876946
 GameObject:
   m_ObjectHideFlags: 3
@@ -18605,6 +20373,25 @@ CapsuleCollider:
   m_Height: 2.517171
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1199202539 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1366727930}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1199202540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199202539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1207787335
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18672,7 +20459,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1207787336 stripped
 Transform:
@@ -23550,7 +25338,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1222598858 stripped
 Transform:
@@ -23624,13 +25413,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1225118743 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 1225118742}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1233923815 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 192710391}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1233923816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233923815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1246649682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23696,6 +25505,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad07a1404309c1f49b100ca1f3b82a73, type: 3}
+--- !u!1 &1247125807 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1095864963}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1247125808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247125807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1247876095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23763,7 +25591,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1247876096 stripped
 Transform:
@@ -23882,7 +25711,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1260185650 stripped
 Transform:
@@ -24035,6 +25865,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4377898936349960, guid: 60db8c45aa08acd449a7a49854773ba2, type: 3}
   m_PrefabInstance: {fileID: 880617699}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1276671702 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1435174871}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1276671703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276671702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &1276878269
 GameObject:
   m_ObjectHideFlags: 0
@@ -24065,6 +25914,25 @@ Transform:
   m_Father: {fileID: 1249395055}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1288182344 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1917438375}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1288182345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288182344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &1314343545
 GameObject:
   m_ObjectHideFlags: 0
@@ -24158,6 +26026,25 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1318982780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 2080361122}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1318982781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318982780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1324487285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24225,7 +26112,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1324487286 stripped
 Transform:
@@ -24299,7 +26187,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1327647096 stripped
 Transform:
@@ -24560,7 +26449,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1337712561 stripped
 Transform:
@@ -24634,13 +26524,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1338086659 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1133986318023041413, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_PrefabInstance: {fileID: 1338086658}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1338140674 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 494496358}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1338140675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338140674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &1341200542 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 2137257886}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1341200543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341200542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1342352601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24712,13 +26641,52 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1342352602 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8278932446890550475, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_PrefabInstance: {fileID: 1342352601}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1343008055 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 917095205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1343008056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343008055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &1349653071 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1794528371}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1349653072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349653071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1349785446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25223,7 +27191,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1352566542 stripped
 Transform:
@@ -25412,7 +27381,8 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1359363769 stripped
 Transform:
@@ -25590,7 +27560,8 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1366727931 stripped
 Transform:
@@ -25820,13 +27791,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1368004570 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1133986318023041413, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_PrefabInstance: {fileID: 1368004569}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1369658414 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1338086658}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1369658415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369658414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &1376326526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 171484502}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1376326527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376326526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1377842140
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25938,6 +27948,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parent: {fileID: 1367804077}
   speed: 50
+--- !u!1 &1378200976 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1385983895}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1378200977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378200976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &1385549093
 GameObject:
   m_ObjectHideFlags: 0
@@ -26051,7 +28080,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1385983896 stripped
 Transform:
@@ -26125,13 +28155,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1386064146 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 1386064145}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1389576215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 2088763643}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1389576216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389576215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &1400977604 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 680948794}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1400977605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400977604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1405913814
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26911,6 +28980,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e6b07c5753836d4f87cb670f8298e1b, type: 3}
+--- !u!1 &1408060134 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 488713912}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1408060135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408060134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &1419513281 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 127502505}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1419513282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419513281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 0.3
+--- !u!1 &1424408438 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 34441668}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1424408439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424408438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1426428166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26981,6 +29107,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2905510648631565902, guid: 6763947fbfd453c4d977de3f24b4fe20, type: 3}
   m_PrefabInstance: {fileID: 1426428166}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1431349609 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 2069357801}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1431349610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431349609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &1432723744
 GameObject:
   m_ObjectHideFlags: 0
@@ -27078,7 +29223,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1435174872 stripped
 Transform:
@@ -27152,7 +29298,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1436558789 stripped
 Transform:
@@ -27256,7 +29403,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1441020627 stripped
 Transform:
@@ -27330,7 +29478,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1448021559 stripped
 Transform:
@@ -27404,7 +29553,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1459511192 stripped
 Transform:
@@ -27508,7 +29658,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1471475378 stripped
 Transform:
@@ -27587,7 +29738,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1475418733 stripped
 Transform:
@@ -27638,6 +29790,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1493694715 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 511764730}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1493694716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493694715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &1501857721
 GameObject:
   m_ObjectHideFlags: 0
@@ -27777,7 +29948,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1507066214 stripped
 Transform:
@@ -27851,7 +30023,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1516345134 stripped
 Transform:
@@ -27906,6 +30079,25 @@ Transform:
   m_Father: {fileID: 1249395055}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1528882071 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 379384224}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1528882072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528882071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1529016893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27973,7 +30165,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (15)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1529016894 stripped
 Transform:
@@ -28155,7 +30348,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1547489224 stripped
 Transform:
@@ -28906,7 +31100,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1579805896 stripped
 Transform:
@@ -29091,7 +31286,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1595158416 stripped
 Transform:
@@ -29165,13 +31361,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1597273757 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1133986318023041413, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_PrefabInstance: {fileID: 1597273756}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1615523325 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 786112954}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1615523326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615523325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1615644945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29239,7 +31455,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1615644946 stripped
 Transform:
@@ -29313,7 +31530,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1616354174 stripped
 Transform:
@@ -29387,13 +31605,71 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1617640912 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8278932446890550475, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_PrefabInstance: {fileID: 1617640911}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1621691591 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1260185649}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1621691592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621691591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &1624201146 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1948051617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1624201147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624201146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &1631760057 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1804230382}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1631760058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631760057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1635814652
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30037,6 +32313,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WhalePearl
       objectReference: {fileID: 0}
+    - target: {fileID: 3781143741146462922, guid: 3f474f08897ddc74e8fc2e463a5d877d, type: 3}
+      propertyPath: m_TagString
+      value: Whale Pearl
+      objectReference: {fileID: 0}
     - target: {fileID: 3781143741146462926, guid: 3f474f08897ddc74e8fc2e463a5d877d, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -30162,7 +32442,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1646035216 stripped
 Transform:
@@ -30236,7 +32517,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1652705163 stripped
 Transform:
@@ -30310,7 +32592,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (15)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1664924790 stripped
 Transform:
@@ -30433,6 +32716,25 @@ CapsuleCollider:
   m_Height: 2.517171
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1679595179 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 2012605019}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1679595180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679595179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1685691111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30443,6 +32745,10 @@ PrefabInstance:
     - target: {fileID: 1819011886131928, guid: ce99f0bb52be88742aa40c0812158c71, type: 3}
       propertyPath: m_Name
       value: Fueldepot2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819011886131928, guid: ce99f0bb52be88742aa40c0812158c71, type: 3}
+      propertyPath: m_TagString
+      value: Refueling Depot
       objectReference: {fileID: 0}
     - target: {fileID: 4156672571795390, guid: ce99f0bb52be88742aa40c0812158c71, type: 3}
       propertyPath: m_RootOrder
@@ -30517,7 +32823,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 34.531998
+  m_Radius: 50
   m_Height: 159.00247
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
@@ -30532,11 +32838,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06c98d5434b124842b3e65fc394cf585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1703572786 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 210277137}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1703572787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703572786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &1704592284 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1516345133}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1704592285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704592284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!4 &1709289528 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4623156272463914, guid: 0d91774ebbcda3c4e800809f3ff768d1, type: 3}
   m_PrefabInstance: {fileID: 166729009}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1713528658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 711075723}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1713528659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713528658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1720923711
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30604,7 +32967,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (15)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1720923712 stripped
 Transform:
@@ -30678,7 +33042,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1723812555 stripped
 Transform:
@@ -30782,7 +33147,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1749655274 stripped
 Transform:
@@ -30967,7 +33333,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1765364842 stripped
 Transform:
@@ -31090,6 +33457,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parent: {fileID: 1367804077}
   speed: 50
+--- !u!1 &1779414008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1225118742}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1779414009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779414008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1794528371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31157,7 +33543,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1794528372 stripped
 Transform:
@@ -31231,7 +33618,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1804230383 stripped
 Transform:
@@ -31305,13 +33693,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1806254397 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 1806254396}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1829471350 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 963798855}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1829471351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829471350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &1843292723
 GameObject:
   m_ObjectHideFlags: 0
@@ -31543,7 +33951,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1853502228 stripped
 Transform:
@@ -31680,13 +34089,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1869568043 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1133986318023041413, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_PrefabInstance: {fileID: 1869568042}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1871351444 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 192766163}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1871351445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871351444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &1882869401 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1581720697183192, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
@@ -31705,6 +34134,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 512637110}
+--- !u!1 &1884731531 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 381275223}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1884731532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884731531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1885152510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31772,13 +34220,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1885152511 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 1885152510}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1893155142 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 721263120}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1893155143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893155142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1908723759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31846,7 +34314,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1908723760 stripped
 Transform:
@@ -31925,7 +34394,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1917438376 stripped
 Transform:
@@ -31999,13 +34469,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1923245820 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 1923245819}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1924888150 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 915913430}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1924888151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924888150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &1927462816 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1652705162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1927462817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927462816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!4 &1929455649 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4191132248900292, guid: 337665ef1eaae444ebbe568b7ff9a9c8, type: 3}
@@ -32078,7 +34587,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1935005949 stripped
 Transform:
@@ -32245,7 +34755,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1940581852 stripped
 Transform:
@@ -32319,7 +34830,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &1948051618 stripped
 Transform:
@@ -32393,7 +34905,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1949365544 stripped
 Transform:
@@ -32445,6 +34958,25 @@ Transform:
   m_Father: {fileID: 614635531}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1955786742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1935005948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1955786743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955786742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &1966256091
 GameObject:
   m_ObjectHideFlags: 0
@@ -32733,7 +35265,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &1971997222 stripped
 Transform:
@@ -32807,13 +35340,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &1980669940 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1133986318023041413, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_PrefabInstance: {fileID: 1980669939}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1981978635 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 2087897600}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1981978636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981978635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &1993854221 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1869568042}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1993854222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993854221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &2004029769
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32925,6 +35497,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parent: {fileID: 1367804077}
   speed: 50
+--- !u!1 &2010110329 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1971997221}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2010110330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010110329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &2012605019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32992,7 +35583,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &2012605020 stripped
 Transform:
@@ -33104,13 +35696,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &2020387370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 2020387369}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2025059937 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1885152510}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2025059938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025059937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &2027524169 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1853502227}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2027524170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027524169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &2028921576
 GameObject:
   m_ObjectHideFlags: 0
@@ -33185,6 +35816,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2034885814 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 1765364841}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2034885815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034885814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &2036635333
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33296,6 +35946,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parent: {fileID: 1367804077}
   speed: 50
+--- !u!1 &2039899189 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 851693837}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2039899190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039899189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &2043883117 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1940581851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2043883118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043883117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &2044456080
 GameObject:
   m_ObjectHideFlags: 0
@@ -33329,6 +36017,25 @@ Transform:
   m_Father: {fileID: 124029624}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2050070860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 589929874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2050070861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050070860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &2055056314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33396,13 +36103,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &2055056315 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1133986318023041413, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_PrefabInstance: {fileID: 2055056314}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2055938613 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1080173390}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2055938614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055938613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &2064230606 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8449805696585814965, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
@@ -33564,7 +36291,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &2069357802 stripped
 Transform:
@@ -33638,13 +36366,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8278932446900400219, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ecf272b31c2afe9458322aa559498880, type: 3}
 --- !u!4 &2071946422 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8278932446890550475, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_PrefabInstance: {fileID: 2071946421}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2076024611 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 686994109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2076024612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076024611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &2080361122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33712,13 +36460,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &2080361123 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 2080361122}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2084832043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1030701567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2084832044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084832043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &2087897600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33786,7 +36554,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &2087897601 stripped
 Transform:
@@ -33860,13 +36629,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid1 Variant (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1133986318012087153, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
 --- !u!4 &2088763644 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1133986318023041413, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
   m_PrefabInstance: {fileID: 2088763643}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2108514135 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
+  m_PrefabInstance: {fileID: 896081196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2108514136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108514135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1 &2116104090
 GameObject:
   m_ObjectHideFlags: 0
@@ -33912,6 +36701,25 @@ Transform:
   m_Father: {fileID: 2044456081}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2119579839 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
+  m_PrefabInstance: {fileID: 1806254396}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2119579840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119579839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &2121846519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34055,6 +36863,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 618129e97d6641d4691fae76b53f5f7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2126967986 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 1222598857}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2126967987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126967986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
+--- !u!1 &2131664269 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 422169274}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2131664270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131664269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 0.3
 --- !u!1001 &2137257886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34122,10 +36968,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurAsteroid2 Variant (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8183796033526121910, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
 --- !u!4 &2137257887 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 2137257886}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2146919191 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
+  m_PrefabInstance: {fileID: 235974100}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2146919192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146919191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1

@@ -21,6 +21,7 @@ TagManager:
   - Astoriana
   - Active Missile
   - Inactive Missile
+  - Whale Pearl
   layers:
   - Default
   - TransparentFX
