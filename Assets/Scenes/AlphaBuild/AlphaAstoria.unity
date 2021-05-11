@@ -5278,25 +5278,25 @@ MonoBehaviour:
   music:
   - name: Door4
     clip: {fileID: 8300000, guid: 70b85f371d81d034fae415df694373d9, type: 3}
-    volume: 0.5
+    volume: 0.3
     pitch: 0
     loop: 0
     source: {fileID: 0}
   - name: Key_1
     clip: {fileID: 8300000, guid: 75b32cf8861e40d41aed4a23256161ec, type: 3}
-    volume: 0.5
+    volume: 0.3
     pitch: 0
     loop: 0
     source: {fileID: 0}
   - name: Living Mice
     clip: {fileID: 8300000, guid: c88c93823fb505342b929d1bb33d161c, type: 3}
-    volume: 0.5
+    volume: 0.3
     pitch: 0
     loop: 0
     source: {fileID: 0}
   - name: Subwoofer
     clip: {fileID: 8300000, guid: 0b9f77c368f113248a2622bc728c5327, type: 3}
-    volume: 0.5
+    volume: 0.3
     pitch: 0
     loop: 0
     source: {fileID: 0}
@@ -5569,7 +5569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1367804077}
-  speed: 50
+  speed: 70
 --- !u!136 &439710870
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6275,7 +6275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1367804077}
-  speed: 50
+  speed: 70
 --- !u!1 &509016358
 GameObject:
   m_ObjectHideFlags: 0
@@ -6309,7 +6309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 512637110}
-  maxDistance: 200
+  maxDistance: 300
 --- !u!135 &509016360
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6380,7 +6380,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 509016358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -905, y: 750, z: 8479.1}
+  m_LocalPosition: {x: -598, y: -1089.4, z: -177}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 670031808}
@@ -8458,7 +8458,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 30
+      scalar: 60
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -20358,7 +20358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1367804077}
-  speed: 50
+  speed: 70
 --- !u!136 &1195830946
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -26381,7 +26381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1367804077}
-  speed: 50
+  speed: 70
 --- !u!1001 &1337712560
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27295,7 +27295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1367804077}
-  speed: 50
+  speed: 70
 --- !u!136 &1355505676
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -27686,8 +27686,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   predator: {fileID: 512637108}
-  maxChaseDistance: 120
-  speed: 50
+  maxChaseDistance: 550
+  speed: 70
   turnDamping: 1
   patrolMethod: {fileID: 1367804081}
 --- !u!114 &1367804081
@@ -27702,7 +27702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12dc664f82c6c8f4a976ddb7a3875aad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minFleeDistance: 100
+  minFleeDistance: 500
   minTurnDistance: 20
   patrolPoints:
   - {fileID: 1155230316}
@@ -27721,7 +27721,7 @@ MonoBehaviour:
   - {fileID: 202478596}
   - {fileID: 1843292724}
   turnDamping: 1
-  speed: 50
+  speed: 70
   player: {fileID: 512637108}
   fleeMode: {fileID: 1367804080}
 --- !u!1001 &1368004569
@@ -27947,7 +27947,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1367804077}
-  speed: 50
+  speed: 70
 --- !u!1 &1378200976 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
@@ -30532,7 +30532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1367804077}
-  speed: 50
+  speed: 70
 --- !u!1001 &1569783059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31204,7 +31204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1367804077}
-  speed: 50
+  speed: 70
 --- !u!136 &1591825113
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -32701,7 +32701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1367804077}
-  speed: 50
+  speed: 70
 --- !u!136 &1678053754
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -33265,7 +33265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1367804077}
-  speed: 50
+  speed: 70
 --- !u!1001 &1765364841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33456,7 +33456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1367804077}
-  speed: 50
+  speed: 70
 --- !u!1 &1779414008 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
@@ -35496,7 +35496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1367804077}
-  speed: 50
+  speed: 70
 --- !u!1 &2010110329 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
@@ -35945,7 +35945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1367804077}
-  speed: 50
+  speed: 70
 --- !u!1 &2039899189 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
