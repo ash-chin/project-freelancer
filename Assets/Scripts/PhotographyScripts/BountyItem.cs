@@ -72,7 +72,7 @@ public class BountyItem : MonoBehaviour
     {
         descField.enabled = true;
         descField.text = description;
-        reqField.color = Color.black;
+        reqField.color = Color.yellow;
         //descHolder.SetActive(true);
         //descField.text = description;
     }

@@ -807,6 +807,7 @@ MonoBehaviour:
   bounties:
   - {fileID: 2121846521}
   - {fileID: 2121846520}
+  - {fileID: 941115776}
   freelancer: {fileID: 512637110}
   BountyNotification: {fileID: 1363168222}
   notificationText: {fileID: 1265125816}
@@ -3827,7 +3828,7 @@ GameObject:
   - component: {fileID: 280288588}
   - component: {fileID: 280288589}
   - component: {fileID: 280288590}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: TrailingCam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6289,7 +6290,7 @@ GameObject:
   - component: {fileID: 509016361}
   - component: {fileID: 509016360}
   - component: {fileID: 509016359}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: BlackHole
   m_TagString: Black Hole
   m_Icon: {fileID: 0}
@@ -6380,7 +6381,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 509016358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -598, y: -1089.4, z: -177}
+  m_LocalPosition: {x: -598, y: 2000, z: -6000}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 670031808}
@@ -8119,7 +8120,7 @@ GameObject:
   - component: {fileID: 670031808}
   - component: {fileID: 670031810}
   - component: {fileID: 670031809}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: BlackHoleField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14964,6 +14965,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AsteroidSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 1056212089981517116, guid: eddc0265afa66054a841b782d6c52903, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1056212089981517117, guid: eddc0265afa66054a841b782d6c52903, type: 3}
       propertyPath: asteroidAmount
       value: 400
@@ -14974,15 +14979,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1056212089981517118, guid: eddc0265afa66054a841b782d6c52903, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -300
+      value: 7000
       objectReference: {fileID: 0}
     - target: {fileID: 1056212089981517118, guid: eddc0265afa66054a841b782d6c52903, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2147
+      value: -800
       objectReference: {fileID: 0}
     - target: {fileID: 1056212089981517118, guid: eddc0265afa66054a841b782d6c52903, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -300
+      value: 3020
       objectReference: {fileID: 0}
     - target: {fileID: 1056212089981517118, guid: eddc0265afa66054a841b782d6c52903, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17084,6 +17089,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8278932446890550475, guid: ecf272b31c2afe9458322aa559498880, type: 3}
   m_PrefabInstance: {fileID: 940697124}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &941115776 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8198295528773554065, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
+  m_PrefabInstance: {fileID: 2121846519}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 618129e97d6641d4691fae76b53f5f7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &945357724 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8278932446890373321, guid: ecf272b31c2afe9458322aa559498880, type: 3}
@@ -32314,6 +32330,10 @@ PrefabInstance:
       value: WhalePearl
       objectReference: {fileID: 0}
     - target: {fileID: 3781143741146462922, guid: 3f474f08897ddc74e8fc2e463a5d877d, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3781143741146462922, guid: 3f474f08897ddc74e8fc2e463a5d877d, type: 3}
       propertyPath: m_TagString
       value: Whale Pearl
       objectReference: {fileID: 0}
@@ -32335,15 +32355,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3781143741146462926, guid: 3f474f08897ddc74e8fc2e463a5d877d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -300
+      value: 7000
       objectReference: {fileID: 0}
     - target: {fileID: 3781143741146462926, guid: 3f474f08897ddc74e8fc2e463a5d877d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2147
+      value: -806.6
       objectReference: {fileID: 0}
     - target: {fileID: 3781143741146462926, guid: 3f474f08897ddc74e8fc2e463a5d877d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -300
+      value: 3025.84
       objectReference: {fileID: 0}
     - target: {fileID: 3781143741146462926, guid: 3f474f08897ddc74e8fc2e463a5d877d, type: 3}
       propertyPath: m_LocalRotation.w

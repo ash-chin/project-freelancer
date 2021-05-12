@@ -124,7 +124,7 @@ public class CameraScript : MonoBehaviour
             // if the camera spots an object
             if (Physics.Raycast(ray, out hit, 8000))
             {
-                ObjectReadOut.SetActive(true);
+                //ObjectReadOut.SetActive(true);
                 redReticle.SetActive(true);
                 ObjectName.text = hit.transform.tag.ToString();
                 objTag = hit.transform.tag.ToString();
