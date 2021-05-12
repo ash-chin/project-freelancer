@@ -112,6 +112,7 @@ GameObject:
   - component: {fileID: 8449805696742695240}
   - component: {fileID: 8449805696742695242}
   - component: {fileID: 8449805696742695243}
+  - component: {fileID: 1983848500417918146}
   m_Layer: 0
   m_Name: photoCam
   m_TagString: Untagged
@@ -151,7 +152,7 @@ Camera:
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 44.78461
+  m_FocalLength: 20.78461
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -160,7 +161,7 @@ Camera:
     height: 1
   near clip plane: 0.75
   far clip plane: 8000
-  field of view: 30.000002
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -267,6 +268,18 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &1983848500417918146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8449805696742695244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d567a1ce085bd94e92515841151db2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8449805696839698673
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,7 +389,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 341, y: -26.900024}
+  m_AnchoredPosition: {x: 333.7, y: -62}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8449805696972137051

@@ -41,6 +41,7 @@ public class DemoUIScript : MonoBehaviour
 
     private void Update()
     {
+
         timer += Time.deltaTime;
         // I want to acknowledge up front that this method fucking sucks, but I haven't found another way to do it yet, so rip
         if (timer >= timeFraction && activationBarrier)

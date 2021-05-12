@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
     public GameObject bountyMenuUI; // Ash addition
+    public AudioMixer mainMixer; // Ash addition
 
     void Update()
     {
@@ -87,5 +89,10 @@ public class PauseMenu : MonoBehaviour
         // Use to go back to the pause menu
         pauseMenuUI.SetActive(true);
         bountyMenuUI.SetActive(false);
+    }
+
+    public void SetVolume(float volume)
+    {
+        mainMixer.SetFloat("mainVolume", volume);
     }
 }

@@ -108,6 +108,11 @@ public class Player_Space_Ship_Movement : MonoBehaviour
 
     private void Awake()
     {
+        /* 
+         * This if else block says if there is not an instance of the audio manager in the scene
+         *  then instantiate one otherwise there already is one so delete this one
+         */
+
         controller = gameObject.GetComponent<CharacterController>();
 
         playerShipTransform = gameObject.GetComponent<Transform>();
