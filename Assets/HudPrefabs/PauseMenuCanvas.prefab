@@ -1665,10 +1665,11 @@ MonoBehaviour:
     The guy didn\u2019t exactly have the most refined taste - his ship had purple
     accents and he kitted it out with some bright green, gaudy as hell emission lights.
     And a big ass decal of a laughing fox on the wing. He was supposed to pick something
-    up in the AlphaAstoria sector and the last comms I got from him was outside the
-    belt, a ways away from the fuel depot. They got cut real quick, though, before
-    he could say a thing. There\u2019s no way this guy\u2019d screw us over, so his
-    ship should still be in the area. But damn, I hope I\u2019m wrong."
+    up in the AlphaAstoria sector... The last comms I got from him was outside the
+    belt, a ways away from that fuel depot right outside the gate. They got cut real
+    quick, though, before he could say a thing. There\u2019s no way this guy\u2019d
+    screw us over, so his ship should still be in the area. But damn, I hope I\u2019m
+    wrong."
   m_tag: Laughing Fox
   reward: 50
   isComplete: 0
@@ -2444,7 +2445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   request: Sima Zhao Blackhole
   description: Please see title
-  m_tag: Sima Zhao Blackhole
+  m_tag: Black Hole
   reward: 250
   isComplete: 0
   reqField: {fileID: 992600651049781240}

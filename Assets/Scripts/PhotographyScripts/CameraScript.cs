@@ -52,9 +52,10 @@ public class CameraScript : MonoBehaviour
     public void takePhoto()
     {
         playerAudioSource.ShutterNoise();
-        if (numPhotos == maxPhotos)
+        if (i == maxPhotos)
         {
-            return;
+            i = 0; // start saving over old pictures
+            //return;
         }
 
         reticleCanvas.SetActive(false);
@@ -150,6 +151,12 @@ public class CameraScript : MonoBehaviour
         // to do
         // Object.Destroy(playerPhoto.texture);
         Destroy(tempRender);
+
+        if(maxPhotos < numPhotos)
+        {
+            numPhotos = maxPhotos; // if we took more pics than max
+        }
+
         for (i = 0; i < numPhotos; i++)
         {
             //stuff
