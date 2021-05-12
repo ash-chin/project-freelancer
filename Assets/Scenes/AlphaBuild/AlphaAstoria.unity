@@ -13082,11 +13082,11 @@ PrefabInstance:
       objectReference: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
     - target: {fileID: 8449805696972137053, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 26.6
+      value: 333.7
       objectReference: {fileID: 0}
     - target: {fileID: 8449805696972137053, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -82.9
+      value: -62
       objectReference: {fileID: 0}
     - target: {fileID: 8449805697310083245, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
       propertyPath: m_BlockingMask.m_Bits

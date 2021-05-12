@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 153.30356, y: -64.74057}
+  m_AnchoredPosition: {x: 398.4, y: -429.3}
   m_SizeDelta: {x: 207.4072, y: 80.2811}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &51204208
@@ -429,6 +429,62 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 512637109}
     m_Modifications:
+    - target: {fileID: 1161606584, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -318.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161606584, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 165.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933650207914074, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933650207914074, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933650207914074, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933650351477743, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933650351477743, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933650351477743, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933650764815388, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933650764815388, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933650764815388, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933651454633967, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933651454633967, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933651454633967, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5720933651964443686, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
       propertyPath: m_Name
       value: Gallery
@@ -1526,10 +1582,11 @@ MonoBehaviour:
   instructions:
   - 'Oh no! It looks like your fuel is low. You should navigate over to that Fuel
     Depot orbiting Aneras. '
-  - Once you fly close enough to it the game will pause, and the refuel menu will
-    activate.
-  - Once you're fueled up, check out the bounty network. It will have information
-    about local bounties. It's in your pause menu.
+  - When you get close enough to it, the game will pause and the fuel depot menu
+    will activate.
+  - After you've fueld up, try pressing the 1 key to open your pause menu. You can
+    check out the Photo-Bounty Network to see what photo bounties folks have put
+    up.
   - Also, be careful! It seems everything in this system is orbiting a black hole.
     If you get too close it will tear your ship appart!
   instructionCanvas: {fileID: 51204206}

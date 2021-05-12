@@ -25,7 +25,7 @@ public class PauseMenu : MonoBehaviour
     void Update()
     {
         
-        if (UnityEngine.InputSystem.Keyboard.current.escapeKey.wasPressedThisFrame) 
+        if (UnityEngine.InputSystem.Keyboard.current.digit1Key.wasPressedThisFrame) 
         {
             if (GameIsPaused)
             {

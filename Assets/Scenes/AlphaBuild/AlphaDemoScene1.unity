@@ -359,6 +359,62 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 512637109}
     m_Modifications:
+    - target: {fileID: 1161606584, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -317.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161606584, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 167.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933650207914074, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933650207914074, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933650207914074, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933650351477743, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933650351477743, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933650351477743, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933650764815388, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933650764815388, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933650764815388, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933651454633967, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933651454633967, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720933651454633967, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5720933651964443686, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
       propertyPath: m_Name
       value: Gallery
@@ -1530,7 +1586,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -267.02408, y: 159.23752}
+  m_AnchoredPosition: {x: 12.3, y: -185}
   m_SizeDelta: {x: 170.0399, y: 62.4149}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &798607194
@@ -2469,7 +2525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - 'Press W to go Forward
+  - 'Press W to go forward
 
     Press S to go backwards'
   - Press A or D to slide left or right
@@ -2479,7 +2535,7 @@ MonoBehaviour:
   - Press U or O to turn left or right
   - Great job! now press the T key to tranfer to camera mode
   - Solid work. If you press P you'll take a photo of whatever you're aiming at.
-  - Solid work, Now press T to go back to main camera
+  - Now press T to go back to main camera
   - If you fly into that portal over there it will teleport you to the next zone.
   instructions: {fileID: 798607192}
   instructionText: {fileID: 950441992}
