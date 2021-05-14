@@ -8,6 +8,7 @@ public class PostPhotoScript : MonoBehaviour
     public GameObject instructionBackground;
     public Text instructionText;
     public Player_Space_Ship_Movement player;
+    public Player_Asset_Manager playerValues;
     private bool achieved = false;
     private float timer = 0;
 
@@ -21,7 +22,7 @@ public class PostPhotoScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (player.money >= 200)
+        if (playerValues.scrip >= 200)
         {
             achieved = true;
         }

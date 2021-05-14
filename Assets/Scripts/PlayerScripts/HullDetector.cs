@@ -8,10 +8,10 @@ public class HullDetector : MonoBehaviour
     // and then call a function on another script object when collision
     // is detected;
 
-    public Player_Space_Ship_Movement parent;
+    public Player_Asset_Manager manager;
 
     private void OnTriggerEnter(Collider other)
     {
-        parent.HullDamage();
+        manager.HullDamage();
     }
 }

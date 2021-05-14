@@ -14,6 +14,7 @@ public class EnemyShoalAttackParent : MonoBehaviour
     public float damage;
     // this is the player, which will be referenced in several ways
     public Player_Space_Ship_Movement player;
+    public Player_Asset_Manager assetManager;
     // this is the distance from the subject to the player
     private float enemyDistance;
     // this is the resting patrol state that the subject will return to when conditions are met
@@ -49,7 +50,7 @@ public class EnemyShoalAttackParent : MonoBehaviour
             // reset the timer
             timer = 0;
             // damage the player
-            player.VariableDamage(damage);
+            assetManager.VariableDamage(damage);
         }
 
         // move the subject forward relative to itself. 

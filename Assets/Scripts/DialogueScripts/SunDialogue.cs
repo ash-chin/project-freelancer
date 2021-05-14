@@ -5,7 +5,7 @@ using UnityEngine;
 public class SunDialogue : MonoBehaviour
 {
     public Transform player;
-    public Player_Space_Ship_Movement playerHull;
+    public Player_Asset_Manager assetManager;
     public Dialogue dialogue;
     public DialogueManager manager;
     private bool firstTime = true;
@@ -22,7 +22,7 @@ public class SunDialogue : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, player.transform.position) <= 1500)
         {
-            playerHull.VariableDamage(10 * Time.deltaTime);
+            assetManager.VariableDamage(10 * Time.deltaTime);
         }
     }
 }
