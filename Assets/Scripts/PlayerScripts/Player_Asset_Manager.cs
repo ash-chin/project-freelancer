@@ -26,6 +26,7 @@ public class Player_Asset_Manager : MonoBehaviour
 
     private void Start()
     {
+        DontDestroyOnLoad(this.gameObject);
         scripReadout.text = "Scrip: " + scrip.ToString();
         fuelSlider.value = startingFuel;
         hullSlider.value = startingHull;
