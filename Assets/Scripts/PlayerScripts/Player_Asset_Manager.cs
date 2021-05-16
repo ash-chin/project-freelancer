@@ -24,9 +24,23 @@ public class Player_Asset_Manager : MonoBehaviour
     // the script we're going to use to call the end;
     public EndScript endingMechanisms;
 
+    // the static instance of this, to get preservation
+    public static Player_Asset_Manager instance;
+
     private void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(gameObject);
+
+
         scripReadout.text = "Scrip: " + scrip.ToString();
         fuelSlider.value = startingFuel;
         hullSlider.value = startingHull;
