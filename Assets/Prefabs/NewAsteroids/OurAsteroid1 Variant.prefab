@@ -14,6 +14,20 @@ CapsuleCollider:
   m_Height: 2.0431662
   m_Direction: 1
   m_Center: {x: -0.10823834, y: -0.11663389, z: 0}
+--- !u!114 &432649246785454858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133986318023359605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &1133986318023207941
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23,7 +37,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 151664, guid: fa49e460baf435b4780da7196c2ab473, type: 3}
       propertyPath: m_Name
-      value: OurAsteroid1
+      value: OurAsteroid1 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 494976, guid: fa49e460baf435b4780da7196c2ab473, type: 3}
       propertyPath: m_RootOrder
@@ -69,8 +83,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11425652, guid: fa49e460baf435b4780da7196c2ab473, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8275663626598981115, guid: fa49e460baf435b4780da7196c2ab473, type: 3}
+    - {fileID: 11425652, guid: fa49e460baf435b4780da7196c2ab473, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fa49e460baf435b4780da7196c2ab473, type: 3}
 --- !u!1 &1133986318023359605 stripped
 GameObject:
