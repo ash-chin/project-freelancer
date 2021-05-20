@@ -18,6 +18,7 @@ public class Player_Asset_Manager : MonoBehaviour
     // the amount of money the player has, and the associated text readout
     public int scrip;
     public Text scripReadout;
+
     // the script we're going to use to call the end;
     public EndScript endingMechanisms;
 
@@ -80,21 +81,21 @@ public class Player_Asset_Manager : MonoBehaviour
         scripReadout.text = "Scrip: " + scrip.ToString();
     }
 
-    public void Refuel(int cost, float fuel)
+    public void Refuel()
     {
-        if (fuelSlider.value < 100 && cost <= scrip)
+        if (fuelSlider.value < 100 && 50 <= scrip)
         {
-            fuelSlider.value = Mathf.Min(fuelSlider.value + fuel, 100);
-            scrip -= cost;
+            fuelSlider.value = Mathf.Min(fuelSlider.value + 40, 100);
+            scrip -= 50;
         }
     }
 
-    public void RepairHull(int cost, float repairValue)
+    public void RepairHull()
     {
-        if (hullSlider.value < 100 && cost <= scrip)
+        if (hullSlider.value < 100 && scrip >= 50)
         {
-            scrip -= cost;
-            hullSlider.value += Mathf.Min(hullSlider.value + repairValue, 100);
+            scrip -= 50;
+            hullSlider.value += Mathf.Min(hullSlider.value + 30, 100);
         }
     }
 
@@ -103,7 +104,7 @@ public class Player_Asset_Manager : MonoBehaviour
     private void FixedUpdate()
     {
         // first we deal with decrmeneting fuel
-        fuelSlider.value -= 0.1f * (Mathf.Abs(player.movementCurrentZAxisSpeed) + Mathf.Abs(player.movementCurrentYAxisSpeed) + Mathf.Abs(player.movementCurrentXAxisSpeed)) * Time.deltaTime;
+        fuelSlider.value -= 0.001f * (Mathf.Abs(player.movementCurrentZAxisSpeed) + Mathf.Abs(player.movementCurrentYAxisSpeed) + Mathf.Abs(player.movementCurrentXAxisSpeed)) * Time.deltaTime;
 
         // if the fuel slider is at 0 we call the end the of the game and stop attempting to do so by using a bool switch.
         if (fuelSlider.value <= 0)

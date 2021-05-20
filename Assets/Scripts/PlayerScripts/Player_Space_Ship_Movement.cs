@@ -258,6 +258,15 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Refueling Depot")
+        {
+            stationButtons.SetActive(true);
+            Time.timeScale = 0.2f;
+        }
+    }
+
     // That's it. That's the Tweet.
 }
 
