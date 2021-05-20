@@ -35,4 +35,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AlphaBuild/AlphaAstoria.unity
     guid: 1243a1018581c9446a782deafce672ba
+  - enabled: 1
+    path: Assets/Scenes/BetaBuild/BetaIntro.unity
+    guid: 5b8d95590fd78e44a9d8d5944b07b39d
+  - enabled: 1
+    path: Assets/Scenes/BetaBuild/Beta_Astoria.unity
+    guid: 39fece3465b83e84aa5df336ca7eb77b
+  - enabled: 1
+    path: Assets/Scenes/BetaBuild/Anarres.unity
+    guid: c1d02c960cee6c146abd5e0cba145ed8
   m_configObjects: {}
