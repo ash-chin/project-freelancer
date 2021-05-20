@@ -18,9 +18,6 @@ public class Player_Asset_Manager : MonoBehaviour
     // the amount of money the player has, and the associated text readout
     public int scrip;
     public Text scripReadout;
-
-    // this is the bool we're going to use to track the game ending having been called;
-    private bool endCalled;
     // the script we're going to use to call the end;
     public EndScript endingMechanisms;
 
@@ -111,16 +108,7 @@ public class Player_Asset_Manager : MonoBehaviour
         // if the fuel slider is at 0 we call the end the of the game and stop attempting to do so by using a bool switch.
         if (fuelSlider.value <= 0)
         {
-            if (!endCalled)
-            {
-                endCalled = true;
-                endingMechanisms.EndGame();
-            }
-
-            // if the player is out of fuel we slowly pull them to a stop.
-            player.movementMaxXAxisSpeed = Mathf.Lerp(player.movementCurrentXAxisSpeed, 0, player.movementAccelerationXAxis * Time.deltaTime);
-            player.movementMaxYAxisSpeed = Mathf.Lerp(player.movementCurrentYAxisSpeed, 0, player.movementAccelerationYAxis);
-            player.movementMaxZAxisSpeed = Mathf.Lerp(player.movementCurrentZAxisSpeed, 0, player.movementAccelerationZAxis);
+            endingMechanisms.EndGame();
         }
     }
 }
