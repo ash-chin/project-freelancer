@@ -106,7 +106,7 @@ public class Player_Asset_Manager : MonoBehaviour
     private void FixedUpdate()
     {
         // first we deal with decrmeneting fuel
-        fuelSlider.value -= 0.00005f * (Mathf.Abs(player.movementCurrentZAxisSpeed) + Mathf.Abs(player.movementCurrentYAxisSpeed) + Mathf.Abs(player.movementCurrentXAxisSpeed)) * Time.deltaTime;
+        fuelSlider.value -= 0.1f * (Mathf.Abs(player.movementCurrentZAxisSpeed) + Mathf.Abs(player.movementCurrentYAxisSpeed) + Mathf.Abs(player.movementCurrentXAxisSpeed)) * Time.deltaTime;
 
         // if the fuel slider is at 0 we call the end the of the game and stop attempting to do so by using a bool switch.
         if (fuelSlider.value <= 0)
