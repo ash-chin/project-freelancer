@@ -1036,7 +1036,7 @@ MonoBehaviour:
   bounties:
   - {fileID: 1646745480}
   - {fileID: 347820214}
-  freelancer: {fileID: 512637110}
+  assetManager: {fileID: 0}
   BountyNotification: {fileID: 1966367685}
   notificationText: {fileID: 1722892459}
 --- !u!4 &455253153
@@ -1164,6 +1164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 512637110}
+  assetManager: {fileID: 1611365552}
   maxDistance: 200
 --- !u!1 &512637108
 GameObject:
@@ -1222,12 +1223,6 @@ MonoBehaviour:
   mainCam: {fileID: 280288586}
   photoCam: {fileID: 671572679}
   photocamScript: {fileID: 1700655190}
-  hullSlider: {fileID: 1971472744}
-  fuelSlider: {fileID: 1971472745}
-  maxHull: 100
-  maxFuel: 50
-  scripReadout: {fileID: 1971472747}
-  money: 100
   stationButtons: {fileID: 1971472746}
   controls: {fileID: -944628639613478452, guid: 03bce27c72270f947b6188dd3a7df09c, type: 3}
   movementAccelerationZAxis: 0.2
@@ -1437,8 +1432,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restart: AlphaIntro
-  hull: {fileID: 1971472744}
-  fuel: {fileID: 1971472745}
   fadeTime: 5
   hangTime: 5
   endScreen: {fileID: 2068523004}
@@ -1607,6 +1600,7 @@ MonoBehaviour:
   instructionBackground: {fileID: 51204206}
   instructionText: {fileID: 346139449}
   player: {fileID: 512637110}
+  playerValues: {fileID: 1611365552}
 --- !u!1 &585098804 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8449805697310083247, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
@@ -2135,7 +2129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73663c4fd5d21949ac823c077819557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 512637110}
+  player: {fileID: 0}
 --- !u!114 &952660168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2148,7 +2142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73663c4fd5d21949ac823c077819557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 512637110}
+  player: {fileID: 0}
 --- !u!114 &952660169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2161,7 +2155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73663c4fd5d21949ac823c077819557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 512637110}
+  player: {fileID: 0}
 --- !u!114 &952660170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2174,7 +2168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73663c4fd5d21949ac823c077819557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 512637110}
+  player: {fileID: 0}
 --- !u!114 &952660171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2187,7 +2181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73663c4fd5d21949ac823c077819557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 512637110}
+  player: {fileID: 0}
 --- !u!1 &1003127886
 GameObject:
   m_ObjectHideFlags: 0
@@ -7435,6 +7429,58 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4465035140963908, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
   m_PrefabInstance: {fileID: 952660161}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1611365551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1611365553}
+  - component: {fileID: 1611365552}
+  m_Layer: 0
+  m_Name: PlayerAssetManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1611365552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611365551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 240c8756e0a2f7546afcc3c880e06b90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHull: 100
+  startingFuel: 100
+  fuelSlider: {fileID: 1971472745}
+  hullSlider: {fileID: 1971472744}
+  stationButtons: {fileID: 1971472746}
+  player: {fileID: 512637110}
+  scrip: 100
+  scripReadout: {fileID: 1971472747}
+  endingMechanisms: {fileID: 512637115}
+--- !u!4 &1611365553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611365551}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -204.4946, y: 1475.7506, z: -4553.113}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1637023643 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8449805696972137050, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}

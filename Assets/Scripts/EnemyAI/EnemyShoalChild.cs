@@ -15,6 +15,7 @@ public class EnemyShoalChild : MonoBehaviour
     // this is the player, which the target will attack
     // it's inherited from the parent
     private Player_Space_Ship_Movement player;
+    public Player_Asset_Manager assetManager;
     // the damage distance
     private float damageDistance;
     // the damage dealt
@@ -49,7 +50,7 @@ public class EnemyShoalChild : MonoBehaviour
         if (distance <= damageDistance && timer >= attackInterval)
         {
             timer = 0;
-            player.VariableDamage(damage);
+            assetManager.VariableDamage(10);
         }
 
         // move the subject directly forward

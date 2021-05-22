@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class BlackHoleScript : MonoBehaviour
 {
     public Player_Space_Ship_Movement player;
+    public Player_Asset_Manager assetManager;
     public float maxDistance;
     private float distance;
     private Vector3 relativePosition;
@@ -26,7 +27,7 @@ public class BlackHoleScript : MonoBehaviour
             if (distance < 500)
             {
                 damage = 10f * ((maxDistance - distance) / maxDistance) * Time.deltaTime;
-                player.VariableDamage(damage);
+                assetManager.VariableDamage(damage);
             }
 
 

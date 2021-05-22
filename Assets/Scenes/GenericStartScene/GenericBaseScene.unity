@@ -729,12 +729,6 @@ MonoBehaviour:
   mainCam: {fileID: 280288586}
   photoCam: {fileID: 671572679}
   photocamScript: {fileID: 1700655190}
-  hullSlider: {fileID: 1971472744}
-  fuelSlider: {fileID: 1971472745}
-  maxHull: 100
-  maxFuel: 50
-  scripReadout: {fileID: 1971472747}
-  money: 100
   stationButtons: {fileID: 1971472746}
   controls: {fileID: -944628639613478452, guid: 03bce27c72270f947b6188dd3a7df09c, type: 3}
   movementAccelerationZAxis: 0.2
@@ -944,8 +938,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restart: 
-  hull: {fileID: 1971472744}
-  fuel: {fileID: 1971472745}
   fadeTime: 5
   hangTime: 5
   endScreen: {fileID: 2068523004}
@@ -1204,7 +1196,7 @@ MonoBehaviour:
   bounties:
   - {fileID: 2121846521}
   - {fileID: 2121846520}
-  freelancer: {fileID: 512637110}
+  assetManager: {fileID: 0}
   BountyNotification: {fileID: 538256015}
   notificationText: {fileID: 1420634275}
 --- !u!4 &698184352
@@ -2178,6 +2170,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2007162122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2007162124}
+  - component: {fileID: 2007162123}
+  m_Layer: 0
+  m_Name: AssetManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2007162123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007162122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 240c8756e0a2f7546afcc3c880e06b90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHull: 100
+  startingFuel: 100
+  fuelSlider: {fileID: 1971472745}
+  hullSlider: {fileID: 1971472744}
+  stationButtons: {fileID: 1971472746}
+  player: {fileID: 512637110}
+  scrip: 0
+  scripReadout: {fileID: 1971472747}
+  endingMechanisms: {fileID: 512637115}
+--- !u!4 &2007162124
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007162122}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.0000076293945, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2028921576
 GameObject:
   m_ObjectHideFlags: 0

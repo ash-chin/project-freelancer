@@ -16,18 +16,6 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     public Camera mainCam;
     public Camera photoCam;
     public CameraScript photocamScript;
-    // public Canvas playerGallery;    // object that holds the photo
-
-    
-    // Hull and Fuel assets
-    public Slider hullSlider;
-    public Slider fuelSlider;
-    public float maxHull;
-    public float maxFuel;
-
-    // scrip resources
-    public Text scripReadout;
-    public int money;
 
     // these are the buttons for refueling and whatnot
     // the timer is to ensure that the player doesn't get caught in the cylce endlessly
@@ -40,21 +28,21 @@ public class Player_Space_Ship_Movement : MonoBehaviour
 
     #region Serialized Fields
     // serialized fields for the input of controls
-    [SerializeField] private float movementAccelerationZAxis;
-    [SerializeField] private float movementAccelerationXAxis;
-    [SerializeField] private float movementAccelerationYAxis;
+    [SerializeField] public float movementAccelerationZAxis;
+    [SerializeField] public float movementAccelerationXAxis;
+    [SerializeField] public float movementAccelerationYAxis;
 
-    [SerializeField] private float movementMaxZAxisSpeed;
-    [SerializeField] private float movementMaxXAxisSpeed;
-    [SerializeField] private float movementMaxYAxisSpeed;
+    [SerializeField] public float movementMaxZAxisSpeed;
+    [SerializeField] public float movementMaxXAxisSpeed;
+    [SerializeField] public float movementMaxYAxisSpeed;
 
     [SerializeField] private float movementZAxis;
     [SerializeField] private float movementXAxis;
     [SerializeField] private float movementYAxis;
 
-    [SerializeField] private float movementCurrentZAxisSpeed;
-    [SerializeField] private float movementCurrentXAxisSpeed;
-    [SerializeField] private float movementCurrentYAxisSpeed;
+    [SerializeField] public float movementCurrentZAxisSpeed;
+    [SerializeField] public float movementCurrentXAxisSpeed;
+    [SerializeField] public float movementCurrentYAxisSpeed;
 
     [SerializeField] private float rotationAccelerationZAxis;
     [SerializeField] private float rotationAccelerationXAxis;
@@ -76,7 +64,7 @@ public class Player_Space_Ship_Movement : MonoBehaviour
 
     // photoCam movement restricted to rotation w/ seperate accel & speeds
 
-
+    #region Camera Serialized Fields
     [SerializeField] private float photoCam_rotationAccelerationZAxis;
     [SerializeField] private float photoCam_rotationAccelerationXAxis;
     [SerializeField] private float photoCam_rotationAccelerationYAxis;
@@ -84,6 +72,7 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     [SerializeField] private float photoCam_rotationMaxXAxisSpeed;
     [SerializeField] private float photoCam_rotationMaxYAxisSpeed;
     public float rotationResetSpeed = 1.0f;
+    #endregion
 
     // is Player in photo mode?
     bool photoMode;
@@ -99,11 +88,6 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         //playerGallery.enabled = false;
         //playerPhoto.SetActive(false);
         controls.FindActionMap("photoCam Controls").Disable();
-
-        fuelSlider.value = maxFuel;
-        hullSlider.value = maxHull;
-
-        scripReadout.text = "Scrip: " + money.ToString();
     }
 
     private void Awake()
@@ -225,37 +209,31 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     {
         if (!photoMode)
         {
-            if (fuelSlider.value > 0)
-            {
-                /*
-             * PHOTO MODE DISENGAGED
-             * resume normal flight movement
-             */
+            /*
+           * PHOTO MODE DISENGAGED
+           * resume normal flight movement
+           */
 
-                // controls the movement speed during acceleration and deceleration.
-                movementCurrentZAxisSpeed = Mathf.Lerp(movementCurrentZAxisSpeed, movementZAxis * movementMaxZAxisSpeed, movementAccelerationZAxis * Time.deltaTime);
-                movementCurrentXAxisSpeed = Mathf.Lerp(movementCurrentXAxisSpeed, movementXAxis * movementMaxXAxisSpeed, movementAccelerationXAxis * Time.deltaTime);
-                movementCurrentYAxisSpeed = Mathf.Lerp(movementCurrentYAxisSpeed, movementYAxis * movementMaxYAxisSpeed, movementAccelerationYAxis * Time.deltaTime);
+            // controls the movement speed during acceleration and deceleration.
+            movementCurrentZAxisSpeed = Mathf.Lerp(movementCurrentZAxisSpeed, movementZAxis * movementMaxZAxisSpeed, movementAccelerationZAxis * Time.deltaTime);
+            movementCurrentXAxisSpeed = Mathf.Lerp(movementCurrentXAxisSpeed, movementXAxis * movementMaxXAxisSpeed, movementAccelerationXAxis * Time.deltaTime);
+            movementCurrentYAxisSpeed = Mathf.Lerp(movementCurrentYAxisSpeed, movementYAxis * movementMaxYAxisSpeed, movementAccelerationYAxis * Time.deltaTime);
 
-                // controls rotation speed during acceleration and deceleration.
-                rotationCurrentZAxisSpeed = Mathf.Lerp(rotationCurrentZAxisSpeed, rotationZAxis * rotationMaxZAxisSpeed, rotationAccelerationZAxis * Time.deltaTime);
-                rotationCurrentXAxisSpeed = Mathf.Lerp(rotationCurrentXAxisSpeed, rotationXAxis * rotationMaxXAxisSpeed, rotationAccelerationXAxis * Time.deltaTime);
-                rotationCurrentYAxisSpeed = Mathf.Lerp(rotationCurrentYAxisSpeed, rotationYAxis * rotationMaxYAxisSpeed, rotationAccelerationYAxis * Time.deltaTime);
+            // controls rotation speed during acceleration and deceleration.
+            rotationCurrentZAxisSpeed = Mathf.Lerp(rotationCurrentZAxisSpeed, rotationZAxis * rotationMaxZAxisSpeed, rotationAccelerationZAxis * Time.deltaTime);
+            rotationCurrentXAxisSpeed = Mathf.Lerp(rotationCurrentXAxisSpeed, rotationXAxis * rotationMaxXAxisSpeed, rotationAccelerationXAxis * Time.deltaTime);
+            rotationCurrentYAxisSpeed = Mathf.Lerp(rotationCurrentYAxisSpeed, rotationYAxis * rotationMaxYAxisSpeed, rotationAccelerationYAxis * Time.deltaTime);
 
-                controller.Move((transform.forward * movementCurrentZAxisSpeed * Time.deltaTime) +
-                                (transform.right * movementCurrentXAxisSpeed * Time.deltaTime) +
-                                (transform.up * movementCurrentYAxisSpeed * Time.deltaTime));
+            controller.Move((transform.forward * movementCurrentZAxisSpeed * Time.deltaTime) +
+                            (transform.right * movementCurrentXAxisSpeed * Time.deltaTime) +
+                            (transform.up * movementCurrentYAxisSpeed * Time.deltaTime));
 
-                playerShipTransform.Rotate(rotationCurrentZAxisSpeed * Time.deltaTime,
-                                           rotationCurrentXAxisSpeed * Time.deltaTime,
-                                           rotationCurrentYAxisSpeed * Time.deltaTime,
-                                           Space.Self);
+            playerShipTransform.Rotate(rotationCurrentZAxisSpeed * Time.deltaTime,
+                                       rotationCurrentXAxisSpeed * Time.deltaTime,
+                                       rotationCurrentYAxisSpeed * Time.deltaTime,
+                                       Space.Self);
+        
 
-                //now we decrement the fuel in relation to absolute movement.
-                fuelSlider.value -= 0.00005f * (Mathf.Abs(movementCurrentZAxisSpeed) + Mathf.Abs(movementCurrentYAxisSpeed) + Mathf.Abs(movementCurrentXAxisSpeed));
-
-            }
-            
         }
         else
         {
@@ -280,64 +258,15 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         }
     }
 
-    // the following is a function called by Hull Detector, meant
-    // to decrease the value of hull, relative to collioson strength
-
-    public void HullDamage()
-    {
-        hullSlider.value -= 0.1f * (Mathf.Abs(movementCurrentXAxisSpeed) + Mathf.Abs(movementCurrentYAxisSpeed) + Mathf.Abs(movementCurrentZAxisSpeed));
-    }
-
-
-    public void PayTheMan(int payment)
-    {
-        money -= payment;
-        scripReadout.text = "Scrip: " + money.ToString();
-    }
-
-    public void MoneyPweaaaaase(int payment)
-    {
-        money += payment;
-        scripReadout.text = "Scrip: " + money.ToString();
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Refueling Depot")
         {
-            Time.timeScale = 0f;
             stationButtons.SetActive(true);
+            Time.timeScale = 0.2f;
         }
     }
 
-    public void LeaveStation()
-    {
-        stationButtons.SetActive(false);
-        Time.timeScale = 1f;
-    }
-
-    public void RefuelTen()
-    {
-        if (fuelSlider.value < 100 && money >= 50)
-        {
-            fuelSlider.value += 25;
-            PayTheMan(50);
-        }
-    }
-
-    public void RepairHull()
-    {
-        if (hullSlider.value < 100 && money >= 50)
-        {
-            PayTheMan(50);
-            hullSlider.value += 10;
-        }
-    }
-
-    public void VariableDamage(float damage)
-    {
-        hullSlider.value -= damage;
-    }
-    // END OF SCRIPT
+    // That's it. That's the Tweet.
 }
 

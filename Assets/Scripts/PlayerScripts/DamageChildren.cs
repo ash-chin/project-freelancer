@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DamageChildren : MonoBehaviour
 {
-    public Player_Space_Ship_Movement player;
+    public Player_Asset_Manager player;
 
     private void OnCollisionEnter(Collision collision)
     {

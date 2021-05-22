@@ -14,6 +14,20 @@ CapsuleCollider:
   m_Height: 4.294985
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: -0.018382072}
+--- !u!114 &6978105136986291153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8278932446890373321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a03000ef7f8b3489ce5a3fbdb645a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tumble: 0.25
+  rotationSpeed: 1
 --- !u!1001 &8278932446890347775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23,7 +37,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 130102, guid: 04d0bf4be9447154188d86f6e3b8dce9, type: 3}
       propertyPath: m_Name
-      value: OurAsteroid3
+      value: OurAsteroid3 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 469044, guid: 04d0bf4be9447154188d86f6e3b8dce9, type: 3}
       propertyPath: m_RootOrder
@@ -71,6 +85,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3004358593390410103, guid: 04d0bf4be9447154188d86f6e3b8dce9, type: 3}
+    - {fileID: 11467940, guid: 04d0bf4be9447154188d86f6e3b8dce9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 04d0bf4be9447154188d86f6e3b8dce9, type: 3}
 --- !u!1 &8278932446890373321 stripped
 GameObject:
