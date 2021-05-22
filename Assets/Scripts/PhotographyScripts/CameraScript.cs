@@ -12,24 +12,21 @@ public class CameraScript : MonoBehaviour
     public GameObject reticleCanvas;
     public GameObject blackReticle;
     public GameObject redReticle;
-    public BountyNetwork bountyNetwork;
-    // new members
+    public BountyNetwork bountyNetwork;    // BountyManager
     public Player_Space_Ship_Movement freelancer;
     public PlayerAudio playerAudioSource;
-    public Canvas galleryCanvas;
-    public int maxPhotos;
+    public Canvas previewCanvas;    // Preview Pic
     public RawImage previewPic;
-    public RawImage[] photoGallery;
 
-    private int numPhotos;
-    private int i;
+    // photos and photo data (max, count, current index) stored in GalleryManager
+    public GalleryManager GM;
 
-    Camera photoCam;
-    string objTag;
-    // new variables
-    RawImage thePhoto;
-    Texture2D photoTexture;
-    RenderTexture tempRender;
+    Camera photoCam;    // the photography camera
+    string objTag;    // used to verify if bounty was photographed
+
+    RawImage thePhoto;    // temp hold RawImage objects
+    RenderTexture tempRender;    // temp to render camera into for photos
+    Texture2D photoTexture;    // this plus thePhoto make up the actual photos
 
     void Start()
     {
@@ -40,21 +37,17 @@ public class CameraScript : MonoBehaviour
         blackReticle.SetActive(false);
         redReticle.SetActive(false);
 
-        numPhotos = 0;
-        galleryCanvas.enabled = false;
-        for (int j = 0; j < maxPhotos; j++)
-        {
-            photoGallery[j].enabled = false;
-        }
+        // numPhotos = 0;
+        previewCanvas.enabled = false;
     }
 
 
     public void takePhoto()
     {
         playerAudioSource.ShutterNoise();
-        if (i == maxPhotos)
+        if (GM.index == GM.maxPhotos)
         {
-            i = 0; // start saving over old pictures
+            GM.index = 0; // start saving over old pictures
             //return;
         }
 
@@ -71,7 +64,7 @@ public class CameraScript : MonoBehaviour
         RenderTexture.active = tempRender;
 
         // grab empty photo from gallery
-        thePhoto = photoGallery[i];
+        thePhoto = GM.photoGallery[GM.index];
 
         // read pixels from screen into photoTexture
         // scales down size and flips so not upside down
@@ -86,8 +79,8 @@ public class CameraScript : MonoBehaviour
         reticleCanvas.SetActive(true);    // turn reticle back on
 
         // increase photo count
-        i++;
-        numPhotos++;
+        GM.index++;
+        GM.photoCount++;
 
         // show the player a preview of the photo they just took
         previewPic.texture = photoTexture;
@@ -104,9 +97,9 @@ public class CameraScript : MonoBehaviour
     IEnumerator showPhoto()
     {
         //stuff
-        galleryCanvas.enabled = true;
+        previewCanvas.enabled = true;
         yield return new WaitForSeconds(2);
-        galleryCanvas.enabled = false;
+        previewCanvas.enabled = false;
     }
 
     public void Update()
@@ -152,15 +145,15 @@ public class CameraScript : MonoBehaviour
         // Object.Destroy(playerPhoto.texture);
         Destroy(tempRender);
 
-        if(maxPhotos < numPhotos)
+        if(GM.maxPhotos < GM.photoCount)
         {
-            numPhotos = maxPhotos; // if we took more pics than max
+            GM.photoCount = GM.maxPhotos; // if we took more pics than max
         }
 
-        for (i = 0; i < numPhotos; i++)
+        for (int i = 0; i < GM.photoCount; i++)
         {
             //stuff
-            thePhoto = photoGallery[i];
+            thePhoto = GM.photoGallery[i];
             Object.Destroy(thePhoto.texture);
         }
     }

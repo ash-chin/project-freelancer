@@ -22,7 +22,8 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
     public GameObject bountyMenuUI; // Ash addition
-    public AudioMixer mainMixer; // Ash addition
+    public AudioMixer mainMixer; // Ash addition - currently not in use
+
 
     void Update()
     {
