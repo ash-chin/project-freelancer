@@ -10,16 +10,15 @@ Shader "Unlit/ArthShield"
     {
         Tags { "Queue" = "Transparent" "RenderType" = "Transparent" }
         Blend SrcAlpha OneMinusSrcAlpha
-        Cull front
+        //Cull front
         LOD 100
 
         Pass
         {
             CGPROGRAM
             #pragma vertex vert alpha
-            #pragma fragment frag alpha
-            // make fog work
-            #pragma multi_compile_fog
+            #pragma fragment frag //alpha
+                 
 
             #include "UnityCG.cginc"
 
@@ -45,20 +44,27 @@ Shader "Unlit/ArthShield"
             v2f vert (appdata v)
             {
                 v2f o;
-                v.normal *= -1;
-                v.uv.y += _Time.y;
+                
+                //v.uv.x += _Time.y;
                 //v.uv.x += _Time.y/2;
+                v.vertex.y += sin(v.vertex.y + _Time.y)*.05;
+
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
                 
                 return o;
             }
 
-            fixed4 frag (v2f i) : SV_Target
-            {   
-               
+            fixed4 frag(v2f i) : SV_Target
+            {
+
                 // sample the texture
+                i.uv.x += _Time.x;
+                
+                i.uv.y += sin(i.uv.y*_Time.y);
                 fixed4 col = tex2D(_MainTex, i.uv);
+                
+                
                 
                 col *= _OtherCol;
                 

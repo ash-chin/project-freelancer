@@ -53,7 +53,7 @@ Shader "Unlit/Portal"
             {
                 
                 v2f o;
-                v.vertex.y = sin((v.vertex.y+_Time.y)*_OscillationSpeed)*_OscillationDistance;
+                //v.vertex.y = sin((v.vertex.y+_Time.y)*_OscillationSpeed)*_OscillationDistance;
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
                 UNITY_TRANSFER_FOG(o,o.vertex);
