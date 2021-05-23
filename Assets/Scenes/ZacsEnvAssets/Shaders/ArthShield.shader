@@ -17,7 +17,7 @@ Shader "Unlit/ArthShield"
         {
             CGPROGRAM
             #pragma vertex vert alpha
-            #pragma fragment frag //alpha
+            #pragma fragment frag alpha
                  
 
             #include "UnityCG.cginc"
@@ -45,9 +45,11 @@ Shader "Unlit/ArthShield"
             {
                 v2f o;
                 
-                //v.uv.x += _Time.y;
-                //v.uv.x += _Time.y/2;
-                v.vertex.y += sin(v.vertex.y + _Time.y)*.05;
+                if (floor(v.vertex.x) == floor(sqrt(-pow((v.vertex.y), 2) + 1)))
+                   v.uv.x += _Time.x;
+                
+                else if (floor(v.uv.x) == floor(sqrt(-pow((v.uv.y), 2) + 1)))
+                   v.uv.x += _Time.x;
 
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
@@ -59,16 +61,22 @@ Shader "Unlit/ArthShield"
             {
 
                 // sample the texture
-                i.uv.x += _Time.x;
-                
-                i.uv.y += sin(i.uv.y*_Time.y);
+                //i.uv.x += sin(i.uv.y * _Time.y);
+                i.uv.y += _Time.x;
+              
+
                 fixed4 col = tex2D(_MainTex, i.uv);
                 
                 
+                col.x *= _OtherCol.x;
+                col.y *= _OtherCol.y;
+                col.z *= _OtherCol.z;
                 
-                col *= _OtherCol;
+                col.w = sin(_OtherCol.w * _Time.y*2);
+
                 
-                //col.w *= _Color.w;
+
+                
                 
                 if (!all(col))
                     col = _Color;
