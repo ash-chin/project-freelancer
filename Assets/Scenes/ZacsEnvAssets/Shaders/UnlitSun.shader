@@ -43,11 +43,19 @@ Shader "Unlit/UnlitSun"
             {
                 v2f o;
                 
-                v.uv.x = cos(v.vertex.y * 0.4 * _Time.y);
+                //v.uv.x += sin(_Time.y);
+
+                if (v.vertex.x == sqrt( pow(v.vertex.z, 2)+2))
+                    v.uv.x += _Time.y;
+                
+                else if (v.vertex.x == -sqrt(pow(v.vertex.z, 2)+2))
+                    v.uv.x += _Time.y;
+              
 
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
 
+              
            
 
                 return o;
@@ -60,7 +68,7 @@ Shader "Unlit/UnlitSun"
          
                 fixed4 col = tex2D(_MainTex, i.uv);
                 
-                float mul = dot(normalize(col), normalize(col));
+                //float mul = dot(normalize(col), normalize(col));
 
                 return col;
             }
