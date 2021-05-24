@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.33429, y: 1.3288879}
-  m_SizeDelta: {x: 740.4328, y: 365.665}
+  m_AnchoredPosition: {x: 1.5461273, y: 4.4}
+  m_SizeDelta: {x: 387.525, y: 177.731}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &54908551
 MonoBehaviour:
@@ -241,15 +241,16 @@ MonoBehaviour:
     you find floating around in space
 
 
-    You can find suggestions about what to
-    take pictures of on the bounty menu, located in the pause menu
+    You can get paid to take photos of certain
+    objects, locations, or creatures by completing "photo bounties". To see a list
+    of currently requested photo bounties, view the Photo-Bounty Network in the pause
+    menu.
 
 
-    Use the
-    money you earn to refill your fuel and hull and fuel depots'
+    Use the money you earn to refill your fuel and hull and fuel depots'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -273,8 +274,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -358,8 +359,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 916.30005, y: 0}
-  m_SizeDelta: {x: 1003.7, y: 574.8959}
+  m_AnchoredPosition: {x: 365, y: -9}
+  m_SizeDelta: {x: 420, y: 204}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &98428919
 MonoBehaviour:
@@ -381,7 +382,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a69163ca2eb6c934c87ebe5deea5b747, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 87bfb6426e0bd604cb110aedae9e5e4d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -433,7 +434,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -233}
+  m_AnchoredPosition: {x: 0, y: -72.1}
   m_SizeDelta: {x: 0, y: 112.0409}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &147680619
@@ -483,10 +484,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 70
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -568,8 +569,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.33429, y: 1.3288879}
-  m_SizeDelta: {x: 740.4328, y: 365.665}
+  m_AnchoredPosition: {x: 18.6, y: -15.1}
+  m_SizeDelta: {x: 437.2511, y: 190.6205}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &188921038
 MonoBehaviour:
@@ -667,7 +668,7 @@ MonoBehaviour:
     to pause the game, and access the bounty menu'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -691,8 +692,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -776,8 +777,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -252}
-  m_SizeDelta: {x: 608.2855, y: 53.1841}
+  m_AnchoredPosition: {x: 19.3277, y: -128.1073}
+  m_SizeDelta: {x: 446.6348, y: 44.3987}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &420477403
 MonoBehaviour:
@@ -967,8 +968,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.007019043, y: -485.9}
-  m_SizeDelta: {x: 916.293, y: 594.1}
+  m_AnchoredPosition: {x: 10, y: -235}
+  m_SizeDelta: {x: 420, y: 204}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &524726820
 MonoBehaviour:
@@ -990,7 +991,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a69163ca2eb6c934c87ebe5deea5b747, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 87bfb6426e0bd604cb110aedae9e5e4d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1057,7 +1058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1233,7 +1234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -624.4685, y: -270.21655}
+  m_AnchoredPosition: {x: -229.8, y: -117.6}
   m_SizeDelta: {x: 288.0383, y: 172.7279}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &692151390
@@ -1553,8 +1554,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -121}
-  m_SizeDelta: {x: 608.2855, y: 53.1841}
+  m_AnchoredPosition: {x: 27.2, y: -41.06436}
+  m_SizeDelta: {x: 395.6797, y: 47.9128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1011910718
 MonoBehaviour:
@@ -1757,7 +1758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1846,8 +1847,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.33429, y: 1.3289185}
-  m_SizeDelta: {x: 740.4328, y: 365.665}
+  m_AnchoredPosition: {x: -9, y: 0}
+  m_SizeDelta: {x: 381.852, y: 186.3745}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1094646303
 MonoBehaviour:
@@ -1937,7 +1938,7 @@ MonoBehaviour:
     like black holes. Be careful about what you fly near!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1961,8 +1962,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2046,8 +2047,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1003.7, y: 574.8959}
+  m_AnchoredPosition: {x: 8.900024, y: -19.599976}
+  m_SizeDelta: {x: 417, y: 175}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1186901612
 MonoBehaviour:
@@ -2069,7 +2070,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a69163ca2eb6c934c87ebe5deea5b747, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 87bfb6426e0bd604cb110aedae9e5e4d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2135,7 +2136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -2224,7 +2225,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.33429, y: 1.3289185}
+  m_AnchoredPosition: {x: 167.4, y: -103.8}
   m_SizeDelta: {x: 740.4328, y: 365.665}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1292616246
@@ -2303,21 +2304,21 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Use the same controls to look around in camera mode
+  m_text: 'WASD look around in camera mode
 
 
-    You can switch
-    into / back from camera mode by pressing the T key
+    You can switch into / back from
+    camera mode by pressing the T key
 
 
-    You can take a picture
-    using the P key
+    You can take a picture using the P key
 
 
-    Take pictures to collect bounties and earn money'
+    Take
+    pictures to collect bounties and earn money'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2341,8 +2342,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2377,7 +2378,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0.000061035156, w: 0}
+  m_margin: {x: 16.23431, y: 0, z: 338.73535, w: 213.84769}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2426,8 +2427,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 305.1013, y: 38.3221}
+  m_AnchoredPosition: {x: 19.8, y: 46.6}
+  m_SizeDelta: {x: 255.0247, y: 38.3221}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1514090445
 MonoBehaviour:
@@ -2617,7 +2618,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -660, y: 325}
+  m_AnchoredPosition: {x: -222.2, y: 114.9}
   m_SizeDelta: {x: 231.4367, y: 146.6336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1948379993
@@ -2808,8 +2809,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1003.7003, y: -485.9}
-  m_SizeDelta: {x: 916.293, y: 594.1}
+  m_AnchoredPosition: {x: 370.4, y: -249.5}
+  m_SizeDelta: {x: 417, y: 175}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2067732636
 MonoBehaviour:
@@ -2831,7 +2832,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a69163ca2eb6c934c87ebe5deea5b747, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 87bfb6426e0bd604cb110aedae9e5e4d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
