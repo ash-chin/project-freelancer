@@ -22,7 +22,9 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
     public GameObject bountyMenuUI; // Ash addition
-    public AudioMixer mainMixer; // Ash addition - currently not in use
+    public GameObject galleryMenuUI; // located under player object
+    public Canvas gallery;
+    // public AudioMixer mainMixer; // Ash addition - currently not in use
 
 
     void Update()
@@ -84,7 +86,6 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         bountyMenuUI.SetActive(true);
     }
-
     public void bountiesBack()
     {
         // Use to go back to the pause menu
@@ -92,8 +93,23 @@ public class PauseMenu : MonoBehaviour
         bountyMenuUI.SetActive(false);
     }
 
-    public void SetVolume(float volume)
+    public void ViewGallery()
+    {
+        pauseMenuUI.SetActive(false);
+        galleryMenuUI.SetActive(true);
+        gallery.enabled = true;
+    }
+
+    public void galleryBack()
+    {
+        // Use to go back to the pause menu
+        pauseMenuUI.SetActive(true);
+        galleryMenuUI.SetActive(false);
+        gallery.enabled = false;
+    }
+
+/*    public void SetVolume(float volume)
     {
         mainMixer.SetFloat("mainVolume", volume);
-    }
+    }*/
 }

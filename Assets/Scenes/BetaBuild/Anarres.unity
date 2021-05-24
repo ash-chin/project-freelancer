@@ -6023,6 +6023,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 512637109}
     m_Modifications:
+    - target: {fileID: 3411572765087760476, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 685240132}
+    - target: {fileID: 3411572765087760476, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: galleryBack
+      objectReference: {fileID: 0}
     - target: {fileID: 5720933650207914077, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -6195,6 +6203,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &231198877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5720933651964443686, guid: bee860a54f083b0478c5fe5472067c29, type: 3}
+  m_PrefabInstance: {fileID: 231198870}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &237613830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9848,6 +9861,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8183796033520389398, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
   m_PrefabInstance: {fileID: 677899306}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &685240132 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7448387197063100950, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
+  m_PrefabInstance: {fileID: 2121846519}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8c6c1ac1ab36684da4dc5752a6d7e2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &690128003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21543,6 +21567,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Onikaza
       objectReference: {fileID: 0}
+    - target: {fileID: 7448387197063100950, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
+      propertyPath: gallery
+      value: 
+      objectReference: {fileID: 231198872}
+    - target: {fileID: 7448387197063100950, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
+      propertyPath: galleryMenuUI
+      value: 
+      objectReference: {fileID: 231198877}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
 --- !u!114 &2121846520 stripped
