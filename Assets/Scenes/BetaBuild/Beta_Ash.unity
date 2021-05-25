@@ -6178,7 +6178,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 512637110}
-  assetManager: {fileID: 0}
   maxDistance: 300
 --- !u!135 &509016360
 SphereCollider:
