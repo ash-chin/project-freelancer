@@ -20,6 +20,7 @@ public class Player_Space_Ship_Movement : MonoBehaviour
     // these are the buttons for refueling and whatnot
     // the timer is to ensure that the player doesn't get caught in the cylce endlessly
     public GameObject stationButtons;
+    public GameObject miniMap;
 
     // player controls, and input assets
     private CharacterController controller;
@@ -263,7 +264,8 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         if (other.tag == "Refueling Depot")
         {
             stationButtons.SetActive(true);
-            Time.timeScale = 0.2f;
+            miniMap.SetActive(false);
+            Time.timeScale = 0.0f;
         }
     }
 

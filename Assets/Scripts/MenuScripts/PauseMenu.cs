@@ -24,25 +24,9 @@ public class PauseMenu : MonoBehaviour
     public GameObject bountyMenuUI; // Ash addition
     public GameObject galleryMenuUI; // located under player object
     public Canvas gallery;
+    public Canvas OuterHud;
     // public AudioMixer mainMixer; // Ash addition - currently not in use
-    // public static GameObject testObject;
 
-/*    private void Start()
-    {
-        if(testObject == null)
-        {
-            testObject = GameObject.Find("testObject");
-        }
-
-        if (testObject)
-        {
-            Debug.Log("zooweemama");
-        }
-        else
-        {
-            Debug.Log("uhoh");
-        }
-    }*/
 
     void Update()
     {
@@ -72,6 +56,7 @@ public class PauseMenu : MonoBehaviour
         //this line is what actually pauses the game
         Time.timeScale = 0f;
         GameIsPaused = true;
+        OuterHud.enabled = false;
     }
 
     public void MainMenu()
@@ -89,7 +74,7 @@ public class PauseMenu : MonoBehaviour
         //this line is what restarts the game after pausing
         Time.timeScale = 1f;
         GameIsPaused = false;
-
+        OuterHud.enabled = true;
     }
 
     public void Exit()
