@@ -9973,6 +9973,7 @@ MonoBehaviour:
   bounties:
   - {fileID: 2121846521}
   - {fileID: 2121846520}
+  - {fileID: 738739645}
   assetManager: {fileID: 0}
   BountyNotification: {fileID: 538256015}
   notificationText: {fileID: 1420634275}
@@ -9991,6 +9992,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &738739645 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8198295528773554065, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
+  m_PrefabInstance: {fileID: 2121846519}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 618129e97d6641d4691fae76b53f5f7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &744435764
 GameObject:
   m_ObjectHideFlags: 0
@@ -16045,6 +16057,7 @@ MonoBehaviour:
   startingFuel: 100
   fuelSlider: {fileID: 1971472745}
   hullSlider: {fileID: 1971472744}
+  bountyBools: 
   stationButtons: {fileID: 1971472746}
   player: {fileID: 512637110}
   scrip: 0
@@ -21463,6 +21476,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5769378883200669320, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
+      propertyPath: m_index
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7448387197063100937, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -21575,6 +21592,10 @@ PrefabInstance:
       propertyPath: galleryMenuUI
       value: 
       objectReference: {fileID: 231198877}
+    - target: {fileID: 8198295528773554065, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
+      propertyPath: m_index
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
 --- !u!114 &2121846520 stripped

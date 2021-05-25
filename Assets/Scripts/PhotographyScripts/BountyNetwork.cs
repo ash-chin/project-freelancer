@@ -12,13 +12,21 @@ public class BountyNetwork : MonoBehaviour
     public GameObject BountyNotification;
     public Text notificationText;
 
+    public static GameObject AM;
+
     private void Start()
     {
-        //descriptionField.SetActive(false);
+        if (AM == null)
+        {
+            AM = GameObject.Find("AssetManager");
+        }
+
         BountyNotification.SetActive(false);
         notificationText.text = "";
+
         foreach (BountyItem b in bounties)
         {
+            b.isComplete = AM.GetComponent<Player_Asset_Manager>().bountyBools[b.m_index];
             b.fillFields();
         }
     }
@@ -32,6 +40,7 @@ public class BountyNetwork : MonoBehaviour
             if(b.m_tag == objTag)
             {
                 b.isComplete = true;
+                AM.GetComponent<Player_Asset_Manager>().bountyBools[b.m_index] = true;
                 b.updateStatus();
                 notificationText.text = "PhotoBounty Completed! " + b.request;
                 StartCoroutine(showCompleted());

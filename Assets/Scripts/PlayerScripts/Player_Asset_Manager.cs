@@ -10,6 +10,7 @@ public class Player_Asset_Manager : MonoBehaviour
     public float startingFuel;
     public Slider fuelSlider;
     public Slider hullSlider;
+    public List<bool> bountyBools;
     // this is the canvas for station buttons
     public GameObject stationButtons;
     // the player's controller script. We will use this to slowly decrement the speed
@@ -24,6 +25,7 @@ public class Player_Asset_Manager : MonoBehaviour
 
     // the static instance of this, to get preservation
     public static Player_Asset_Manager instance;
+    
 
     private void Start()
     {

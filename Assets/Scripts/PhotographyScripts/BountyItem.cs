@@ -27,28 +27,13 @@ public class BountyItem : MonoBehaviour
     public TextMeshProUGUI descField;
     public TextMeshProUGUI rewardField;
     public TextMeshProUGUI statusField;
-
-    /*
-    private void Start()
-    {
-        descHolder.SetActive(false);
-    }
-    */
+    public int m_index;
 
     public void fillFields()
     {
         reqField.text = request;
         rewardField.text = "reward: " + reward.ToString();
         updateStatus();
-        /*
-        if (isComplete)
-        {
-            statusField.text = "Completed";
-        } else
-        {
-            statusField.text = "Open Bounty";
-        }
-        */
     }
 
     public void updateStatus()
