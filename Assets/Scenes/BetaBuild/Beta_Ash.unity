@@ -33492,6 +33492,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4362243778409373388, guid: 049b6628fb3dc6245b7b530cea0115b7, type: 3}
   m_PrefabInstance: {fileID: 1971472743}
   m_PrefabAsset: {fileID: 0}
+--- !u!223 &1766883023 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 4362243778409373393, guid: 049b6628fb3dc6245b7b530cea0115b7, type: 3}
+  m_PrefabInstance: {fileID: 1971472743}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1777268434
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36748,6 +36753,10 @@ PrefabInstance:
       propertyPath: gallery
       value: 
       objectReference: {fileID: 231198877}
+    - target: {fileID: 7448387197063100950, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
+      propertyPath: OuterHud
+      value: 
+      objectReference: {fileID: 1766883023}
     - target: {fileID: 7448387197063100950, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
       propertyPath: galleryMenuUI
       value: 
