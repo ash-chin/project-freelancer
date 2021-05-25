@@ -4352,7 +4352,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73663c4fd5d21949ac823c077819557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!1 &232070687
 GameObject:
   m_ObjectHideFlags: 0
@@ -10482,7 +10481,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73663c4fd5d21949ac823c077819557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!1 &487570927 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1133986318023359605, guid: e98bc05994877b842a1db30cf7b979dd, type: 3}
@@ -11283,7 +11281,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 512637110}
-  assetManager: {fileID: 0}
   maxDistance: 300
 --- !u!135 &509016360
 SphereCollider:
@@ -11528,7 +11525,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73663c4fd5d21949ac823c077819557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!1001 &511764730
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11699,6 +11695,7 @@ MonoBehaviour:
   photoCam: {fileID: 671572679}
   photocamScript: {fileID: 1700655190}
   stationButtons: {fileID: 1971472746}
+  miniMap: {fileID: 0}
   controls: {fileID: -944628639613478452, guid: 03bce27c72270f947b6188dd3a7df09c, type: 3}
   movementAccelerationZAxis: 0.2
   movementAccelerationXAxis: 2.5
@@ -40409,7 +40406,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73663c4fd5d21949ac823c077819557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!1 &1527160850
 GameObject:
   m_ObjectHideFlags: 0
@@ -43031,7 +43027,7 @@ MonoBehaviour:
   xSpin: 0
   ySpin: 1
   zSpin: 0
-  rotateSpeed: -0.5
+  rotateSpeed: -2
 --- !u!1 &1638666988 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8183796033520610200, guid: 351da9425c0cc8a429c346b511edfebe, type: 3}
@@ -43093,7 +43089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3781143741146462926, guid: 3f474f08897ddc74e8fc2e463a5d877d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8098
+      value: -2135
       objectReference: {fileID: 0}
     - target: {fileID: 3781143741146462926, guid: 3f474f08897ddc74e8fc2e463a5d877d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -43101,7 +43097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3781143741146462926, guid: 3f474f08897ddc74e8fc2e463a5d877d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 260
+      value: -8784
       objectReference: {fileID: 0}
     - target: {fileID: 3781143741146462926, guid: 3f474f08897ddc74e8fc2e463a5d877d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -48713,7 +48709,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73663c4fd5d21949ac823c077819557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!1001 &1883172852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50032,6 +50027,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1106790539}
     m_Modifications:
+    - target: {fileID: 1330132023, guid: 049b6628fb3dc6245b7b530cea0115b7, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2068523003, guid: 049b6628fb3dc6245b7b530cea0115b7, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2096468935, guid: 049b6628fb3dc6245b7b530cea0115b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
