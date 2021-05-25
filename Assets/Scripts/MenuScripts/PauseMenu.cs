@@ -25,9 +25,9 @@ public class PauseMenu : MonoBehaviour
     public GameObject galleryMenuUI; // located under player object
     public Canvas gallery;
     // public AudioMixer mainMixer; // Ash addition - currently not in use
-    public static GameObject testObject;
+    // public static GameObject testObject;
 
-    private void Start()
+/*    private void Start()
     {
         if(testObject == null)
         {
@@ -42,7 +42,7 @@ public class PauseMenu : MonoBehaviour
         {
             Debug.Log("uhoh");
         }
-    }
+    }*/
 
     void Update()
     {
