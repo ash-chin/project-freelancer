@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0031037452, g: 0.002729593, b: 0.0033060266, a: 1}
+  m_IndirectSpecularColor: {r: 0.0029643, g: 0.0026189217, b: 0.003141697, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9645,6 +9645,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1766883019}
     - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
+      propertyPath: maxPhotos
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
       propertyPath: freelancer
       value: 
       objectReference: {fileID: 512637110}
@@ -9665,6 +9669,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 512637113}
     - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
+      propertyPath: photoGallery.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
       propertyPath: photoGallery.Array.data[0]
       value: 
       objectReference: {fileID: 72810541}
@@ -9680,6 +9688,22 @@ PrefabInstance:
       propertyPath: photoGallery.Array.data[3]
       value: 
       objectReference: {fileID: 576491427}
+    - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
+      propertyPath: photoGallery.Array.data[4]
+      value: 
+      objectReference: {fileID: 231198876}
+    - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
+      propertyPath: photoGallery.Array.data[5]
+      value: 
+      objectReference: {fileID: 231198875}
+    - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
+      propertyPath: photoGallery.Array.data[6]
+      value: 
+      objectReference: {fileID: 231198874}
+    - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
+      propertyPath: photoGallery.Array.data[7]
+      value: 
+      objectReference: {fileID: 231198873}
     - target: {fileID: 8449805696742695244, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
       propertyPath: m_Name
       value: photoCam
@@ -16086,6 +16110,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90bdcb8a2786e844497be474b2a24256, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!223 &1971472749 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 4362243778409373393, guid: 049b6628fb3dc6245b7b530cea0115b7, type: 3}
+  m_PrefabInstance: {fileID: 1971472743}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1996265328
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16355,8 +16384,6 @@ MonoBehaviour:
   currentFuel: 100
   scrip: 100
   bountyBools: 000000
-  player: {fileID: 512637110}
-  endingMechanisms: {fileID: 512637115}
 --- !u!4 &2007162124
 Transform:
   m_ObjectHideFlags: 0
@@ -21877,6 +21904,10 @@ PrefabInstance:
       propertyPath: gallery
       value: 
       objectReference: {fileID: 231198872}
+    - target: {fileID: 7448387197063100950, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
+      propertyPath: OuterHud
+      value: 
+      objectReference: {fileID: 1971472749}
     - target: {fileID: 7448387197063100950, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
       propertyPath: galleryMenuUI
       value: 

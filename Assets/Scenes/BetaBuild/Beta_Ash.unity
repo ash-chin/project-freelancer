@@ -12784,6 +12784,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1766883019}
     - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
+      propertyPath: maxPhotos
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
       propertyPath: freelancer
       value: 
       objectReference: {fileID: 512637110}
@@ -12795,6 +12799,42 @@ PrefabInstance:
       propertyPath: playerAudioSource
       value: 
       objectReference: {fileID: 512637113}
+    - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
+      propertyPath: photoGallery.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
+      propertyPath: photoGallery.Array.data[0]
+      value: 
+      objectReference: {fileID: 231198875}
+    - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
+      propertyPath: photoGallery.Array.data[1]
+      value: 
+      objectReference: {fileID: 231198874}
+    - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
+      propertyPath: photoGallery.Array.data[2]
+      value: 
+      objectReference: {fileID: 231198873}
+    - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
+      propertyPath: photoGallery.Array.data[3]
+      value: 
+      objectReference: {fileID: 231198872}
+    - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
+      propertyPath: photoGallery.Array.data[4]
+      value: 
+      objectReference: {fileID: 1803959309}
+    - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
+      propertyPath: photoGallery.Array.data[5]
+      value: 
+      objectReference: {fileID: 1659468182}
+    - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
+      propertyPath: photoGallery.Array.data[6]
+      value: 
+      objectReference: {fileID: 937872279}
+    - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
+      propertyPath: photoGallery.Array.data[7]
+      value: 
+      objectReference: {fileID: 1583584943}
     - target: {fileID: 8449805696742695244, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
       propertyPath: m_Name
       value: photoCam
@@ -36554,8 +36594,6 @@ MonoBehaviour:
   currentFuel: 100
   scrip: 100
   bountyBools: 000000
-  player: {fileID: 512637110}
-  endingMechanisms: {fileID: 512637115}
 --- !u!4 &2108050819
 Transform:
   m_ObjectHideFlags: 0
@@ -36660,6 +36698,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1106790539}
     m_Modifications:
+    - target: {fileID: 5769378883200669320, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
+      propertyPath: m_tag
+      value: Refueling Depot
+      objectReference: {fileID: 0}
     - target: {fileID: 7448387197063100937, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
       propertyPath: m_Pivot.x
       value: 0

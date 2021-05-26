@@ -21,16 +21,18 @@ public class Player_Asset_Manager : MonoBehaviour
 
     public List<bool> bountyBools;    // track bounty completion status
 
-    // Use player controller scrip to slowly decrement the speed
-    // when fuel runs out, then call the end script
-    public Player_Space_Ship_Movement player;
 
-    // the script we're going to use to call the end;
-    public EndScript endingMechanisms;
+/*  
+    These components are not perserved on load, so they will be missing if player
+    loads into another scene. Will instead "find" the player object and access its
+    variables and scripts as needed.
+    // public Player_Space_Ship_Movement player;
+    // public EndScript endingMechanisms; // the script we're going to use to call the end;
+*/
 
-    // the static instance of this, to get preservation
-    public static Player_Asset_Manager instance;
-    
+    public static Player_Asset_Manager instance;    // the static instance of this, to get preservation
+    public static GameObject PM;    // GameObject holding player transformation variables and scripts
+
 
     private void Start()
     {
@@ -45,6 +47,11 @@ public class Player_Asset_Manager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
 
+        if (PM == null)
+        {
+            PM = GameObject.Find("Player");
+        }
+
         // scripReadout.text = "Scrip: " + scrip.ToString();
         // fuelSlider.value = startingFuel;
         // hullSlider.value = startingHull;
@@ -53,7 +60,10 @@ public class Player_Asset_Manager : MonoBehaviour
 
     public void HullDamage()
     {
-        currentHull -= 0.1f * (Mathf.Abs(player.movementCurrentXAxisSpeed) + Mathf.Abs(player.movementCurrentYAxisSpeed) + Mathf.Abs(player.movementCurrentZAxisSpeed));
+        //currentHull -= 0.1f * (Mathf.Abs(player.movementCurrentXAxisSpeed) + Mathf.Abs(player.movementCurrentYAxisSpeed) + Mathf.Abs(player.movementCurrentZAxisSpeed));
+        currentHull -= 0.1f * (Mathf.Abs(PM.GetComponent<Player_Space_Ship_Movement>().movementCurrentXAxisSpeed) +
+            Mathf.Abs(PM.GetComponent<Player_Space_Ship_Movement>().movementCurrentYAxisSpeed) + 
+            Mathf.Abs(PM.GetComponent<Player_Space_Ship_Movement>().movementCurrentZAxisSpeed));
     }
 
     public void VariableDamage(float damage)
@@ -96,12 +106,17 @@ public class Player_Asset_Manager : MonoBehaviour
     private void FixedUpdate()
     {
         // first we deal with decrmeneting fuel
-        currentFuel -= 0.001f * (Mathf.Abs(player.movementCurrentZAxisSpeed) + Mathf.Abs(player.movementCurrentYAxisSpeed) + Mathf.Abs(player.movementCurrentXAxisSpeed)) * Time.deltaTime;
+        //currentFuel -= 0.001f * (Mathf.Abs(player.movementCurrentZAxisSpeed) + Mathf.Abs(player.movementCurrentYAxisSpeed) + Mathf.Abs(player.movementCurrentXAxisSpeed)) * Time.deltaTime;
+        
+        currentFuel -= 0.001f * (Mathf.Abs(PM.GetComponent<Player_Space_Ship_Movement>().movementCurrentZAxisSpeed) + 
+            Mathf.Abs(PM.GetComponent<Player_Space_Ship_Movement>().movementCurrentYAxisSpeed) + 
+            Mathf.Abs(PM.GetComponent<Player_Space_Ship_Movement>().movementCurrentXAxisSpeed)) * Time.deltaTime;
 
         // if the fuel slider is at 0 we call the end the of the game and stop attempting to do so by using a bool switch.
-        if (currentFuel <= 0)
+        if ((currentFuel <= 0)||(currentHull <= 0))
         {
-            endingMechanisms.EndGame();
+            //endingMechanisms.EndGame();
+            PM.GetComponent<EndScript>().EndGame();
         }
     }
 }
