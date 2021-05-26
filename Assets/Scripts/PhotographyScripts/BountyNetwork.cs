@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class BountyNetwork : MonoBehaviour
 {
     public BountyItem[] bounties;
-    public Player_Asset_Manager assetManager;
+    //public Player_Asset_Manager assetManager;
     public GameObject BountyNotification;
     public Text notificationText;
 
@@ -44,7 +44,7 @@ public class BountyNetwork : MonoBehaviour
                 b.updateStatus();
                 notificationText.text = "PhotoBounty Completed! " + b.request;
                 StartCoroutine(showCompleted());
-                assetManager.MoneyPwease(b.reward);
+                AM.GetComponent<Player_Asset_Manager>().MoneyPwease(b.reward);
             }
         }
     }
