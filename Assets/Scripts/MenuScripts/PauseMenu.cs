@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -23,14 +24,27 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     public GameObject bountyMenuUI; // Ash addition
     public GameObject galleryMenuUI; // located under player object
+    public GameObject controlsMenuUI;
     public Canvas gallery;
     public Canvas OuterHud;
-    // public AudioMixer mainMixer; // Ash addition - currently not in use
+    public Slider volumeSlider;
+    //public AudioMixer mainMixer; // Ash addition - currently not in use
 
+    public static GameObject audioMan;
+    [HideInInspector]
+    // Sound music;
+    // int si;
+
+    void Start()
+    {
+        if (audioMan == null)
+        {
+            audioMan = GameObject.Find("SoundManager");
+        }
+    }
 
     void Update()
     {
-        
         if (UnityEngine.InputSystem.Keyboard.current.digit1Key.wasPressedThisFrame) 
         {
             if (GameIsPaused)
@@ -51,6 +65,11 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
+        /*si = audioMan.GetComponent<AudioManager>().currentTrackNumber;
+        music = audioMan.GetComponent<AudioManager>().music[si];
+        volumeSlider.value = music.volume;*/
+
+        volumeSlider.value = audioMan.GetComponent<AudioManager>().currentTrackSrc.volume;
         //active pause menu
         pauseMenuUI.SetActive(true);
         //this line is what actually pauses the game
@@ -62,8 +81,9 @@ public class PauseMenu : MonoBehaviour
     public void MainMenu()
     {
         Time.timeScale = 1f;
+        GameIsPaused = false;
         Debug.Log("Loading Main Menu...");
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("BetaIntro");
     }
 
     public void Resume()
@@ -111,8 +131,21 @@ public class PauseMenu : MonoBehaviour
         gallery.enabled = false;
     }
 
-/*    public void SetVolume(float volume)
+    public void ViewControls()
     {
-        mainMixer.SetFloat("mainVolume", volume);
-    }*/
+        pauseMenuUI.SetActive(false);
+        controlsMenuUI.SetActive(true);
+    }
+
+    public void controlsBack()
+    {
+        // Use to go back to the pause menu
+        pauseMenuUI.SetActive(true);
+        controlsMenuUI.SetActive(false);
+    }
+
+    public void SetVolume()
+    {
+        audioMan.GetComponent<AudioManager>().currentTrackSrc.volume = volumeSlider.value;
+    }
 }

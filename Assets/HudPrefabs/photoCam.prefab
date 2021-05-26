@@ -333,7 +333,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.75
-  far clip plane: 7987.15
+  far clip plane: 19987.15
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -521,7 +521,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4b804a9be58915c488d88b6442b37cbf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0fc6f13fc4e50ef4983bbba8dbf11546, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -831,7 +831,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0407e2a575eeba047a0ab2c3e307ebbb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e90c2ceab87f2fd40a6dfcda3a72a603, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

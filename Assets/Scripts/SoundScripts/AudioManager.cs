@@ -12,9 +12,10 @@ public class AudioManager : MonoBehaviour
     public Sound[] music;
     //public Sound[] sounds;
     public static AudioManager instance;
-
-    static AudioSource currentTrackSrc;
-    int currentTrackNumber = 0;
+    public AudioSource currentTrackSrc;
+    
+    [HideInInspector]
+    public int currentTrackNumber = 0;
 
     void Awake()
     {
@@ -49,7 +50,6 @@ public class AudioManager : MonoBehaviour
         {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
-
             s.source.volume = s.volume;
             s.source.pitch = 1f;
             s.source.loop = s.loop;
@@ -63,7 +63,6 @@ public class AudioManager : MonoBehaviour
         Sound s = music[0];
         s.source.Play();
         currentTrackSrc = s.source;
-
     }
 
     void Update()

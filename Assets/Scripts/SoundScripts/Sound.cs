@@ -17,8 +17,10 @@ public class Sound
     public float pitch;
 
     public bool loop;
+    //public AudioMixer mainMixer;
 
     //we dont want this to be changed during testing so hide it
     [HideInInspector]
     public AudioSource source;
+    
 }
