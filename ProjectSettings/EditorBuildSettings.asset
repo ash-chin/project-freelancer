@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BetaBuild/Beta_Ash.unity
     guid: c816ab288e3c6384abd63ead422da1bd
+  - enabled: 1
+    path: Assets/Scenes/BetaBuild/Arth.unity
+    guid: a354830a5c94b944dac4d05f8d85a723
   m_configObjects: {}
