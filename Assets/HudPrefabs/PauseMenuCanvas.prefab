@@ -3498,7 +3498,7 @@ MonoBehaviour:
   description: "Need updated visual data on Arth\u2019s shield so our team can continue
     monitoring its effectiveness and take action as needed."
   m_tag: Arth Shield
-  reward: 50
+  reward: 25
   isComplete: 0
   reqField: {fileID: 8765635487703529913}
   descField: {fileID: 753406135782580102}

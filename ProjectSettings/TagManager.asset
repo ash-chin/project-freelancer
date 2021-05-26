@@ -23,6 +23,8 @@ TagManager:
   - Inactive Missile
   - Whale Pearl
   - Laughing Fox
+  - Arth Shield
+  - UFV
   layers:
   - Default
   - TransparentFX
