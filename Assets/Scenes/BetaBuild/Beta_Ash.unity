@@ -12776,21 +12776,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 512637109}
     m_Modifications:
     - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
-      propertyPath: GM
-      value: 
-      objectReference: {fileID: 970424568}
-    - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
       propertyPath: OuterHud
       value: 
       objectReference: {fileID: 1766883019}
-    - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
-      propertyPath: maxPhotos
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
-      propertyPath: freelancer
-      value: 
-      objectReference: {fileID: 512637110}
     - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
       propertyPath: bountyNetwork
       value: 
@@ -12799,10 +12787,6 @@ PrefabInstance:
       propertyPath: playerAudioSource
       value: 
       objectReference: {fileID: 512637113}
-    - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
-      propertyPath: photoGallery.Array.size
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 8449805696742695242, guid: 1b236adbbb9f93744ab65e9fc00153f9, type: 3}
       propertyPath: photoGallery.Array.data[0]
       value: 

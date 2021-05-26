@@ -371,11 +371,19 @@ MonoBehaviour:
   blackReticle: {fileID: 8449805697823955494}
   redReticle: {fileID: 8449805696839698673}
   bountyNetwork: {fileID: 0}
-  freelancer: {fileID: 0}
   playerAudioSource: {fileID: 0}
+  maxPhotos: 8
+  photoGallery:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   previewCanvas: {fileID: 7834201004553228772}
   previewPic: {fileID: 4811753182548239866}
-  GM: {fileID: 0}
 --- !u!114 &8449805696742695243
 MonoBehaviour:
   m_ObjectHideFlags: 0
