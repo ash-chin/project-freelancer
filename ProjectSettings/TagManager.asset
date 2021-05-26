@@ -4,9 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - SpaceStation
   - Enemy
-  - Space Station
   - Refueling Depot
   - Onikaza
   - Fuel Depot Dialogue
@@ -25,6 +23,10 @@ TagManager:
   - Laughing Fox
   - Arth Shield
   - UFV
+  - Balae Erraldoia
+  - WilyBuggers
+  - Poacher
+  - AnarresAnomaly
   layers:
   - Default
   - TransparentFX

@@ -5289,6 +5289,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AlienFighter (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4154595508381948, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -5343,6 +5347,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4154595508381948, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2505934923381456241, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5822,6 +5830,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AlienFighter (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4154595508381948, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -5876,6 +5888,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4154595508381948, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2505934923381456241, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7142,9 +7158,53 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4870890535806552826, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4871864423950556636, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4872153039922297150, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4872159747180557478, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4872197509690627702, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4872430618037143084, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4872607563039021002, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4872682315717260868, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 4872862503880906410, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
       propertyPath: m_Name
       value: Astoria Gate
+      objectReference: {fileID: 0}
+    - target: {fileID: 4872862503880906410, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4872867669910049296, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8193170613614800557, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
@@ -7257,6 +7317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AlienFighter (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4154595508381948, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -7311,6 +7375,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4154595508381948, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2505934923381456241, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9079,6 +9147,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AlienFighter (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4154595508381948, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -9133,6 +9205,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4154595508381948, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2505934923381456241, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9247,6 +9323,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AlienFighter
       objectReference: {fileID: 0}
+    - target: {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4154595508381948, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -9301,6 +9381,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4154595508381948, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2505934923381456241, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9531,7 +9615,7 @@ GameObject:
   - component: {fileID: 629743758}
   m_Layer: 0
   m_Name: Shoal
-  m_TagString: Untagged
+  m_TagString: WilyBuggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9965,6 +10049,10 @@ MonoBehaviour:
   - {fileID: 1521592925}
   - {fileID: 1338839456}
   - {fileID: 2108846390}
+  - {fileID: 2121846525}
+  - {fileID: 2121846524}
+  - {fileID: 2121846523}
+  - {fileID: 2121846522}
   BountyNotification: {fileID: 538256015}
   notificationText: {fileID: 1420634275}
 --- !u!4 &698184352
@@ -10559,7 +10647,7 @@ GameObject:
   m_Component:
   - component: {fileID: 904188816}
   - component: {fileID: 904188817}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: GateCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11121,7 +11209,7 @@ GameObject:
   - component: {fileID: 1041364618}
   m_Layer: 0
   m_Name: MissileShoal
-  m_TagString: Untagged
+  m_TagString: WilyBuggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11416,6 +11504,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AlienFighter (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4154595508381948, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -11470,6 +11562,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4154595508381948, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2505934923381456241, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -11951,6 +12047,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AlienFighter (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4154595508381948, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -12005,6 +12105,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4154595508381948, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2505934923381456241, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12902,6 +13006,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AlienFighter (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4154595508381948, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -12956,6 +13064,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4154595508381948, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2505934923381456241, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -13814,6 +13926,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4869800374487640714, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
   m_PrefabInstance: {fileID: 1462950951}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1462950953 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8193170613614800557, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+  m_PrefabInstance: {fileID: 1462950951}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1462950954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462950953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46c2acba5b3aee2438bbc0372987590c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetScene: Arth
 --- !u!1 &1467963282
 GameObject:
   m_ObjectHideFlags: 0
@@ -14166,6 +14296,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AlienFighter (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4154595508381948, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -14220,6 +14354,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4154595508381948, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2505934923381456241, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -14552,9 +14690,9 @@ GameObject:
   - component: {fileID: 1699103999}
   - component: {fileID: 1699103998}
   - component: {fileID: 1699103997}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Bethalk
-  m_TagString: Untagged
+  m_TagString: AnarresAnomaly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15261,6 +15399,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AlienFighter (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4154595508381948, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -15315,6 +15457,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4154595508381948, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2505934923381456241, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -15546,6 +15692,10 @@ PrefabInstance:
     - target: {fileID: 367511215123131872, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
       propertyPath: m_Name
       value: humpback_whale_model23
+      objectReference: {fileID: 0}
+    - target: {fileID: 367511215123131872, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
+      propertyPath: m_TagString
+      value: Balae Erraldoia
       objectReference: {fileID: 0}
     - target: {fileID: 3693778905882435571, guid: b4bcc2fb1ffd2a04fa50e2933e19a89f, type: 3}
       propertyPath: m_RootOrder
@@ -16319,6 +16469,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+--- !u!1 &2001796620 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8193170613614800557, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+  m_PrefabInstance: {fileID: 2001796619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2001796621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001796620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46c2acba5b3aee2438bbc0372987590c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetScene: Beta_Ash
 --- !u!1 &2007162122
 GameObject:
   m_ObjectHideFlags: 0
@@ -16351,7 +16519,7 @@ MonoBehaviour:
   currentHull: 100
   currentFuel: 100
   scrip: 100
-  bountyBools: 000000000000
+  bountyBools: 00000000000000000000
 --- !u!4 &2007162124
 Transform:
   m_ObjectHideFlags: 0
@@ -16450,7 +16618,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2029791386}
   - component: {fileID: 2029791387}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21911,6 +22079,50 @@ MonoBehaviour:
 --- !u!114 &2121846521 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4167351282309043588, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
+  m_PrefabInstance: {fileID: 2121846519}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 618129e97d6641d4691fae76b53f5f7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2121846522 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1739250726168407965, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
+  m_PrefabInstance: {fileID: 2121846519}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 618129e97d6641d4691fae76b53f5f7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2121846523 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1591161639968351526, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
+  m_PrefabInstance: {fileID: 2121846519}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 618129e97d6641d4691fae76b53f5f7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2121846524 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5957999044139551110, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
+  m_PrefabInstance: {fileID: 2121846519}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 618129e97d6641d4691fae76b53f5f7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2121846525 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6454345922181601099, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
   m_PrefabInstance: {fileID: 2121846519}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
