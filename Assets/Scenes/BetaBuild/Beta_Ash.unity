@@ -1405,7 +1405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46c2acba5b3aee2438bbc0372987590c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: Anarres
+  targetScene: Arth
 --- !u!1001 &121860551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3949,7 +3949,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280288584}
-  m_LocalRotation: {x: -1.2417001e-16, y: -0.24868794, z: -3.188117e-17, w: 0.9685837}
+  m_LocalRotation: {x: 1.2417005e-16, y: -0.24868794, z: 3.1881175e-17, w: 0.9685837}
   m_LocalPosition: {x: 1054.2656, y: 1047.8, z: 451.45908}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -4263,6 +4263,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tumble: 0.25
   rotationSpeed: 1
+--- !u!1 &311791759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 311791761}
+  - component: {fileID: 311791760}
+  m_Layer: 0
+  m_Name: WildlifeSafari
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &311791760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311791759}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f90f5935b22c29949898aba88b282752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xSpin: 0
+  ySpin: 1
+  zSpin: 0
+  rotateSpeed: 1
+--- !u!4 &311791761
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311791759}
+  m_LocalRotation: {x: 0.025793854, y: -0.27738214, z: 0.057263386, w: 0.95870477}
+  m_LocalPosition: {x: -3209, y: 1002.6, z: 1433}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2079307271}
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 4.659, y: -32.05, z: 5.498}
 --- !u!1 &316124973
 GameObject:
   m_ObjectHideFlags: 0
@@ -15253,7 +15301,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784164472}
-  m_LocalRotation: {x: -1.2417001e-16, y: -0.24868794, z: -3.188117e-17, w: 0.9685837}
+  m_LocalRotation: {x: 1.2417005e-16, y: -0.24868794, z: 3.1881175e-17, w: 0.9685837}
   m_LocalPosition: {x: 1054.2656, y: 1047.8, z: 451.45908}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -34474,7 +34522,7 @@ GameObject:
   - component: {fileID: 1637754899}
   - component: {fileID: 1637754900}
   m_Layer: 0
-  m_Name: PortalRotator
+  m_Name: CivillizationGate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34528,7 +34576,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3781143741146462922, guid: 3f474f08897ddc74e8fc2e463a5d877d, type: 3}
       propertyPath: m_TagString
-      value: Whale Pearl
+      value: LostPearl
       objectReference: {fileID: 0}
     - target: {fileID: 3781143741146462926, guid: 3f474f08897ddc74e8fc2e463a5d877d, type: 3}
       propertyPath: m_RootOrder
@@ -38952,6 +39000,90 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tumble: 0.25
   rotationSpeed: 1
+--- !u!1001 &2079307270
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 311791761}
+    m_Modifications:
+    - target: {fileID: 4869800374487640714, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869800374487640714, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1214.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869800374487640714, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -158.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869800374487640714, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 769.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869800374487640714, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.88941526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869800374487640714, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.08251862
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869800374487640714, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.41297343
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869800374487640714, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.17771924
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869800374487640714, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 17.072
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869800374487640714, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 47.543
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869800374487640714, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -15.035
+      objectReference: {fileID: 0}
+    - target: {fileID: 4872862503880906410, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_Name
+      value: PortalStation
+      objectReference: {fileID: 0}
+    - target: {fileID: 8193170613614800557, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+--- !u!4 &2079307271 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4869800374487640714, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+  m_PrefabInstance: {fileID: 2079307270}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2079307272 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8193170613614800557, guid: 95018c85a4526644eace223f66c93c7e, type: 3}
+  m_PrefabInstance: {fileID: 2079307270}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2079307273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079307272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46c2acba5b3aee2438bbc0372987590c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetScene: Anarres
 --- !u!1001 &2080361122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39513,6 +39645,10 @@ PrefabInstance:
       propertyPath: galleryMenuUI
       value: 
       objectReference: {fileID: 231198876}
+    - target: {fileID: 8198295528773554065, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
+      propertyPath: m_tag
+      value: LostPearl
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
 --- !u!114 &2121846520 stripped

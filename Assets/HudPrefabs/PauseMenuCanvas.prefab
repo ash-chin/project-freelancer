@@ -2102,7 +2102,7 @@ MonoBehaviour:
     and silvers. It is nowhere to be found in the wreckage, but it can\u2019t be
     too far off. I am willing to pay a fair price to get photographic evidence of
     its location. If you\u2019re smart, you\u2019ll leave it where you found it."
-  m_tag: Whale Pearl
+  m_tag: LostPearl
   reward: 100
   isComplete: 0
   reqField: {fileID: 8622468760890893217}
