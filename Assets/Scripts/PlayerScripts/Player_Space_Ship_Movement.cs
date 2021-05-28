@@ -9,6 +9,12 @@ using TMPro;
 
 public class Player_Space_Ship_Movement : MonoBehaviour
 {
+    // the boost bool
+    private bool boosted = false;
+    public float boostQuantity;
+    public float boostModifier = 1;
+    public float boostFuelCost;
+
     // sound source
     public PlayerAudio playerAudioSource;
 
@@ -121,6 +127,7 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         controls.FindActionMap("Space Ship Controls").FindAction("Rotation Y Axis").canceled += cntxt => rotationYAxis = 0;
 
         controls.FindActionMap("Space Ship Controls").FindAction("Camera Switch").performed += cntxt => SwitchCamera();
+        controls.FindActionMap("Space Ship Controls").FindAction("Boost").performed += cntxt => Boost();
 
 
 
@@ -174,6 +181,22 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         
     }
 
+    private void Boost()
+    {
+        if (!boosted)
+        {
+            boosted = true;
+            movementMaxZAxisSpeed += boostQuantity;
+            boostModifier = boostFuelCost;
+        }
+        else
+        {
+            boosted = false;
+            movementMaxZAxisSpeed -= boostQuantity;
+            boostModifier = 1;
+        }
+    }
+
 
     private void OnEnable()
     {
@@ -185,7 +208,7 @@ public class Player_Space_Ship_Movement : MonoBehaviour
         controls.FindAction("Rotation Y Axis").Enable();
         controls.FindAction("Camera Switch").Enable();
         controls.FindAction("Take Photo").Enable();
-
+        controls.FindAction("Boost").Enable();
     }
 
     private void OnDisable()

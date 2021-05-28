@@ -8381,6 +8381,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24302a79f7589d343a27fe5ccd02af0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boostQuantity: 200
+  boostModifier: 1
+  boostFuelCost: 2
   playerAudioSource: {fileID: 512637113}
   mainCam: {fileID: 280288586}
   photoCam: {fileID: 671572679}
@@ -16831,6 +16834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 240c8756e0a2f7546afcc3c880e06b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mover: {fileID: 512637110}
   currentHull: 100
   currentFuel: 100
   scrip: 100

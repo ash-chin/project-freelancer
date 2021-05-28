@@ -13,6 +13,8 @@ public class Player_Asset_Manager : MonoBehaviour
     public Slider hullSlider;
     */
 
+    public Player_Space_Ship_Movement mover;
+
 
     // GUI elements updated in HUD script attached to OutHud
     public float currentHull;
@@ -108,7 +110,7 @@ public class Player_Asset_Manager : MonoBehaviour
         // first we deal with decrmeneting fuel
         //currentFuel -= 0.001f * (Mathf.Abs(player.movementCurrentZAxisSpeed) + Mathf.Abs(player.movementCurrentYAxisSpeed) + Mathf.Abs(player.movementCurrentXAxisSpeed)) * Time.deltaTime;
         
-        currentFuel -= 0.001f * (Mathf.Abs(PM.GetComponent<Player_Space_Ship_Movement>().movementCurrentZAxisSpeed) + 
+        currentFuel -= 0.001f * mover.boostFuelCost * (Mathf.Abs(PM.GetComponent<Player_Space_Ship_Movement>().movementCurrentZAxisSpeed) + 
             Mathf.Abs(PM.GetComponent<Player_Space_Ship_Movement>().movementCurrentYAxisSpeed) + 
             Mathf.Abs(PM.GetComponent<Player_Space_Ship_Movement>().movementCurrentXAxisSpeed)) * Time.deltaTime;
 
