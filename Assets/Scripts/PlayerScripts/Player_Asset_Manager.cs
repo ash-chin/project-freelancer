@@ -5,23 +5,62 @@ using UnityEngine.UI;
 
 public class Player_Asset_Manager : MonoBehaviour
 {
+    /* Responsible for holding onto and updating player data, such as:
+     *     - Current fuel, hull, and scrip values
+     *     - Bounty completion statuses
+     * 
+     * MEMBERS:
+     *   public float currentHull:
+     *           This is the value of the player's current hull integrity
+     *   public float currentFuel:
+     *           This is the value of player's current remaining fuel
+     *   public int scrip:
+     *           This is the current value of the player's
+     *   public List<bool> bountyBools:
+     *           List of bools that tracks player's current completion status on bounties
+     * 
+     * GUI ELEMENTS OF DATA MEMBERS: inside HUD.cs script
+     *   The visual representation of the hull/fuel/scrip data members are updated in the
+     *   HUD.cs script, which is attached to the OuterHud object in the heirarchy.
+     *   The visual representation of bounty completion statuses are updated in the
+     *   BountyNetwork.cs script, attached to the PhotoBountyNetwork item in the heirarchy.
+     * 
+     * STATIC MEMBERS:
+     *   public static GameObject PM:
+     *      Reference to the object holding the player script.
+     *      Used to access members and methods inside the script.
+     *      This member is assigned at start as follows:
+     *              if (PM == null)
+     *                  {
+     *                      PM = GameObject.Find("Player");
+     *                  }
+     *   
+     * 
+     * METHODS:
+     *   public void HullDamage()
+     *   public void VariableDamage(float damage)
+     *   public void PayTheMan(int payment)
+     *   public void MoneyPwease(int payment)
+     *   public void Refuel()
+     *   public void RepairHull()
+     * 
+     * 
+     * -----HOW TO ACCESS MEMBERS OR METHODS--------------------------------------------------------
+     * To reference this script, first find the GameObject this script is attached to like so:
+     *      if (AM == null) { AM = GameObject.Find("AssetManager"); }
+     * and then 
+     *      AM.GetComponent<Player_Asset_Manager>().[ MEMBER OR METHOD CALL ]
+     * EXAMPLE:
+     *      hullSlider.value = AM.GetComponent<Player_Asset_Manager>().currentHull;
+     * the above example can be found in HUD.cs on line 28
+     * ---------------------------------------------------------------------------------------------
+     */
 
-    /* OLD STUFF
-    public float startingHull;
-    public float startingFuel;
-    public Slider fuelSlider;
-    public Slider hullSlider;
-    */
-
-    public Player_Space_Ship_Movement mover;
-
-
-    // GUI elements updated in HUD script attached to OutHud
     public float currentHull;
     public float currentFuel;
-    public int scrip;    // amount of money player has
+    public int scrip;
 
-    public List<bool> bountyBools;    // track bounty completion status
+    public List<bool> bountyBools;
 
 
 /*  
@@ -110,7 +149,7 @@ public class Player_Asset_Manager : MonoBehaviour
         // first we deal with decrmeneting fuel
         //currentFuel -= 0.001f * (Mathf.Abs(player.movementCurrentZAxisSpeed) + Mathf.Abs(player.movementCurrentYAxisSpeed) + Mathf.Abs(player.movementCurrentXAxisSpeed)) * Time.deltaTime;
         
-        currentFuel -= 0.001f * mover.boostFuelCost * (Mathf.Abs(PM.GetComponent<Player_Space_Ship_Movement>().movementCurrentZAxisSpeed) + 
+        currentFuel -= 0.001f * PM.GetComponent<Player_Space_Ship_Movement>().boostFuelCost * (Mathf.Abs(PM.GetComponent<Player_Space_Ship_Movement>().movementCurrentZAxisSpeed) + 
             Mathf.Abs(PM.GetComponent<Player_Space_Ship_Movement>().movementCurrentYAxisSpeed) + 
             Mathf.Abs(PM.GetComponent<Player_Space_Ship_Movement>().movementCurrentXAxisSpeed)) * Time.deltaTime;
 
