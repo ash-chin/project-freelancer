@@ -59,9 +59,7 @@ public class Player_Asset_Manager : MonoBehaviour
     public float currentHull;
     public float currentFuel;
     public int scrip;
-
     public List<bool> bountyBools;
-
 
 /*  
     These components are not perserved on load, so they will be missing if player
