@@ -24,6 +24,7 @@ public class BountyItem : MonoBehaviour
     public bool isComplete;   // whether the request is complete
     
     public TextMeshProUGUI reqField;
+    public TextMeshProUGUI titleField;
     public TextMeshProUGUI descField;
     public TextMeshProUGUI rewardField;
     public TextMeshProUGUI statusField;
@@ -56,20 +57,59 @@ public class BountyItem : MonoBehaviour
     public void OnMouseOver()
     {
         descField.enabled = true;
+        titleField.enabled = true;
+        statusField.enabled = true;
+        rewardField.enabled = true;
+        rewardField.text = reward.ToString();
         descField.text = description;
-        reqField.color = Color.yellow;
+        titleField.text = request;
+        if (isComplete)
+        {
+            statusField.text = "Completed";
+        }
+        else
+        {
+            statusField.text = "Open Bounty";
+        }
+        reqField.color = Color.black;
+        // descField.enabled = true;
+        // descField.text = description;
+        // reqField.color = Color.black;
         //descHolder.SetActive(true);
         //descField.text = description;
+    }
+
+    public void OnMouseDown()
+    {
+        descField.enabled = true;
+        titleField.enabled = true;
+        statusField.enabled = true;
+        rewardField.enabled = true;
+        rewardField.text = reward.ToString();
+        descField.text = description;
+        titleField.text = request;
+        if (isComplete)
+        {
+            statusField.text = "Completed";
+        }
+        else
+        {
+            statusField.text = "Open Bounty";
+        }
+        reqField.color = Color.black;
     }
 
     public void OnMouseExit()
     {
         descField.text = "";
         descField.enabled = false;
+        titleField.enabled = false;
+        statusField.enabled = false;
+        rewardField.enabled = false;
         reqField.color = Color.white;
         //descHolder.SetActive(false);
         //descField.text = "";
     }
-    
-    
+
+
 }
