@@ -4592,11 +4592,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   request: Record Settin' Beauty!
   description: "The presence of an enormous, ancient whale has recently been detected
-    at the Irwin Space Reserve and we\u2019re hopin\u2019 some adventurous freelancer
-    would be willin\u2019 to snap us a photo of this rare beauty. Reports indicate
-    that the fella is nearly 500 yards long, makin\u2019 this bloke the largest ever
-    recorded of his kind! We just need to confirm this guy is the real deal. Great
-    opportunity to get paid to witness one of nature\u2019s miraculous creatures!"
+    at the Irwin Space Reserve in the Anarres Sector and we\u2019re hopin\u2019 some
+    adventurous freelancer would be willin\u2019 to snap us a photo of this rare
+    beauty. Reports indicate that the fella is nearly 500 yards long, makin\u2019
+    this bloke the largest ever recorded of his kind! We just need to confirm this
+    guy is the real deal. Great opportunity to get paid to witness one of nature\u2019s
+    miraculous creatures!"
   m_tag: Balae Erraldoia
   reward: 25
   isComplete: 0
@@ -5687,7 +5688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   request: Sima Zhao Blackhole
-  description: Please see title
+  description: Please see title. It is located in the AlphaAstoria sector.
   m_tag: Black Hole
   reward: 200
   isComplete: 0
@@ -7033,10 +7034,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   request: Poacher sightings
   description: "Some park visitors said they spotted a large ship hoverin\u2019 near
-    the sector not long ago. Said the ship had no markings and no transponder - telltale
-    sign of poachers. If there\u2019s a kind freelancer out there who\u2019d be willin\u2019
-    to get a photo that verifies these claims, the rangers over at the preserve and
-    the marvelous beauties inhabitin\u2019 it would be grateful."
+    the Anarres Sector not long ago. Said the ship had no markings and no transponder
+    - telltale sign of poachers. If there\u2019s a kind freelancer out there who\u2019d
+    be willin\u2019 to get a photo that verifies these claims, the rangers over at
+    the preserve and the marvelous beauties inhabitin\u2019 it would be grateful."
   m_tag: Poacher
   reward: 50
   isComplete: 0

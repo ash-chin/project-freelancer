@@ -16834,7 +16834,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 240c8756e0a2f7546afcc3c880e06b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mover: {fileID: 512637110}
   currentHull: 100
   currentFuel: 100
   scrip: 100
@@ -22275,6 +22274,10 @@ PrefabInstance:
     - target: {fileID: 5769378883200669320, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
       propertyPath: m_index
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5769378883200669320, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
+      propertyPath: description
+      value: Please see title. It's in the AlphaAstoria sector.
       objectReference: {fileID: 0}
     - target: {fileID: 7448387197063100937, guid: c42f2714ec0cd1b4ebbe42294ed7ebe5, type: 3}
       propertyPath: m_Pivot.x
