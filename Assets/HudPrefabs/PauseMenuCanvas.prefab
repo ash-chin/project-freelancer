@@ -4875,10 +4875,13 @@ MonoBehaviour:
     and R: Move up and down
 
 
-    Pause Menu, Bounty-Network, View Gallery: 1 Key
+    1 KEY: Pause Menu, Bounty-Network, View Gallery,
+    Adjust volume
 
-    T:
-    Switch to photo mode and switch back to flight mode'
+    T: Switch to photo mode and switch back to flight mode
+
+    LEFT
+    SHIFT: Boost (note, boosting expends more fuel)'
 --- !u!1 &5490165795619419364
 GameObject:
   m_ObjectHideFlags: 0
